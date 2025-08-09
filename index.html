@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新美剧实时更新</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 交互式年份时间线 -->
+        <div id="interactive-timeline" class="interactive-timeline">
+            <ul id="year-list"></ul>
+        </div>
+
+        <!-- **修改**：主标题现在独立于粘性容器 -->
+        <h1>最新美剧实时更新</h1>
+
+        <!-- **修改**：粘性头部容器现在只包裹筛选栏 -->
+        <header class="sticky-header">
+            <div id="genre-filter-container" class="genre-filter-container"></div>
+        </header>
+
+        <!-- 这个部分保持隐藏 -->
+        <div class="file-loader">
+            <p id="status-message">正在尝试加载默认文件 `data.json`...</p>
+            <input type="file" id="file-input" accept=".json">
+            <label for="file-input" class="file-label">或手动选择一个JSON文件</label>
+        </div>
+        
+        <main id="main-content">
+            <div id="coming-soon-container" style="display: none;"></div>
+            <div id="results-container"></div>
+            <div id="no-results" style="display: none;">没有找到符合条件的剧集。</div>
+            <div id="loader" class="loader" style="display: none;"></div>
+        </main>
+    </div>
+
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
