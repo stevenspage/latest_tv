@@ -26,20 +26,7 @@ h1 {
     color: var(--imdb-accent);
     margin-top: 0;
     margin-bottom: 20px;
-    /* **修改**: 调整行高以适应两行布局 */
-    line-height: 1.3;
 }
-
-/* **新增**: 更新日期的样式 */
-h1 .update-date {
-    display: block; /* 使其独占一行 */
-    margin-top: 6px; /* 与主标题的间距 */
-    font-size: 1rem; /* 字体大小 */
-    font-weight: 400; /* 正常字重 */
-    color: var(--imdb-text-secondary); /* 使用次要文本颜色 */
-    letter-spacing: 1.5px; /* 增加字母间距以提升现代感 */
-}
-
 
 /* --- Sticky Header --- */
 .sticky-header {
