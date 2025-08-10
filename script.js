@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let visibleYearCount = 3;
     let isScrollingProgrammatically = false;
     let selectedGenre = '全部';
-    let selectedNetwork = '全部';
     const FUTURE_TAG = '即将上映';
 
     // DOM Elements
     const mainTitle = document.querySelector('h1');
     const genreFilterContainer = document.getElementById('genre-filter-container');
-    const networkFilterContainer = document.getElementById('network-filter-container');
     const loadingOverlay = document.getElementById('loading-overlay');
     const comingSoonContainer = document.getElementById('coming-soon-container');
     const interactiveTimeline = document.getElementById('interactive-timeline');
@@ -71,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         allSeasons = flattenedSeasons;
         populateGenreFilters();
-        populateNetworkFilters();
         filterAndRenderShows();
     }
 
@@ -104,62 +101,21 @@ document.addEventListener('DOMContentLoaded', () => {
         return tag;
     }
 
-    function populateNetworkFilters() {
-        const displayOrder = ['全部', 'Netflix', 'Apple TV', 'Prime Video', 'Paramount', 'YouTube', 'Hulu', 'Disney', 'ABC', 'NBC', 'HBO'];
-        networkFilterContainer.innerHTML = '';
-        displayOrder.forEach(networkName => {
-            const tag = createNetworkTag(networkName);
-            if (networkName === '全部') {
-                tag.classList.add('active');
-            }
-            networkFilterContainer.appendChild(tag);
-        });
-    }
-
-    function createNetworkTag(networkName) {
-        const tag = document.createElement('div');
-        tag.className = 'genre-tag'; // Re-use genre-tag style
-        tag.textContent = networkName;
-        tag.dataset.network = networkName;
-        tag.addEventListener('click', () => {
-            if (selectedNetwork === networkName) return;
-            document.querySelector('#network-filter-container .genre-tag.active')?.classList.remove('active');
-            tag.classList.add('active');
-            selectedNetwork = networkName;
-            filterAndRenderShows();
-        });
-        return tag;
-    }
-
     function filterAndRenderShows() {
-        // 1. Filter by Genre
-        const genreFiltered = selectedGenre === '全部'
+        const currentlyFiltered = selectedGenre === '全部'
             ? [...allSeasons]
             : allSeasons.filter(season => 
                 season.parentShow.genres.some(genre => genre.name === selectedGenre)
             );
 
-        // 2. Filter by Network
-        const networkFiltered = selectedNetwork === '全部'
-            ? genreFiltered
-            : genreFiltered.filter(season => {
-                if (!season.parentShow.networks || season.parentShow.networks.length === 0) {
-                    return false;
-                }
-                const searchKeyword = selectedNetwork.toLowerCase();
-                return season.parentShow.networks.some(network => 
-                    network.name.toLowerCase().includes(searchKeyword)
-                );
-            });
-
         const now = new Date();
         now.setHours(0, 0, 0, 0);
 
-        const futureSeasons = networkFiltered
+        const futureSeasons = currentlyFiltered
             .filter(season => new Date(season.air_date) > now)
             .sort((a, b) => new Date(a.air_date) - new Date(b.air_date));
 
-        filteredPastAndPresentSeasons = networkFiltered
+        filteredPastAndPresentSeasons = currentlyFiltered
             .filter(season => new Date(season.air_date) <= now)
             .sort((a, b) => new Date(b.air_date) - new Date(a.air_date));
 
