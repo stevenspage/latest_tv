@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function initialize() {
         try {
-            const response = await fetch('json/us_tv.json');
+            const response = await fetch('json/tv_us.json');
             if (!response.ok) throw new Error('Default file not found');
             const data = await response.json();
             statusMessage.textContent = '成功加载默认文件 `json/us_tv.json`。';
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         futureSeasons.forEach(season => {
             cardsHTML += createShowCard(season).outerHTML;
         });
-        comingSoonContainer.innerHTML = `<h2 class="month-group-header">即将上映</h2><div class="scroller-wrapper"><button class="scroller-arrow left" aria-label="Scroll left" style="display: none;">‹</button><div class="scroller-container"><div class="horizontal-scroller">${cardsHTML}</div></div><button class="scroller-arrow right" aria-label="Scroll right">›</button></div>`;
+        comingSoonContainer.innerHTML = `<h2 class="month-group-header">即将上映</h2><div class="scroller-wrapper"><button class="scroller-arrow left" aria-label="Scroll left">‹</button><div class="scroller-container"><div class="horizontal-scroller">${cardsHTML}</div></div><button class="scroller-arrow right" aria-label="Scroll right">›</button></div>`;
         comingSoonContainer.style.display = 'block';
         setupHorizontalScroller(comingSoonContainer);
     }
@@ -146,6 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const scrollLeft = scroller.scrollLeft;
             const scrollWidth = scroller.scrollWidth;
             const clientWidth = scroller.clientWidth;
+            arrowLeft.style.display = 'block';
+            arrowRight.style.display = 'block';
             arrowLeft.disabled = scrollLeft < 10;
             arrowRight.disabled = scrollWidth - scrollLeft - clientWidth < 10;
         }
@@ -231,28 +233,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- MODIFICATION START ---
     function createShowCard(season) {
         const show = season.parentShow;
         const posterPath = season.poster_path || show.poster_path;
         const posterUrl = posterPath ? `${TMDB_IMAGE_BASE_URL}${posterPath}` : 'https://via.placeholder.com/500x750.png?text=No+Image';
         const displayTitle = show.name !== show.original_name ? `${show.name} (${show.original_name})` : show.name;
         const fullTitle = `${displayTitle} - ${season.name}`;
+        
+        // Extract Douban related info and verification status
+        const doubanVerified = season.douban_link_verified;
         const doubanLink = season.douban_link_google;
+        const doubanRating = season.douban_rating;
+        
         const tmdbLink = `https://www.themoviedb.org/tv/${show.id}/season/${season.season_number}`;
         const imdbLink = show.imdb_id ? `https://www.imdb.com/title/${show.imdb_id}/` : null;
-        const doubanRating = season.douban_rating;
+
+        // Conditionally create the rating HTML based on verification
         let ratingElementHTML = '';
-        if (doubanRating) {
+        if (doubanVerified && doubanRating) {
             ratingElementHTML = `<div class="card-rating"><span class="imdb-gold">★</span> <span class="douban-green">豆瓣</span> <span class="imdb-gold">${doubanRating}</span></div>`;
         } else {
             ratingElementHTML = `<div class="card-rating"><span class="imdb-gold">★</span> <span class="douban-green">豆瓣：</span><span class="no-rating-text">暂无</span></div>`;
         }
+        
         const airDateInfo = season.air_date ? `<div class="card-meta-info">上映日期：${season.air_date}</div>` : '';
         const card = document.createElement('div');
         card.className = 'show-card';
-        card.innerHTML = `<div class="card-poster-container"><img src="${posterUrl}" alt="${fullTitle}" class="poster" loading="lazy"><div class="watchlist-button" role="button" aria-label="Add to Watchlist"><svg class="watchlist-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="currentColor"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg></div></div><div class="card-content">${ratingElementHTML}<h3 class="card-title" title="${fullTitle}">${fullTitle}</h3>${airDateInfo}<div class="card-links">${doubanLink ? `<a href="${doubanLink}" class="card-link" target="_blank">豆瓣</a>` : ''}<a href="${tmdbLink}" class="card-link" target="_blank">TMDb</a>${imdbLink ? `<a href="${imdbLink}" class="card-link" target="_blank">IMDb</a>` : ''}</div></div>`;
+        
+        // Conditionally include the Douban link in the final HTML
+        card.innerHTML = `<div class="card-poster-container"><img src="${posterUrl}" alt="${fullTitle}" class="poster" loading="lazy"><div class="watchlist-button" role="button" aria-label="Add to Watchlist"><svg class="watchlist-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="currentColor"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg></div></div><div class="card-content">${ratingElementHTML}<h3 class="card-title" title="${fullTitle}">${fullTitle}</h3>${airDateInfo}<div class="card-links">${(doubanVerified && doubanLink) ? `<a href="${doubanLink}" class="card-link" target="_blank">豆瓣</a>` : ''}<a href="${tmdbLink}" class="card-link" target="_blank">TMDb</a>${imdbLink ? `<a href="${imdbLink}" class="card-link" target="_blank">IMDb</a>` : ''}</div></div>`;
         return card;
     }
+    // --- MODIFICATION END ---
     
     function renderTimeline(activeYear) {
         yearList.innerHTML = '';
