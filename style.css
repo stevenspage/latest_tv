@@ -161,32 +161,7 @@ h1 .update-date {
 @media (max-width: 1024px) { .month-grid { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 900px) { 
     .sticky-header { padding-left: 0; } /* 新增：在小屏幕上移除内边距 */
-    .network-filter-container { 
-        padding-left: 0; 
-        /* **修改**: 让其可以水平滚动 */
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    } 
-    .genre-filter-container {
-         /* **新增**: 让其可以水平滚动 */
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
-    .network-filter-container::-webkit-scrollbar,
-    .genre-filter-container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, and Opera */
-    }
-    .genre-tag {
-        flex-shrink: 0; /* 防止标签在flex容器中被压缩 */
-        /* **新增**: 让标签更紧凑 */
-        padding: 6px 12px;
-        font-size: 13px;
-    }
-
+    .network-filter-container { padding-left: 0; } /* 新增：在小屏幕上为 network-filter-container 移除内边距 */
     body { padding: 8px 0; } 
     .container { padding: 0 8px; } 
     #main-content { margin-left: 0; } 
