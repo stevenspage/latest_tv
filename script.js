@@ -140,21 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 season.parentShow.genres.some(genre => genre.name === selectedGenre)
             );
 
-        // 1.5. 过滤掉没有评分的动画片
-        const filteredNoRatingAnime = genreFiltered.filter(season => {
-            // 判断是否为动画片
-            const isAnime = season.parentShow.genres && season.parentShow.genres.some(g => g.name === '动画');
-            // 判断是否有评分
-            const hasRating = season.douban_rating && Number(season.douban_rating) > 0;
-            // 如果是动画片且没有评分，则过滤掉
-            if (isAnime && !hasRating) return false;
-            return true;
-        });
-
         // 2. Filter by Network
         const networkFiltered = selectedNetwork === '全部'
-            ? filteredNoRatingAnime
-            : filteredNoRatingAnime.filter(season => {
+            ? genreFiltered
+            : genreFiltered.filter(season => {
                 if (!season.parentShow.networks || season.parentShow.networks.length === 0) {
                     return false;
                 }
