@@ -97,6 +97,9 @@ h1 .update-date {
     background-color: var(--imdb-accent);
     color: #000;
     border-color: var(--imdb-accent);
+    /* **新增**: 提升层级，确保激活的标签显示在渐变遮罩之上 */
+    position: relative;
+    z-index: 2;
 }
 
 /* --- File Loader (隐藏) --- */
