@@ -337,9 +337,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function appendItems(seasonsToRender) {
-        let currentGrid = resultsContainer.querySelector('.month-grid:last-of-type');
-        seasonsToRender.forEach(season => {
+        if (seasonsToRender.length === 0) return;
+
+        let index = 0;
+        let currentGrid;
+        
+        function progressiveAppend() {
+            if (index >= seasonsToRender.length) return;
+
+            const season = seasonsToRender[index];
             const monthKey = season.air_date.substring(0, 7);
+
             if (monthKey !== lastRenderedMonth) {
                 lastRenderedMonth = monthKey;
                 const header = document.createElement('h2');
@@ -348,13 +356,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 const date = new Date(monthKey + '-01');
                 header.textContent = `${date.getFullYear()}年 ${date.getMonth() + 1}月`;
                 resultsContainer.appendChild(header);
+                
                 currentGrid = document.createElement('div');
                 currentGrid.className = 'month-grid';
                 resultsContainer.appendChild(currentGrid);
             }
+
             const card = createShowCard(season);
+            // Fallback for safety
+            if (!currentGrid) {
+                 currentGrid = resultsContainer.querySelector('.month-grid:last-of-type') || document.createElement('div');
+                 if (!currentGrid.parentElement) {
+                    currentGrid.className = 'month-grid';
+                    resultsContainer.appendChild(currentGrid);
+                 }
+            }
             currentGrid.appendChild(card);
-        });
+            
+            index++;
+            requestAnimationFrame(progressiveAppend);
+        }
+        
+        requestAnimationFrame(progressiveAppend);
     }
 
     // --- MODIFICATION START ---

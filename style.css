@@ -289,11 +289,18 @@ h1 .update-date {
     border-radius: 4px;
 }
 
-.show-card.skeleton {
-    height: 0;
-    padding-bottom: 150%; /* This creates a 2:3 aspect ratio box */
-    position: relative;
-    background-color: var(--imdb-card-bg);
+/* Skeleton card for the main responsive grid */
+.month-grid .show-card.skeleton {
+    aspect-ratio: 2 / 3;
+    border-radius: 4px;
+}
+
+/* Skeleton card for the horizontal scroller (fixed size) */
+.horizontal-scroller .show-card.skeleton {
+    width: 160px;
+    height: 290px; /* Fixed height to match the approximate final card height */
+    flex-shrink: 0;
+    border-radius: 4px;
 }
 
 .genre-tag.skeleton {
