@@ -46,7 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function processData(data) {
         if (data.metadata && data.metadata.last_updated) {
             const updateDate = data.metadata.last_updated.substring(0, 10);
-            mainTitle.textContent = `最新美剧实时更新（${updateDate}）`;
+            // **修改**: 不再重写整个h1，而是填充small标签
+            const updateDateElement = mainTitle.querySelector('.update-date');
+            if (updateDateElement) {
+                updateDateElement.textContent = updateDate;
+            }
         }
         if (!data || !Array.isArray(data.shows)) {
             statusMessage.textContent = 'JSON文件格式不正确，需要包含 "shows" 数组。'; 
