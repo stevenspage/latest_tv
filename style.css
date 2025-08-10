@@ -161,25 +161,50 @@ h1 .update-date {
 @media (max-width: 1024px) { .month-grid { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 900px) { 
     .sticky-header { padding-left: 0; } /* 新增：在小屏幕上移除内边距 */
+    .network-filter-container,
+    .genre-filter-container {
+        position: relative; /* 为渐变遮罩提供定位上下文 */
+    }
+
     .network-filter-container { 
         padding-left: 0; 
-        /* **修改**: 让其可以水平滚动 */
         overflow-x: auto;
         flex-wrap: nowrap;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     } 
     .genre-filter-container {
-         /* **新增**: 让其可以水平滚动 */
         overflow-x: auto;
         flex-wrap: nowrap;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
     .network-filter-container::-webkit-scrollbar,
     .genre-filter-container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, and Opera */
+        display: none;
     }
+    
+    /* **新增**: 渐变遮罩，用于提示可滚动 */
+    .network-filter-container::after,
+    .genre-filter-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px; /* 渐变区域的宽度 */
+        height: 100%;
+        background: linear-gradient(to left, var(--imdb-bg), transparent);
+        pointer-events: none; /* 确保遮罩不会影响鼠标操作 */
+        transition: opacity 0.2s ease-in-out;
+        opacity: 1;
+    }
+
+    /* **新增**: 当滚动到末尾时，隐藏遮罩 */
+    .network-filter-container.scrolled-to-end::after,
+    .genre-filter-container.scrolled-to-end::after {
+        opacity: 0;
+    }
+
     .genre-tag {
         flex-shrink: 0; /* 防止标签在flex容器中被压缩 */
         /* **新增**: 让标签更紧凑 */
