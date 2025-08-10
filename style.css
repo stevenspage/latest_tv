@@ -162,10 +162,6 @@ h1 .update-date {
     .month-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .horizontal-scroller .show-card { width: 140px; }
     .scroller-arrow { display: none !important; }
-    /* 新增：在移动端明确筛选器为居中对齐，以获得更好的视觉效果 */
-    .genre-filter-container, .network-filter-container {
-        justify-content: center;
-    }
 }
 
 /* --- IMDb Style Card --- */
