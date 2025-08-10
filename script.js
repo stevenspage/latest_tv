@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function populateGenreFilters() {
-        const genreMap = { '全部': '全部', '剧情': '剧情', '喜剧': '喜剧', '悬疑': '悬疑', '科幻|奇幻': 'Sci-Fi & Fantasy', '犯罪': '犯罪', '动作冒险': '动作冒险', '儿童': '儿童', '动画': '动画' };
-        const displayOrder = ['全部', '剧情', '喜剧', '悬疑', '犯罪', '动作冒险', '科幻|奇幻', '儿童', '动画'];
+        const genreMap = { '全部': '全部', '剧情': '剧情', '喜剧': '喜剧', '悬疑': '悬疑', '科幻|奇幻': 'Sci-Fi & Fantasy', '犯罪': '犯罪', '家庭': '家庭', '动作冒险': '动作冒险', '儿童': '儿童', '动画': '动画' };
+        const displayOrder = ['全部', '剧情', '喜剧', '家庭', '悬疑', '犯罪', '动作冒险', '科幻|奇幻', '儿童', '动画'];
         genreFilterContainer.innerHTML = '';
         displayOrder.forEach(displayName => {
             const actualValue = genreMap[displayName];
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function populateNetworkFilters() {
-        const displayOrder = ['全部', 'Netflix', 'Apple TV', 'Hulu', 'Disney', 'Paramount', 'HBO', 'ABC'];
+        const displayOrder = ['全部', 'Netflix', 'Apple TV', 'Prime Video', 'Hulu', 'Disney', 'Paramount', 'HBO', 'ABC'];
         networkFilterContainer.innerHTML = '';
         displayOrder.forEach(networkName => {
             const tag = createNetworkTag(networkName);
