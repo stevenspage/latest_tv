@@ -265,3 +265,52 @@ h1 .update-date {
 @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
 .loading-overlay { position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; z-index: 9999; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s 0.3s; }
 .loading-overlay.visible { opacity: 1; visibility: visible; transition: opacity 0.3s, visibility 0s; }
+
+/* --- Skeleton Loader Styles --- */
+.skeleton {
+    opacity: 0.7;
+    animation: skeleton-loading 1.5s infinite linear;
+    background: linear-gradient(90deg, var(--imdb-card-bg) 25%, #2a2a2a 50%, var(--imdb-card-bg) 75%);
+    background-size: 200% 100%;
+}
+
+.month-group-header.skeleton {
+    /* Override to look like a real header */
+    color: var(--imdb-accent);
+    background: none;
+    animation: none;
+    border-bottom: 2px solid var(--imdb-border);
+}
+
+.update-date.skeleton {
+    height: 1rem; /* Match font-size of final state */
+    width: 120px; /* Approximate width of the date text */
+    margin: 6px auto 0; /* Match margin-top and center it */
+    border-radius: 4px;
+}
+
+.show-card.skeleton {
+    height: 0;
+    padding-bottom: 150%; /* This creates a 2:3 aspect ratio box */
+    position: relative;
+    background-color: var(--imdb-card-bg);
+}
+
+.genre-tag.skeleton {
+    pointer-events: none; /* Make skeleton tags unclickable */
+    user-select: none;
+    /* Override skeleton animation to make tags look static */
+    opacity: 1;
+    animation: none;
+    background: var(--imdb-card-bg);
+    border: 1px solid var(--imdb-border);
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}

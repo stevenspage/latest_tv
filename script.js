@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
+    const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w300';
     let allSeasons = [];
     let filteredPastAndPresentSeasons = [];
 
@@ -31,9 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsContainer = document.getElementById('results-container');
     const noResultsMessage = document.getElementById('no-results');
     const loader = document.getElementById('loader');
+    const skeletonContainer = document.getElementById('skeleton-container');
 
     async function initialize() {
         try {
+            // Keep skeleton visible during fetch
             const response = await fetch('json/tv_us.json');
             if (!response.ok) throw new Error('Default file not found');
             const data = await response.json();
@@ -44,6 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
             statusMessage.textContent = '加载 json/us_tv.json 失败或文件格式无效。';
             statusMessage.style.color = '#F44336';
             console.error("Fetch or Parse Error:", error);
+            // Hide skeleton on error
+            if(skeletonContainer) skeletonContainer.style.display = 'none';
         }
     }
 
@@ -54,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const updateDateElement = mainTitle.querySelector('.update-date');
             if (updateDateElement) {
                 updateDateElement.textContent = updateDate;
+                updateDateElement.classList.remove('skeleton'); // Remove skeleton class
             }
         }
         if (!data || !Array.isArray(data.shows)) {
@@ -230,11 +235,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 return ratingB - ratingA;
             });
 
+        // Initially hide coming soon container until we know if there are future seasons
+        comingSoonContainer.style.display = 'none';
+        
         renderComingSoon(futureSeasons);
         startRendering();
     }
     
     function renderComingSoon(futureSeasons) {
+        // Clear existing skeleton or real content
         comingSoonContainer.innerHTML = '';
         if (futureSeasons.length === 0) {
             comingSoonContainer.style.display = 'none';
@@ -273,7 +282,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function startRendering() {
-        resultsContainer.innerHTML = '';
+        // Instead of clearing the whole container, just hide the skeleton.
+        if (skeletonContainer) {
+            skeletonContainer.style.display = 'none';
+        }
+        resultsContainer.innerHTML = ''; // Clear previous real content, but not skeleton
         noResultsMessage.style.display = 'none';
         interactiveTimeline.classList.remove('visible');
         currentPage = 1;

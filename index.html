@@ -16,18 +16,37 @@
         <!-- **修改**: 主标题现在包含一个用于日期的 small 标签 -->
         <h1>
             最新美剧实时更新
-            <small class="update-date"></small>
+            <small class="update-date skeleton"></small>
         </h1>
 
         <!-- **新增**：豆瓣评分筛选器 -->
-        <div id="rating-filter-container" class="network-filter-container"></div>
+        <div id="rating-filter-container" class="network-filter-container">
+            <div class="genre-tag skeleton">全部</div>
+            <div class="genre-tag skeleton">&gt; 9分</div>
+            <div class="genre-tag skeleton">&gt; 8分</div>
+            <div class="genre-tag skeleton">&gt; 7分</div>
+        </div>
 
         <!-- 将 network-filter-container 移到粘性头部之外，使其不再固定 -->
-        <div id="network-filter-container" class="network-filter-container"></div>
+        <div id="network-filter-container" class="network-filter-container">
+            <div class="genre-tag skeleton">全部</div>
+            <div class="genre-tag skeleton">Netflix</div>
+            <div class="genre-tag skeleton">Apple TV</div>
+            <div class="genre-tag skeleton">Hulu</div>
+            <div class="genre-tag skeleton">Disney</div>
+            <div class="genre-tag skeleton">HBO</div>
+        </div>
 
         <!-- **修改**：粘性头部容器现在只包裹 genres 筛选栏 -->
         <header class="sticky-header">
-            <div id="genre-filter-container" class="genre-filter-container"></div>
+            <div id="genre-filter-container" class="genre-filter-container">
+                <div class="genre-tag skeleton">全部</div>
+                <div class="genre-tag skeleton">剧情</div>
+                <div class="genre-tag skeleton">喜剧</div>
+                <div class="genre-tag skeleton">悬疑</div>
+                <div class="genre-tag skeleton">犯罪</div>
+                <div class="genre-tag skeleton">科幻</div>
+            </div>
         </header>
 
         <!-- 这个部分保持隐藏 -->
@@ -38,8 +57,44 @@
         </div>
         
         <main id="main-content">
-            <div id="coming-soon-container" style="display: none;"></div>
-            <div id="results-container"></div>
+            <div id="coming-soon-container">
+                <h2 class="month-group-header skeleton">即将上映</h2>
+                <div class="scroller-wrapper">
+                    <div class="scroller-container">
+                        <div class="horizontal-scroller">
+                            <div class="show-card skeleton"></div>
+                            <div class="show-card skeleton"></div>
+                            <div class="show-card skeleton"></div>
+                            <div class="show-card skeleton"></div>
+                            <div class="show-card skeleton"></div>
+                            <div class="show-card skeleton"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="results-container">
+                <!-- Skeleton Loader -->
+                <div id="skeleton-container">
+                    <h2 class="month-group-header skeleton">&nbsp;</h2>
+                    <div class="month-grid">
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                    </div>
+                    <h2 class="month-group-header skeleton">&nbsp;</h2>
+                    <div class="month-grid">
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                    </div>
+                </div>
+            </div>
             <div id="no-results" style="display: none;">没有找到符合条件的剧集。</div>
             <div id="loader" class="loader" style="display: none;"></div>
         </main>
