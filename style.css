@@ -47,7 +47,7 @@ h1 .update-date {
     top: 0;
     background-color: var(--imdb-bg);
     z-index: 100;
-    padding: 10px 0; /* 修改：将上下内边距改为 10px */
+    padding: 15px 0;
     margin-bottom: 30px;
     padding-left: 100px; /* 新增：与主内容对齐 */
     box-sizing: border-box; /* 新增：确保内边距不会增加总宽度 */
@@ -66,15 +66,9 @@ h1 .update-date {
     justify-content: flex-start; /* 修改：默认为左对齐 */
     gap: 10px;
     padding-left: 100px; /* 新增：与下方的 sticky-header 对齐 */
-    margin-bottom: 10px; /* 修改：将默认下边距改为 10px */
+    margin-bottom: 15px; /* 新增：与下方的 sticky-header 保持间距 */
     box-sizing: border-box; /* 新增：确保内边距不会增加总宽度 */
 }
-
-/* **新增**: 移除第二个筛选器（平台）的下边距，以避免双重间距 */
-#network-filter-container {
-    margin-bottom: 0;
-}
-
 /* 恢复：合并样式，所有标签都使用 .genre-tag */
 .genre-tag {
     background-color: var(--imdb-card-bg);
@@ -168,8 +162,7 @@ h1 .update-date {
 @media (max-width: 900px) { 
     .sticky-header { padding-left: 0; } /* 新增：在小屏幕上移除内边距 */
     .network-filter-container,
-    .genre-filter-container,
-    #rating-filter-container { /* 新增：确保评分容器也应用相对定位 */
+    .genre-filter-container {
         position: relative; /* 为渐变遮罩提供定位上下文 */
     }
 
@@ -180,12 +173,6 @@ h1 .update-date {
         -ms-overflow-style: none;
         scrollbar-width: none;
     } 
-    #rating-filter-container { /* 新增：确保评分容器在移动端也能水平滚动 */
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
     .genre-filter-container {
         overflow-x: auto;
         flex-wrap: nowrap;
@@ -193,15 +180,13 @@ h1 .update-date {
         scrollbar-width: none;
     }
     .network-filter-container::-webkit-scrollbar,
-    .genre-filter-container::-webkit-scrollbar,
-    #rating-filter-container::-webkit-scrollbar { /* 新增：隐藏评分容器的滚动条 */
+    .genre-filter-container::-webkit-scrollbar {
         display: none;
     }
     
     /* **新增**: 渐变遮罩，用于提示可滚动 */
     .network-filter-container::after,
-    .genre-filter-container::after,
-    #rating-filter-container::after { /* 新增：为评分容器应用渐变遮罩 */
+    .genre-filter-container::after {
         content: '';
         position: absolute;
         top: 0;
@@ -216,8 +201,7 @@ h1 .update-date {
 
     /* **新增**: 当滚动到末尾时，隐藏遮罩 */
     .network-filter-container.scrolled-to-end::after,
-    .genre-filter-container.scrolled-to-end::after,
-    #rating-filter-container.scrolled-to-end::after { /* 新增：为评分容器应用隐藏逻辑 */
+    .genre-filter-container.scrolled-to-end::after {
         opacity: 0;
     }
 
