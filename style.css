@@ -157,6 +157,7 @@ h1 .update-date {
 .show-card { background-color: var(--imdb-card-bg); border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s ease-in-out, background-color 0.2s; border: none; box-shadow: none; }
 .show-card:hover { transform: scale(1.05); background-color: var(--imdb-card-bg-hover); z-index: 10; }
 .card-poster-container { position: relative; }
+.card-poster-container.clickable { cursor: pointer; }
 .show-card img.poster { width: 100%; height: auto; aspect-ratio: 2/3; object-fit: cover; background-color: #222; display: block; }
 .watchlist-button { position: absolute; top: 0; left: 0; width: 28px; height: 38px; background-color: rgba(0, 0, 0, 0.7); cursor: pointer; clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%); transition: background-color 0.2s; }
 .watchlist-button:hover { background-color: var(--imdb-accent); }
