@@ -75,18 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         populateRatingFilters(); // 新增：调用评分筛选器生成
         populateGenreFilters();
         populateNetworkFilters();
-        
-        // --- 优化：异步处理数据，避免阻塞渲染 ---
-        // 1. 立即显示加载动画，让用户知道正在处理
-        loader.style.display = 'block';
-        resultsContainer.innerHTML = ''; // 清空之前可能存在的内容
-        
-        // 2. 将耗时的筛选和渲染任务推迟到下一个事件循环
-        //    这使得浏览器有时间先渲染出刚刚生成的筛选器UI
-        setTimeout(() => {
-            filterAndRenderShows();
-            // 加载动画会在 filterAndRenderShows 内部的渲染流程中被自动隐藏
-        }, 50); // 使用一个小的延迟，确保UI渲染优先
+        filterAndRenderShows();
     }
 
     // --- 新增：生成评分筛选器 ---
@@ -115,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 tag.classList.add('active');
                 selectedRating = label;
                 filterAndRenderShows();
-                scrollTagIntoView(tag); // 新增：调用滚动函数
             });
 
             ratingFilterContainer.appendChild(tag);
@@ -148,7 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tag.classList.add('active');
             selectedGenre = actualValue;
             filterAndRenderShows();
-            scrollTagIntoView(tag); // 新增：调用滚动函数
         });
         return tag;
     }
@@ -176,7 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
             tag.classList.add('active');
             selectedNetwork = networkName;
             filterAndRenderShows();
-            scrollTagIntoView(tag); // 新增：调用滚动函数
         });
         return tag;
     }
@@ -184,12 +170,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterAndRenderShows() {
         // 0. 评分筛选
         const ratingThresholds = { '> 9分': 9, '> 8分': 8, '> 7分': 7, '> 6分': 6 };
-        const ratingFiltered = selectedRating === '全部' // 当选择“全部”时，不进行任何评分筛选
+        const ratingFiltered = selectedRating === '全部' // 修改：判断条件改为“全部”
             ? [...allSeasons]
             : allSeasons.filter(season => {
-                // 当激活评分筛选时，必须同时满足链接已验证和评分达标两个条件
                 const rating = parseFloat(season.douban_rating) || 0;
-                return season.douban_link_verified && rating >= ratingThresholds[selectedRating];
+                return rating >= ratingThresholds[selectedRating];
             });
 
         // 1. Filter by Genre
@@ -556,40 +541,6 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('resize', () => {
              setTimeout(updateFade, 100);
         }, { passive: true });
-    }
-
-    // --- 新增：将点击的标签滚动到视图内 ---
-    function scrollTagIntoView(tag) {
-        const container = tag.parentElement;
-        if (!container) return;
-
-        const tagLeft = tag.offsetLeft;
-        const tagRight = tagLeft + tag.offsetWidth;
-        const scrollPadding = 20; // 留出一点边距，避免贴边
-
-        // --- 处理右侧被遮挡的情况 ---
-        // 容器当前可见区域的右边界
-        const containerVisibleRight = container.scrollLeft + container.clientWidth;
-        if (tagRight > containerVisibleRight) {
-            // 需要向左滚动的距离 = 标签右边缘 - 容器可见区域右边缘 + 边距
-            const scrollAmount = tagRight - containerVisibleRight + scrollPadding;
-            container.scrollBy({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        }
-        
-        // --- 处理左侧被遮挡的情况 ---
-        // 容器当前可见区域的左边界
-        const containerVisibleLeft = container.scrollLeft;
-        if (tagLeft < containerVisibleLeft) {
-            // 需要向右滚动的距离 = 容器可见区域左边缘 - 标签左边缘 + 边距
-            const scrollAmount = containerVisibleLeft - tagLeft + scrollPadding;
-            container.scrollBy({
-                left: -scrollAmount, // 向右滚动是负值
-                behavior: 'smooth'
-            });
-        }
     }
 
     initialize();
