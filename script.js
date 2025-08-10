@@ -261,15 +261,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'show-card';
         
-        // Create poster HTML, wrapping it in a link if Douban link is verified
-        const imageHTML = `<img src="${posterUrl}" alt="${fullTitle}" class="poster" loading="lazy">`;
-        const posterContainerClass = (doubanVerified && doubanLink) ? 'card-poster-container clickable' : 'card-poster-container';
-        const posterHTML = (doubanVerified && doubanLink)
-            ? `<a href="${doubanLink}" target="_blank" class="poster-link">${imageHTML}</a>`
-            : imageHTML;
-
         // Conditionally include the Douban link in the final HTML
-        card.innerHTML = `<div class="${posterContainerClass}">${posterHTML}<div class="watchlist-button" role="button" aria-label="Add to Watchlist"><svg class="watchlist-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="currentColor"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg></div></div><div class="card-content">${ratingElementHTML}<h3 class="card-title" title="${fullTitle}">${fullTitle}</h3>${airDateInfo}<div class="card-links">${(doubanVerified && doubanLink) ? `<a href="${doubanLink}" class="card-link" target="_blank">豆瓣</a>` : ''}<a href="${tmdbLink}" class="card-link" target="_blank">TMDb</a>${imdbLink ? `<a href="${imdbLink}" class="card-link" target="_blank">IMDb</a>` : ''}</div></div>`;
+        card.innerHTML = `<div class="card-poster-container"><img src="${posterUrl}" alt="${fullTitle}" class="poster" loading="lazy"><div class="watchlist-button" role="button" aria-label="Add to Watchlist"><svg class="watchlist-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="currentColor"><path d="M18 13h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5H6c-.55 0-1-.45-1-1s.45-1 1-1h5V6c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"></path></svg></div></div><div class="card-content">${ratingElementHTML}<h3 class="card-title" title="${fullTitle}">${fullTitle}</h3>${airDateInfo}<div class="card-links">${(doubanVerified && doubanLink) ? `<a href="${doubanLink}" class="card-link" target="_blank">豆瓣</a>` : ''}<a href="${tmdbLink}" class="card-link" target="_blank">TMDb</a>${imdbLink ? `<a href="${imdbLink}" class="card-link" target="_blank">IMDb</a>` : ''}</div></div>`;
         return card;
     }
     // --- MODIFICATION END ---
