@@ -76,17 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         populateGenreFilters();
         populateNetworkFilters();
         
-        // --- 优化：异步处理数据，避免阻塞渲染 ---
-        // 1. 立即显示加载动画，让用户知道正在处理
-        loader.style.display = 'block';
-        resultsContainer.innerHTML = ''; // 清空之前可能存在的内容
-        
-        // 2. 将耗时的筛选和渲染任务推迟到下一个事件循环
-        //    这使得浏览器有时间先渲染出刚刚生成的筛选器UI
-        setTimeout(() => {
-            filterAndRenderShows();
-            // 加载动画会在 filterAndRenderShows 内部的渲染流程中被自动隐藏
-        }, 50); // 使用一个小的延迟，确保UI渲染优先
+        // 优化：改为异步处理，并显示全屏加载动画
+        triggerFilterProcess();
     }
 
     // --- 新增：生成评分筛选器 ---
@@ -114,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('#rating-filter-container .genre-tag.active')?.classList.remove('active');
                 tag.classList.add('active');
                 selectedRating = label;
-                filterAndRenderShows();
-                scrollTagIntoView(tag); // 新增：调用滚动函数
+                triggerFilterProcess(); // 修改：调用新的主流程函数
+                scrollTagIntoView(tag);
             });
 
             ratingFilterContainer.appendChild(tag);
@@ -147,8 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#genre-filter-container .genre-tag.active')?.classList.remove('active');
             tag.classList.add('active');
             selectedGenre = actualValue;
-            filterAndRenderShows();
-            scrollTagIntoView(tag); // 新增：调用滚动函数
+            triggerFilterProcess(); // 修改：调用新的主流程函数
+            scrollTagIntoView(tag);
         });
         return tag;
     }
@@ -175,19 +166,35 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('#network-filter-container .genre-tag.active')?.classList.remove('active');
             tag.classList.add('active');
             selectedNetwork = networkName;
-            filterAndRenderShows();
-            scrollTagIntoView(tag); // 新增：调用滚动函数
+            triggerFilterProcess(); // 修改：调用新的主流程函数
+            scrollTagIntoView(tag);
         });
         return tag;
     }
 
-    function filterAndRenderShows() {
+    // --- 新增：主流程触发函数 ---
+    function triggerFilterProcess() {
+        // 1. 立即显示全屏加载动画，提供即时反馈
+        loadingOverlay.classList.add('visible');
+
+        // 2. 使用 setTimeout 将繁重任务推入异步队列，让浏览器先渲染加载动画
+        setTimeout(() => {
+            // 3. 在后台执行纯数据计算
+            const { futureSeasons, pastAndPresentSeasons } = performFilteringAndSorting();
+            // 4. 将计算结果用于渲染 DOM
+            renderResults(futureSeasons, pastAndPresentSeasons);
+            // 5. 所有操作完成后，隐藏加载动画
+            loadingOverlay.classList.remove('visible');
+        }, 10); // 短暂延迟即可
+    }
+
+    // --- 新增：纯数据处理函数 ---
+    function performFilteringAndSorting() {
         // 0. 评分筛选
         const ratingThresholds = { '> 9分': 9, '> 8分': 8, '> 7分': 7, '> 6分': 6 };
-        const ratingFiltered = selectedRating === '全部' // 当选择“全部”时，不进行任何评分筛选
+        const ratingFiltered = selectedRating === '全部'
             ? [...allSeasons]
             : allSeasons.filter(season => {
-                // 当激活评分筛选时，必须同时满足链接已验证和评分达标两个条件
                 const rating = parseFloat(season.douban_rating) || 0;
                 return season.douban_link_verified && rating >= ratingThresholds[selectedRating];
             });
@@ -201,11 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1.5. 过滤掉没有评分的动画片
         const filteredNoRatingAnime = genreFiltered.filter(season => {
-            // 判断是否为动画片
             const isAnime = season.parentShow.genres && season.parentShow.genres.some(g => g.name === '动画');
-            // 判断是否有评分
             const hasRating = season.douban_rating && Number(season.douban_rating) > 0;
-            // 如果是动画片且没有评分，则过滤掉
             if (isAnime && !hasRating) return false;
             return true;
         });
@@ -214,13 +218,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const networkFiltered = selectedNetwork === '全部'
             ? filteredNoRatingAnime
             : filteredNoRatingAnime.filter(season => {
-                if (!season.parentShow.networks || season.parentShow.networks.length === 0) {
-                    return false;
-                }
+                if (!season.parentShow.networks || season.parentShow.networks.length === 0) return false;
                 const searchKeyword = selectedNetwork.toLowerCase();
-                return season.parentShow.networks.some(network => 
-                    network.name.toLowerCase().includes(searchKeyword)
-                );
+                return season.parentShow.networks.some(network => network.name.toLowerCase().includes(searchKeyword));
             });
 
         const now = new Date();
@@ -230,21 +230,25 @@ document.addEventListener('DOMContentLoaded', () => {
             .filter(season => new Date(season.air_date) > now)
             .sort((a, b) => new Date(a.air_date) - new Date(b.air_date));
 
-        filteredPastAndPresentSeasons = networkFiltered
+        const pastAndPresentSeasons = networkFiltered
             .filter(season => new Date(season.air_date) <= now)
             .sort((a, b) => {
                 const monthA = a.air_date.substring(0, 7);
                 const monthB = b.air_date.substring(0, 7);
-                // 首要排序：按月份降序
-                if (monthA !== monthB) {
-                    return monthB.localeCompare(monthA);
-                }
-                // 次要排序：月份相同，则按评分降序
+                if (monthA !== monthB) return monthB.localeCompare(monthA);
                 const ratingA = parseFloat(a.douban_rating) || 0;
                 const ratingB = parseFloat(b.douban_rating) || 0;
                 return ratingB - ratingA;
             });
+        
+        return { futureSeasons, pastAndPresentSeasons };
+    }
 
+    // --- 重构：纯渲染函数 ---
+    function renderResults(futureSeasons, pastAndPresentSeasons) {
+        // 更新全局变量以供无限滚动使用
+        filteredPastAndPresentSeasons = pastAndPresentSeasons;
+        
         renderComingSoon(futureSeasons);
         startRendering();
     }
@@ -339,24 +343,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function appendItems(seasonsToRender) {
-        let currentGrid = resultsContainer.querySelector('.month-grid:last-of-type');
+        const newElementsFragment = document.createDocumentFragment();
+        const cardsForLastGridFragment = document.createDocumentFragment();
+    
+        let lastGridInDom = resultsContainer.querySelector('.month-grid:last-of-type');
+        let currentGridInFragment = null;
+    
         seasonsToRender.forEach(season => {
+            const card = createShowCard(season);
             const monthKey = season.air_date.substring(0, 7);
+    
+            // Case 1: The month is new. A new header and grid are needed.
             if (monthKey !== lastRenderedMonth) {
                 lastRenderedMonth = monthKey;
+    
                 const header = document.createElement('h2');
                 header.className = 'month-group-header';
                 header.id = `month-${monthKey}`;
                 const date = new Date(monthKey + '-01');
                 header.textContent = `${date.getFullYear()}年 ${date.getMonth() + 1}月`;
-                resultsContainer.appendChild(header);
-                currentGrid = document.createElement('div');
-                currentGrid.className = 'month-grid';
-                resultsContainer.appendChild(currentGrid);
+                newElementsFragment.appendChild(header);
+    
+                currentGridInFragment = document.createElement('div');
+                currentGridInFragment.className = 'month-grid';
+                currentGridInFragment.appendChild(card);
+                newElementsFragment.appendChild(currentGridInFragment);
+    
+                // From now on, new items for different months will be in the fragment,
+                // so we nullify the reference to the DOM grid.
+                lastGridInDom = null; 
+            } 
+            // Case 2: The month is the same as the previous item processed *in this batch*.
+            // Append to the grid we're building in our fragment.
+            else if (currentGridInFragment) {
+                currentGridInFragment.appendChild(card);
             }
-            const card = createShowCard(season);
-            currentGrid.appendChild(card);
+            // Case 3: The month is a continuation of the last grid already in the DOM.
+            // Append the card to a separate fragment for later batch appending.
+            else if (lastGridInDom) {
+                cardsForLastGridFragment.appendChild(card);
+            }
         });
+    
+        // Batch DOM updates: at most two writes per call.
+        if (lastGridInDom && cardsForLastGridFragment.hasChildNodes()) {
+            lastGridInDom.appendChild(cardsForLastGridFragment);
+        }
+        if (newElementsFragment.hasChildNodes()) {
+            resultsContainer.appendChild(newElementsFragment);
+        }
     }
 
     // --- MODIFICATION START ---
