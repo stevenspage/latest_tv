@@ -35,18 +35,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function initialize() {
         try {
-            // Keep skeleton visible during fetch
-            const response = await fetch('json/tv_us.json');
-            if (!response.ok) throw new Error('Default file not found');
-            const data = await response.json();
-            statusMessage.textContent = '成功加载默认文件 `json/us_tv.json`。';
-            statusMessage.style.color = '#4CAF50';
-            processData(data);
+            // Step 1: Fetch and render the latest data for a fast initial load
+            const latestResponse = await fetch('json/tv_us_latest.json');
+            if (!latestResponse.ok) {
+                // Fallback to complete data if latest is not available
+                console.warn('Could not load latest.json, falling back to complete.json');
+                const completeResponse = await fetch('json/tv_us_complete.json');
+                if (!completeResponse.ok) throw new Error('Could not load any data.');
+                const completeData = await completeResponse.json();
+                processData(completeData);
+                return; // Exit after loading complete data
+            }
+            const latestData = await latestResponse.json();
+            processData(latestData); // This renders the initial page with latest data
+
+            // Step 2: Silently fetch the complete data in the background
+            fetch('json/tv_us_complete.json')
+                .then(response => {
+                    if (!response.ok) throw new Error('Could not load complete data in background.');
+                    return response.json();
+                })
+                .then(completeData => {
+                    assimilateCompleteData(completeData);
+                })
+                .catch(error => {
+                    console.error("Background data load failed:", error);
+                });
+
         } catch (error) {
-            statusMessage.textContent = '加载 json/us_tv.json 失败或文件格式无效。';
+            statusMessage.textContent = '加载数据失败或文件格式无效。';
             statusMessage.style.color = '#F44336';
             console.error("Fetch or Parse Error:", error);
-            // Hide skeleton on error
             if(skeletonContainer) skeletonContainer.style.display = 'none';
         }
     }
@@ -81,6 +100,47 @@ document.addEventListener('DOMContentLoaded', () => {
         populateGenreFilters();
         populateNetworkFilters();
         filterAndRenderShows();
+    }
+
+    function assimilateCompleteData(data) {
+        console.log("Complete data loaded. Assimilating into the app.");
+
+        const flattenedSeasons = [];
+        data.shows.forEach(show => {
+            if (show.seasons && show.seasons.length > 0) {
+                show.seasons.forEach(season => {
+                    if (season.air_date) {
+                        flattenedSeasons.push({ ...season, parentShow: show });
+                    }
+                });
+            }
+        });
+        
+        // Replace master data source
+        allSeasons = flattenedSeasons;
+
+        // Re-run filters with the new complete data to get an updated count for the timeline
+        const { filteredPastAndPresentSeasons: newFilteredSeasons } = applyFilters();
+        
+        // Update the global list that infinite scroll uses
+        filteredPastAndPresentSeasons = newFilteredSeasons;
+
+        // Now, just update the timeline UI without a full page re-render
+        const newAllAvailableYears = [...new Set(filteredPastAndPresentSeasons.map(s => s.air_date.substring(0, 4)))];
+        if (comingSoonContainer.style.display === 'block') {
+            newAllAvailableYears.unshift(FUTURE_TAG);
+        }
+        allAvailableYears = newAllAvailableYears;
+        renderTimeline(currentActiveYear); // Re-render timeline with new years
+
+        // Show a confirmation toast
+        const toast = document.getElementById('toast-notification');
+        if (toast) {
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000); // Hide after 3 seconds
+        }
     }
 
     // --- 新增：生成评分筛选器 ---
@@ -172,35 +232,29 @@ document.addEventListener('DOMContentLoaded', () => {
         return tag;
     }
 
-    function filterAndRenderShows() {
-        // 0. 评分筛选
+    function applyFilters() {
+        // This function contains the pure data filtering and sorting logic
         const ratingThresholds = { '> 9分': 9, '> 8分': 8, '> 7分': 7, '> 6分': 6 };
-        const ratingFiltered = selectedRating === '全部' // 修改：判断条件改为“全部”
+        const ratingFiltered = selectedRating === '全部'
             ? [...allSeasons]
             : allSeasons.filter(season => {
                 const rating = parseFloat(season.douban_rating) || 0;
                 return rating >= ratingThresholds[selectedRating];
             });
 
-        // 1. Filter by Genre
         const genreFiltered = selectedGenre === '全部'
             ? ratingFiltered
             : ratingFiltered.filter(season => 
                 season.parentShow.genres.some(genre => genre.name === selectedGenre)
             );
 
-        // 1.5. 过滤掉没有评分的动画片
         const filteredNoRatingAnime = genreFiltered.filter(season => {
-            // 判断是否为动画片
             const isAnime = season.parentShow.genres && season.parentShow.genres.some(g => g.name === '动画');
-            // 判断是否有评分
             const hasRating = season.douban_rating && Number(season.douban_rating) > 0;
-            // 如果是动画片且没有评分，则过滤掉
             if (isAnime && !hasRating) return false;
             return true;
         });
 
-        // 2. Filter by Network
         const networkFiltered = selectedNetwork === '全部'
             ? filteredNoRatingAnime
             : filteredNoRatingAnime.filter(season => {
@@ -220,20 +274,25 @@ document.addEventListener('DOMContentLoaded', () => {
             .filter(season => new Date(season.air_date) > now)
             .sort((a, b) => new Date(a.air_date) - new Date(b.air_date));
 
-        filteredPastAndPresentSeasons = networkFiltered
+        const filteredPastAndPresentSeasons = networkFiltered
             .filter(season => new Date(season.air_date) <= now)
             .sort((a, b) => {
                 const monthA = a.air_date.substring(0, 7);
                 const monthB = b.air_date.substring(0, 7);
-                // 首要排序：按月份降序
                 if (monthA !== monthB) {
                     return monthB.localeCompare(monthA);
                 }
-                // 次要排序：月份相同，则按评分降序
                 const ratingA = parseFloat(a.douban_rating) || 0;
                 const ratingB = parseFloat(b.douban_rating) || 0;
                 return ratingB - ratingA;
             });
+        
+        return { futureSeasons, filteredPastAndPresentSeasons };
+    }
+
+    function filterAndRenderShows() {
+        const { futureSeasons, filteredPastAndPresentSeasons: newFilteredSeasons } = applyFilters();
+        filteredPastAndPresentSeasons = newFilteredSeasons;
 
         // Initially hide coming soon container until we know if there are future seasons
         comingSoonContainer.style.display = 'none';
