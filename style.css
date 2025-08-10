@@ -57,6 +57,7 @@ h1 .update-date {
     flex-wrap: wrap;
     justify-content: flex-start; /* 修改：默认为左对齐 */
     gap: 10px;
+    /* margin-top: 15px; */ /* 移除：间距现在由 sticky-header 的 padding 和 network-filter-container 的 margin 控制 */
 }
 /* **新增**: 播出平台筛选容器样式 */
 .network-filter-container {
@@ -64,8 +65,11 @@ h1 .update-date {
     flex-wrap: wrap;
     justify-content: flex-start; /* 修改：默认为左对齐 */
     gap: 10px;
-    margin-top: 15px; /* 与上方的类型筛选器拉开距离 */
+    padding-left: 100px; /* 新增：与下方的 sticky-header 对齐 */
+    margin-bottom: 15px; /* 新增：与下方的 sticky-header 保持间距 */
+    box-sizing: border-box; /* 新增：确保内边距不会增加总宽度 */
 }
+/* 恢复：合并样式，所有标签都使用 .genre-tag */
 .genre-tag {
     background-color: var(--imdb-card-bg);
     border: 1px solid var(--imdb-border);
@@ -77,10 +81,12 @@ h1 .update-date {
     font-weight: bold;
     transition: all 0.2s ease;
 }
+
 .genre-tag:hover {
     background-color: var(--imdb-card-bg-hover);
     color: var(--imdb-text-primary);
 }
+
 .genre-tag.active {
     background-color: var(--imdb-accent);
     color: #000;
@@ -155,6 +161,7 @@ h1 .update-date {
 @media (max-width: 1024px) { .month-grid { grid-template-columns: repeat(4, 1fr); } }
 @media (max-width: 900px) { 
     .sticky-header { padding-left: 0; } /* 新增：在小屏幕上移除内边距 */
+    .network-filter-container { padding-left: 0; } /* 新增：在小屏幕上为 network-filter-container 移除内边距 */
     body { padding: 8px 0; } 
     .container { padding: 0 8px; } 
     #main-content { margin-left: 0; } 

@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function populateNetworkFilters() {
-        const displayOrder = ['全部', 'Netflix', 'Apple TV', 'Prime Video', 'Paramount', 'YouTube', 'Hulu', 'Disney', 'ABC', 'NBC', 'HBO'];
+        const displayOrder = ['全部', 'Netflix', 'Apple TV', 'Prime Video', 'Hulu', 'Disney', 'Paramount', 'HBO', 'ABC'];
         networkFilterContainer.innerHTML = '';
         displayOrder.forEach(networkName => {
             const tag = createNetworkTag(networkName);
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function createNetworkTag(networkName) {
         const tag = document.createElement('div');
-        tag.className = 'genre-tag'; // Re-use genre-tag style
+        tag.className = 'genre-tag'; // 恢复：重新使用 genre-tag 样式
         tag.textContent = networkName;
         tag.dataset.network = networkName;
         tag.addEventListener('click', () => {
