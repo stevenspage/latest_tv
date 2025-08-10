@@ -173,18 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         filteredPastAndPresentSeasons = networkFiltered
             .filter(season => new Date(season.air_date) <= now)
-            .sort((a, b) => {
-                const monthA = a.air_date.substring(0, 7);
-                const monthB = b.air_date.substring(0, 7);
-                // 首要排序：按月份降序
-                if (monthA !== monthB) {
-                    return monthB.localeCompare(monthA);
-                }
-                // 次要排序：月份相同，则按评分降序
-                const ratingA = parseFloat(a.douban_rating) || 0;
-                const ratingB = parseFloat(b.douban_rating) || 0;
-                return ratingB - ratingA;
-            });
+            .sort((a, b) => new Date(b.air_date) - new Date(a.air_date));
 
         renderComingSoon(futureSeasons);
         startRendering();
@@ -474,33 +463,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 50);
     });
 
-    // --- 新增：处理滚动容器的渐变遮罩 ---
-    function setupScrollFade(container) {
-        function updateFade() {
-            // 当滚动条位置 + 容器宽度 >= 总滚动宽度时，说明滚动到了末尾
-            // 增加一个小的容差值（例如 5px），以避免像素计算不精确的问题
-            const isAtEnd = container.scrollLeft + container.clientWidth >= container.scrollWidth - 5;
-            // 使用 toggle 简化代码，第二个参数为 true 时添加class，为 false 时移除
-            container.classList.toggle('scrolled-to-end', isAtEnd);
-        }
-        
-        // 首次加载时，延迟一小段时间再检查。
-        // 这可以防止在浏览器完全渲染出内容前，脚本错误地计算了容器宽度，
-        // 尤其是在移动端设备上。
-        setTimeout(updateFade, 100);
-
-        // 监听滚动事件，并使用 passive: true 优化性能
-        container.addEventListener('scroll', updateFade, { passive: true });
-        
-        // 监听窗口大小变化（例如手机横竖屏切换），重新检查
-        window.addEventListener('resize', () => {
-             setTimeout(updateFade, 100);
-        }, { passive: true });
-    }
-
     initialize();
-
-    // 在初始化后为两个筛选容器设置渐变逻辑
-    setupScrollFade(genreFilterContainer);
-    setupScrollFade(networkFilterContainer);
 });
