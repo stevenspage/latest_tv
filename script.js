@@ -14,10 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let isScrollingProgrammatically = false;
     let selectedGenre = '全部';
     let selectedNetwork = '全部';
+    let selectedRating = '全部'; // 修改：将默认值从“豆瓣高分”改为“全部”
     const FUTURE_TAG = '即将上映';
 
     // DOM Elements
     const mainTitle = document.querySelector('h1');
+    const ratingFilterContainer = document.getElementById('rating-filter-container'); // 新增：评分筛选容器
     const genreFilterContainer = document.getElementById('genre-filter-container');
     const networkFilterContainer = document.getElementById('network-filter-container');
     const loadingOverlay = document.getElementById('loading-overlay');
@@ -70,9 +72,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         allSeasons = flattenedSeasons;
+        populateRatingFilters(); // 新增：调用评分筛选器生成
         populateGenreFilters();
         populateNetworkFilters();
         filterAndRenderShows();
+    }
+
+    // --- 新增：生成评分筛选器 ---
+    function populateRatingFilters() {
+        const ratings = {
+            '全部': 0, // 修改：将“豆瓣高分”改为“全部”
+            '> 9分': 9,
+            '> 8分': 8,
+            '> 7分': 7,
+            '> 6分': 6
+        };
+        ratingFilterContainer.innerHTML = '';
+        Object.entries(ratings).forEach(([label, value]) => {
+            const tag = document.createElement('div');
+            tag.className = 'genre-tag';
+            tag.textContent = label;
+            tag.dataset.rating = value;
+
+            if (label === selectedRating) {
+                tag.classList.add('active');
+            }
+
+            tag.addEventListener('click', () => {
+                if (selectedRating === label) return;
+                document.querySelector('#rating-filter-container .genre-tag.active')?.classList.remove('active');
+                tag.classList.add('active');
+                selectedRating = label;
+                filterAndRenderShows();
+            });
+
+            ratingFilterContainer.appendChild(tag);
+        });
     }
 
     function populateGenreFilters() {
@@ -133,10 +168,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function filterAndRenderShows() {
+        // 0. 评分筛选
+        const ratingThresholds = { '> 9分': 9, '> 8分': 8, '> 7分': 7, '> 6分': 6 };
+        const ratingFiltered = selectedRating === '全部' // 修改：判断条件改为“全部”
+            ? [...allSeasons]
+            : allSeasons.filter(season => {
+                const rating = parseFloat(season.douban_rating) || 0;
+                return rating >= ratingThresholds[selectedRating];
+            });
+
         // 1. Filter by Genre
         const genreFiltered = selectedGenre === '全部'
-            ? [...allSeasons]
-            : allSeasons.filter(season => 
+            ? ratingFiltered
+            : ratingFiltered.filter(season => 
                 season.parentShow.genres.some(genre => genre.name === selectedGenre)
             );
 
@@ -476,6 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 新增：处理滚动容器的渐变遮罩 ---
     function setupScrollFade(container) {
+        if (!container) return; // 新增：安全检查，防止容器不存在
         function updateFade() {
             // 当滚动条位置 + 容器宽度 >= 总滚动宽度时，说明滚动到了末尾
             // 增加一个小的容差值（例如 5px），以避免像素计算不精确的问题
@@ -501,6 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initialize();
 
     // 在初始化后为两个筛选容器设置渐变逻辑
+    setupScrollFade(ratingFilterContainer); // 新增：为评分容器启用效果
     setupScrollFade(genreFilterContainer);
     setupScrollFade(networkFilterContainer);
 });
