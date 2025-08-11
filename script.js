@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const TMDB_IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w300';
     let allSeasons = [];
     let filteredPastAndPresentSeasons = [];
+    let usSeasonsCache = [];
+    let gbSeasonsCache = [];
+    let usUpdateDate = '';
+    let gbUpdateDate = '';
+    let currentRegion = 'us'; // 'us' or 'gb'
 
     // State variables
     const ITEMS_PER_PAGE = 18;
@@ -32,35 +37,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const noResultsMessage = document.getElementById('no-results');
     const loader = document.getElementById('loader');
     const skeletonContainer = document.getElementById('skeleton-container');
+    const regionFilterContainer = document.getElementById('region-filter-container');
 
     async function initialize() {
         try {
-            // Step 1: Fetch and render the latest data for a fast initial load
+            // Step 1: Fetch and render the latest US data for a fast initial load
             const latestResponse = await fetch('json/tv_us_latest.json');
             if (!latestResponse.ok) {
-                // Fallback to complete data if latest is not available
                 console.warn('Could not load latest.json, falling back to complete.json');
-                const completeResponse = await fetch('json/tv_us_complete.json');
-                if (!completeResponse.ok) throw new Error('Could not load any data.');
-                const completeData = await completeResponse.json();
-                processData(completeData);
-                return; // Exit after loading complete data
-            }
-            const latestData = await latestResponse.json();
-            processData(latestData); // This renders the initial page with latest data
+                await loadCompleteData('us', 'json/tv_us_complete.json');
+            } else {
+                const latestData = await latestResponse.json();
+                processData(latestData, 'us'); // Initial render with latest US data
 
-            // Step 2: Silently fetch the complete data in the background
-            fetch('json/tv_us_complete.json')
-                .then(response => {
-                    if (!response.ok) throw new Error('Could not load complete data in background.');
-                    return response.json();
-                })
-                .then(completeData => {
-                    assimilateCompleteData(completeData);
-                })
-                .catch(error => {
-                    console.error("Background data load failed:", error);
-                });
+                // Step 2: Silently fetch the complete US and GB data in the background
+                loadCompleteData('us', 'json/tv_us_complete.json'); // This will assimilate and cache
+                loadCompleteData('gb', 'json/tv_gb.json');      // This will just cache
+            }
 
         } catch (error) {
             statusMessage.textContent = '加载数据失败或文件格式无效。';
@@ -70,14 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function processData(data) {
+    function processData(data, region) {
+        // This function now only handles the initial processing and rendering
         if (data.metadata && data.metadata.last_updated) {
             const updateDate = data.metadata.last_updated.substring(0, 10);
-            // **修改**: 不再重写整个h1，而是填充small标签
             const updateDateElement = mainTitle.querySelector('.update-date');
             if (updateDateElement) {
                 updateDateElement.textContent = updateDate;
-                updateDateElement.classList.remove('skeleton'); // Remove skeleton class
+                updateDateElement.classList.remove('skeleton');
             }
         }
         if (!data || !Array.isArray(data.shows)) {
@@ -85,26 +78,26 @@ document.addEventListener('DOMContentLoaded', () => {
             statusMessage.style.color = '#F44336';
             return;
         }
-        const flattenedSeasons = [];
-        data.shows.forEach(show => {
-            if (show.seasons && show.seasons.length > 0) {
-                show.seasons.forEach(season => {
-                    if (season.air_date) {
-                        flattenedSeasons.push({ ...season, parentShow: show });
-                    }
-                });
-            }
-        });
+
+        const flattenedSeasons = flattenSeasonsData(data);
+        
+        // Use the initial data for the first render
         allSeasons = flattenedSeasons;
-        populateRatingFilters(); // 新增：调用评分筛选器生成
+        
+        // The initial data is always US, so it populates the usSeasonsCache
+        usSeasonsCache = flattenedSeasons;
+
+        if (data.metadata && data.metadata.last_updated) {
+            usUpdateDate = data.metadata.last_updated;
+        }
+
+        populateRatingFilters();
         populateGenreFilters();
         populateNetworkFilters();
         filterAndRenderShows();
     }
 
-    function assimilateCompleteData(data) {
-        console.log("Complete data loaded. Assimilating into the app.");
-
+    function flattenSeasonsData(data) {
         const flattenedSeasons = [];
         data.shows.forEach(show => {
             if (show.seasons && show.seasons.length > 0) {
@@ -115,9 +108,52 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             }
         });
+        return flattenedSeasons;
+    }
+
+    async function loadCompleteData(region, url) {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error(`Could not load ${url}`);
+            const data = await response.json();
+            
+            const flattenedData = flattenSeasonsData(data);
+
+            if (region === 'us') {
+                usSeasonsCache = flattenedData;
+                if (data.metadata && data.metadata.last_updated) {
+                    usUpdateDate = data.metadata.last_updated;
+                }
+                // If the current view is US, assimilate seamlessly
+                if (currentRegion === 'us') {
+                    assimilateCompleteData(flattenedData);
+                }
+                 console.log("US complete data loaded and cached.");
+            } else if (region === 'gb') {
+                gbSeasonsCache = flattenedData;
+                if (data.metadata && data.metadata.last_updated) {
+                    gbUpdateDate = data.metadata.last_updated;
+                }
+                console.log("GB data loaded and cached.");
+                 // If the user happens to switch to GB while it's loading, render it.
+                if (currentRegion === 'gb') {
+                    allSeasons = gbSeasonsCache;
+                    updateSubtitleText();
+                    filterAndRenderShows();
+                    populateNetworkFilters(); // Re-populate for GB
+                }
+            }
+        } catch (error) {
+            console.error(`Background data load failed for ${region}:`, error);
+        }
+    }
+
+    function assimilateCompleteData(completeUsData) {
+        console.log("Complete US data loaded. Assimilating into the app.");
         
-        // Replace master data source
-        allSeasons = flattenedSeasons;
+        // Replace master data source and cache
+        allSeasons = completeUsData;
+        usSeasonsCache = completeUsData;
 
         // Re-run filters with the new complete data to get an updated count for the timeline
         const { filteredPastAndPresentSeasons: newFilteredSeasons } = applyFilters();
@@ -133,15 +169,99 @@ document.addEventListener('DOMContentLoaded', () => {
         allAvailableYears = newAllAvailableYears;
         renderTimeline(currentActiveYear); // Re-render timeline with new years
 
+        updateSubtitleText();
+
         // Show a confirmation toast
         const toast = document.getElementById('toast-notification');
         if (toast) {
+            toast.textContent = "已加载所有美剧";
             toast.classList.add('show');
             setTimeout(() => {
                 toast.classList.remove('show');
             }, 3000); // Hide after 3 seconds
         }
     }
+
+    // --- Event Listeners Setup ---
+    function setupEventListeners() {
+        // Region Filter
+        regionFilterContainer.addEventListener('click', (e) => {
+            const target = e.target.closest('.genre-tag');
+            if (!target || target.classList.contains('active')) return;
+
+            const newRegion = target.dataset.region;
+            if (newRegion === currentRegion) return;
+
+            // Update active tag UI
+            regionFilterContainer.querySelector('.active').classList.remove('active');
+            target.classList.add('active');
+
+            // Update state and data source
+            currentRegion = newRegion;
+            
+            if (currentRegion === 'us') {
+                allSeasons = usSeasonsCache;
+            } else if (currentRegion === 'gb') {
+                allSeasons = gbSeasonsCache;
+            }
+
+            updateSubtitleText();
+
+            // Re-render the page with the new data source
+            // check if cache is ready
+            if (allSeasons.length > 0) {
+                 filterAndRenderShows();
+                 populateNetworkFilters(); // Re-populate network filters for the new region
+            } else {
+                // Show a loader while waiting for the background fetch to complete
+                resultsContainer.innerHTML = '';
+                loader.style.display = 'block';
+                 populateNetworkFilters(); // Also update filters UI instantly
+            }
+        });
+
+        // Other filters... (the existing click handlers are set up in their populate functions)
+
+        // File Input
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0]; if (!file) return; const reader = new FileReader();
+            reader.onload = (re) => { try { const data = JSON.parse(re.target.result); statusMessage.textContent = `已加载文件: ${file.name}`; statusMessage.style.color = 'green'; processData(data, 'us'); } catch (err) { statusMessage.textContent = `文件 "${file.name}" 不是有效的JSON格式。`; statusMessage.style.color = 'red'; } };
+            reader.readAsText(file);
+        });
+
+        // Window Scroll
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                updateActiveTimeline();
+                if (!isLoading && (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500)) {
+                    loadMoreItems();
+                }
+            }, 50);
+        });
+    }
+
+    function updateSubtitleText() {
+        const updateDateElement = mainTitle.querySelector('.update-date');
+        if (!updateDateElement) return;
+
+        let dateToDisplay = '';
+        if (currentRegion === 'us') {
+            dateToDisplay = usUpdateDate;
+        } else if (currentRegion === 'gb') {
+            dateToDisplay = gbUpdateDate;
+        }
+
+        if (dateToDisplay) {
+            updateDateElement.textContent = dateToDisplay.substring(0, 10);
+            updateDateElement.classList.remove('skeleton');
+        } else {
+            updateDateElement.textContent = '';
+            updateDateElement.classList.add('skeleton');
+        }
+    }
+
 
     // --- 新增：生成评分筛选器 ---
     function populateRatingFilters() {
@@ -206,7 +326,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function populateNetworkFilters() {
-        const displayOrder = ['全部', 'Netflix', 'Apple TV', 'Hulu', 'Disney', 'Paramount', 'HBO', 'ABC'];
+        const us_networks = ['全部', 'Netflix', 'Apple TV', 'Hulu', 'Prime Video', 'Disney', 'Paramount', 'HBO', 'ABC', 'FOX', 'CBS', 'NBC'];
+        const gb_networks = ['全部', 'BBC', 'Netflix', 'Apple TV', 'Prime Video', 'Sky', 'ITV', 'Channel 4', 'Disney'];
+
+        const displayOrder = currentRegion === 'gb' ? gb_networks : us_networks;
+        
+        // Reset selected network to '全部' when re-populating, to avoid inconsistent state
+        selectedNetwork = '全部';
+        
         networkFilterContainer.innerHTML = '';
         displayOrder.forEach(networkName => {
             const tag = createNetworkTag(networkName);
@@ -596,23 +723,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    fileInput.addEventListener('change', (e) => {
-        const file = e.target.files[0]; if (!file) return; const reader = new FileReader();
-        reader.onload = (re) => { try { const data = JSON.parse(re.target.result); statusMessage.textContent = `已加载文件: ${file.name}`; statusMessage.style.color = 'green'; processData(data); } catch (err) { statusMessage.textContent = `文件 "${file.name}" 不是有效的JSON格式。`; statusMessage.style.color = 'red'; } };
-        reader.readAsText(file);
-    });
-
-    let scrollTimeout;
-    window.addEventListener('scroll', () => {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            updateActiveTimeline();
-            if (!isLoading && (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500)) {
-                loadMoreItems();
-            }
-        }, 50);
-    });
-
     // --- 新增：处理滚动容器的渐变遮罩 ---
     function setupScrollFade(container) {
         if (!container) return; // 新增：安全检查，防止容器不存在
@@ -639,6 +749,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initialize();
+    setupEventListeners();
 
     // 在初始化后为两个筛选容器设置渐变逻辑
     setupScrollFade(ratingFilterContainer); // 新增：为评分容器启用效果

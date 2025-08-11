@@ -338,6 +338,12 @@ h1 .update-date {
     border: 1px solid var(--imdb-border);
 }
 
+#region-filter-container {
+    border-bottom: 1px solid var(--imdb-border);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
 @keyframes skeleton-loading {
     0% {
         background-position: 200% 0;
