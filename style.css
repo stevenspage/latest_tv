@@ -85,7 +85,7 @@ h1 .update-date {
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
-    transition: all 0.2s ease;
+    transition: all 0.2s ease; /* Reverted transition */
 }
 
 .genre-tag:hover {
@@ -97,6 +97,13 @@ h1 .update-date {
     background-color: var(--imdb-accent);
     color: #000;
     border-color: var(--imdb-accent);
+}
+
+/* Apply checkmark only to active tags within multi-select containers, but not to the "All" tag */
+#genre-filter-container .genre-tag.active.multiselect-tick::before,
+#network-filter-container .genre-tag.active.multiselect-tick::before {
+    content: '✓ ';
+    font-weight: bold;
 }
 
 /* --- File Loader (隐藏) --- */

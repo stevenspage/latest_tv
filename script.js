@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let isUsCompleteLoaded = false;
     let isGbCompleteLoaded = false;
     let currentRegion = 'us'; // 'us' or 'gb'
+    let specialFilterMode = null; // Can be 'recent_high_score'
+    let selectedGenres = []; // Array to hold multiple selected genres
+    let selectedNetworks = []; // Array to hold multiple selected networks
 
     // State variables
     const ITEMS_PER_PAGE = 18;
@@ -19,9 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentActiveYear = null;
     let visibleYearCount = 3;
     let isScrollingProgrammatically = false;
-    let selectedGenre = '全部';
-    let selectedNetwork = '全部';
-    let selectedRating = '全部'; // 修改：将默认值从“豆瓣高分”改为“全部”
+    let selectedRating = '全部';
     const FUTURE_TAG = '即将上映';
 
     // DOM Elements
@@ -206,6 +207,24 @@ document.addEventListener('DOMContentLoaded', () => {
             regionFilterContainer.querySelector('.active').classList.remove('active');
             target.classList.add('active');
 
+            // --- RESET ALL OTHER FILTERS ---
+            // Reset state variables
+            specialFilterMode = null;
+            selectedRating = '全部';
+            selectedGenres = [];
+            selectedNetworks = [];
+
+            // Reset UI for other filters
+            document.querySelectorAll('.filters-navigation .genre-tag.active').forEach(tag => {
+                if (!tag.closest('#region-filter-container')) {
+                    tag.classList.remove('active', 'multiselect-tick');
+                }
+            });
+            document.querySelector('#rating-filter-container .genre-tag[data-rating="0"]')?.classList.add('active');
+            document.querySelector('#genre-filter-container .genre-tag[data-genre="全部"]')?.classList.add('active');
+            document.querySelector('#network-filter-container .genre-tag[data-network="全部"]')?.classList.add('active');
+            // --- END RESET ---
+
             // Update state and data source
             currentRegion = newRegion;
 
@@ -276,11 +295,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- 新增：生成评分筛选器 ---
     function populateRatingFilters() {
         const ratings = {
-            '全部': 0, // 修改：将“豆瓣高分”改为“全部”
+            '全部': 0,
             '> 9分': 9,
             '> 8分': 8,
             '> 7分': 7,
-            '> 6分': 6
+            '近2年高分': 'recent_high_score'
         };
         ratingFilterContainer.innerHTML = '';
         Object.entries(ratings).forEach(([label, value]) => {
@@ -289,20 +308,38 @@ document.addEventListener('DOMContentLoaded', () => {
             tag.textContent = label;
             tag.dataset.rating = value;
 
-            if (label === selectedRating) {
+            // Logic to set active class
+            if (specialFilterMode === 'recent_high_score' && value === 'recent_high_score') {
+                tag.classList.add('active');
+            } else if (!specialFilterMode && label === selectedRating) {
                 tag.classList.add('active');
             }
 
             tag.addEventListener('click', () => {
-                if (selectedRating === label) return;
+                const isActive = tag.classList.contains('active');
+                if (isActive) return;
+
                 document.querySelector('#rating-filter-container .genre-tag.active')?.classList.remove('active');
                 tag.classList.add('active');
-                selectedRating = label;
+
+                if (value === 'recent_high_score') {
+                    specialFilterMode = 'recent_high_score';
+                    // Now it doesn't de-select other filters
+                } else {
+                    specialFilterMode = null;
+                    selectedRating = label;
+                }
+                
                 filterAndRenderShows();
             });
 
             ratingFilterContainer.appendChild(tag);
         });
+    }
+
+    function createAndSetupMainFilter(container, dataKey, stateKey, onSelectCallback) {
+        // A generic function to create filter tags could go here to reduce repetition
+        // For now, keeping the specific implementations.
     }
 
     function populateGenreFilters() {
@@ -324,12 +361,35 @@ document.addEventListener('DOMContentLoaded', () => {
         tag.className = 'genre-tag';
         tag.textContent = displayName;
         tag.dataset.genre = actualValue;
+
         tag.addEventListener('click', () => {
-            if (selectedGenre === actualValue) return;
-            // 修改：将选择器范围限定在 genre-filter-container 内
-            document.querySelector('#genre-filter-container .genre-tag.active')?.classList.remove('active');
-            tag.classList.add('active');
-            selectedGenre = actualValue;
+            const isActive = tag.classList.contains('active');
+
+            if (actualValue === '全部') {
+                if (isActive) return;
+                genreFilterContainer.querySelectorAll('.genre-tag').forEach(t => {
+                    t.classList.remove('active', 'multiselect-tick');
+                });
+                selectedGenres = [];
+                tag.classList.add('active');
+            } else {
+                genreFilterContainer.querySelector('.genre-tag[data-genre="全部"]')?.classList.remove('active');
+
+                if (isActive) {
+                    tag.classList.remove('active', 'multiselect-tick');
+                    const index = selectedGenres.indexOf(actualValue);
+                    if (index > -1) {
+                        selectedGenres.splice(index, 1);
+                    }
+                } else {
+                    tag.classList.add('active', 'multiselect-tick');
+                    selectedGenres.push(actualValue);
+                }
+
+                if (selectedGenres.length === 0) {
+                    genreFilterContainer.querySelector('.genre-tag[data-genre="全部"]')?.classList.add('active');
+                }
+            }
             filterAndRenderShows();
         });
         return tag;
@@ -342,8 +402,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const displayOrder = currentRegion === 'gb' ? gb_networks : us_networks;
 
         // Reset selected network to '全部' when re-populating, to avoid inconsistent state
-        selectedNetwork = '全部';
-
+        selectedNetworks = [];
+        
         networkFilterContainer.innerHTML = '';
         displayOrder.forEach(networkName => {
             const tag = createNetworkTag(networkName);
@@ -360,29 +420,65 @@ document.addEventListener('DOMContentLoaded', () => {
         tag.textContent = networkName;
         tag.dataset.network = networkName;
         tag.addEventListener('click', () => {
-            if (selectedNetwork === networkName) return;
-            document.querySelector('#network-filter-container .genre-tag.active')?.classList.remove('active');
-            tag.classList.add('active');
-            selectedNetwork = networkName;
+            const isActive = tag.classList.contains('active');
+
+            if (networkName === '全部') {
+                if (isActive) return;
+                networkFilterContainer.querySelectorAll('.genre-tag').forEach(t => {
+                    t.classList.remove('active', 'multiselect-tick');
+                });
+                selectedNetworks = [];
+                tag.classList.add('active');
+            } else {
+                networkFilterContainer.querySelector('.genre-tag[data-network="全部"]')?.classList.remove('active');
+
+                if (isActive) {
+                    tag.classList.remove('active', 'multiselect-tick');
+                    const index = selectedNetworks.indexOf(networkName);
+                    if (index > -1) {
+                        selectedNetworks.splice(index, 1);
+                    }
+                } else {
+                    tag.classList.add('active', 'multiselect-tick');
+                    selectedNetworks.push(networkName);
+                }
+
+                if (selectedNetworks.length === 0) {
+                    networkFilterContainer.querySelector('.genre-tag[data-network="全部"]')?.classList.add('active');
+                }
+            }
             filterAndRenderShows();
         });
         return tag;
     }
 
     function applyFilters() {
-        // This function contains the pure data filtering and sorting logic
-        const ratingThresholds = { '> 9分': 9, '> 8分': 8, '> 7分': 7, '> 6分': 6 };
-        const ratingFiltered = selectedRating === '全部'
-            ? [...allSeasons]
-            : allSeasons.filter(season => {
+        let sourceData = [...allSeasons];
+
+        // Step 1: Apply special "recent high score" as a base filter if active
+        if (specialFilterMode === 'recent_high_score') {
+            const twoYearsAgo = new Date();
+            twoYearsAgo.setFullYear(twoYearsAgo.getFullYear() - 2);
+            
+            sourceData = sourceData.filter(season => {
+                const airDate = new Date(season.air_date);
+                return airDate >= twoYearsAgo && !!season.douban_rating;
+            });
+        }
+
+        // Step 2: Apply standard filters on the (potentially pre-filtered) source data
+        const ratingThresholds = { '> 9分': 9, '> 8分': 8, '> 7分': 7 };
+        const ratingFiltered = selectedRating === '全部' || specialFilterMode === 'recent_high_score' // Ignore rating threshold in special mode
+            ? sourceData
+            : sourceData.filter(season => {
                 const rating = parseFloat(season.douban_rating) || 0;
                 return rating >= ratingThresholds[selectedRating];
             });
 
-        const genreFiltered = selectedGenre === '全部'
+        const genreFiltered = selectedGenres.length === 0
             ? ratingFiltered
-            : ratingFiltered.filter(season =>
-                season.parentShow.genres.some(genre => genre.name === selectedGenre)
+            : ratingFiltered.filter(season => 
+                season.parentShow.genres.some(genre => selectedGenres.includes(genre.name))
             );
 
         const filteredNoRatingAnime = genreFiltered.filter(season => {
@@ -392,39 +488,52 @@ document.addEventListener('DOMContentLoaded', () => {
             return true;
         });
 
-        const networkFiltered = selectedNetwork === '全部'
+        const networkFiltered = selectedNetworks.length === 0
             ? filteredNoRatingAnime
             : filteredNoRatingAnime.filter(season => {
                 if (!season.parentShow.networks || season.parentShow.networks.length === 0) {
                     return false;
                 }
-                const searchKeyword = selectedNetwork.toLowerCase();
-                return season.parentShow.networks.some(network =>
-                    network.name.toLowerCase().includes(searchKeyword)
+                // Use .some() to check if any of the show's networks is in the selected list
+                return season.parentShow.networks.some(network => 
+                    // Use .some() again for the fuzzy match on each selected network
+                    selectedNetworks.some(selectedNet => network.name.toLowerCase().includes(selectedNet.toLowerCase()))
                 );
             });
 
         const now = new Date();
         now.setHours(0, 0, 0, 0);
 
-        const futureSeasons = networkFiltered
-            .filter(season => new Date(season.air_date) > now)
-            .sort((a, b) => new Date(a.air_date) - new Date(b.air_date));
+        // In special mode, there is no "future seasons" concept
+        const futureSeasons = specialFilterMode === 'recent_high_score'
+            ? []
+            : networkFiltered
+                .filter(season => new Date(season.air_date) > now)
+                .sort((a, b) => new Date(a.air_date) - new Date(b.air_date));
 
-        const filteredPastAndPresentSeasons = networkFiltered
-            .filter(season => new Date(season.air_date) <= now)
-            .sort((a, b) => {
-                const monthA = a.air_date.substring(0, 7);
-                const monthB = b.air_date.substring(0, 7);
-                if (monthA !== monthB) {
-                    return monthB.localeCompare(monthA);
-                }
+        const pastAndPresentResults = specialFilterMode === 'recent_high_score'
+            ? networkFiltered // Already filtered and now we just need to sort
+            : networkFiltered.filter(season => new Date(season.air_date) <= now);
+
+        // Step 3: Apply final sorting
+        const finalSortedSeasons = pastAndPresentResults.sort((a, b) => {
+            if (specialFilterMode === 'recent_high_score') {
                 const ratingA = parseFloat(a.douban_rating) || 0;
                 const ratingB = parseFloat(b.douban_rating) || 0;
                 return ratingB - ratingA;
-            });
-
-        return { futureSeasons, filteredPastAndPresentSeasons };
+            }
+            // Default sort logic
+            const monthA = a.air_date.substring(0, 7);
+            const monthB = b.air_date.substring(0, 7);
+            if (monthA !== monthB) {
+                return monthB.localeCompare(monthA);
+            }
+            const ratingA = parseFloat(a.douban_rating) || 0;
+            const ratingB = parseFloat(b.douban_rating) || 0;
+            return ratingB - ratingA;
+        });
+        
+        return { futureSeasons, filteredPastAndPresentSeasons: finalSortedSeasons };
     }
 
     function filterAndRenderShows() {
@@ -482,27 +591,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if (skeletonContainer) {
             skeletonContainer.style.display = 'none';
         }
-        resultsContainer.innerHTML = ''; // Clear previous real content, but not skeleton
+        resultsContainer.innerHTML = '';
         noResultsMessage.style.display = 'none';
-        interactiveTimeline.classList.remove('visible');
+        
+        // In special mode, the timeline is not relevant, also hide coming-soon
+        if (specialFilterMode === 'recent_high_score') {
+            interactiveTimeline.classList.remove('visible');
+            comingSoonContainer.style.display = 'none';
+        } else {
+             interactiveTimeline.classList.add('visible');
+        }
+
         currentPage = 1;
         lastRenderedMonth = null;
-
+        
         allAvailableYears = [...new Set(filteredPastAndPresentSeasons.map(s => s.air_date.substring(0, 4)))];
         if (comingSoonContainer.style.display === 'block') {
             allAvailableYears.unshift(FUTURE_TAG);
         }
-
+        
         visibleYearCount = Math.min(3, allAvailableYears.length);
         currentActiveYear = null;
-
+        
         if (filteredPastAndPresentSeasons.length === 0 && comingSoonContainer.style.display === 'none') {
             noResultsMessage.style.display = 'block';
         }
-
-        if (allAvailableYears.length > 0) {
-            interactiveTimeline.classList.add('visible');
-            renderTimeline(allAvailableYears[0]);
+        
+        if (allAvailableYears.length > 0 || specialFilterMode === 'recent_high_score') {
+            if (specialFilterMode !== 'recent_high_score') {
+                 renderTimeline(allAvailableYears[0]);
+            }
             loadMoreItems();
         } else {
              yearList.innerHTML = '';
@@ -529,33 +647,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
         isLoading = false;
         loader.style.display = 'none';
-        updateActiveTimeline();
+        if (specialFilterMode !== 'recent_high_score') {
+            updateActiveTimeline();
+        }
     }
-
+    
     function appendItems(seasonsToRender) {
-        if (seasonsToRender.length === 0) return;
-
         let index = 0;
         let currentGrid;
+        
+        // In special mode, create a single grid container
+        if (specialFilterMode === 'recent_high_score' && !resultsContainer.querySelector('.month-grid')) {
+            currentGrid = document.createElement('div');
+            currentGrid.className = 'month-grid';
+            resultsContainer.appendChild(currentGrid);
+        } else {
+            currentGrid = resultsContainer.querySelector('.month-grid:last-of-type');
+        }
 
         function progressiveAppend() {
             if (index >= seasonsToRender.length) return;
 
             const season = seasonsToRender[index];
-            const monthKey = season.air_date.substring(0, 7);
 
-            if (monthKey !== lastRenderedMonth) {
-                lastRenderedMonth = monthKey;
-                const header = document.createElement('h2');
-                header.className = 'month-group-header';
-                header.id = `month-${monthKey}`;
-                const date = new Date(monthKey + '-01');
-                header.textContent = `${date.getFullYear()}年 ${date.getMonth() + 1}月`;
-                resultsContainer.appendChild(header);
+            // Do not create month headers in special mode
+            if (specialFilterMode !== 'recent_high_score') {
+                const monthKey = season.air_date.substring(0, 7);
 
-                currentGrid = document.createElement('div');
-                currentGrid.className = 'month-grid';
-                resultsContainer.appendChild(currentGrid);
+                if (monthKey !== lastRenderedMonth) {
+                    lastRenderedMonth = monthKey;
+                    const header = document.createElement('h2');
+                    header.className = 'month-group-header';
+                    header.id = `month-${monthKey}`;
+                    const date = new Date(monthKey + '-01');
+                    header.textContent = `${date.getFullYear()}年 ${date.getMonth() + 1}月`;
+                    resultsContainer.appendChild(header);
+                    
+                    currentGrid = document.createElement('div');
+                    currentGrid.className = 'month-grid';
+                    resultsContainer.appendChild(currentGrid);
+                }
             }
 
             const card = createShowCard(season);
