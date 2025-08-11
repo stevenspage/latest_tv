@@ -91,6 +91,8 @@ h1 .update-date {
 .genre-tag:hover {
     background-color: var(--imdb-card-bg-hover);
     color: var(--imdb-text-primary);
+    position: relative; /* Lift on hover to be above the gradient */
+    z-index: 2;
 }
 
 .genre-tag.active {
@@ -98,7 +100,7 @@ h1 .update-date {
     color: #000;
     border-color: var(--imdb-accent);
     position: relative; /* Add position to enable z-index */
-    z-index: 2; /* Lift the active tag above the gradient overlay */
+    z-index: 3; /* Active tag should be on top of hovered tags */
 }
 
 /* Apply checkmark only to active tags within multi-select containers, but not to the "All" tag */
@@ -180,6 +182,9 @@ h1 .update-date {
     .genre-filter-container,
     #rating-filter-container { /* 新增：确保评分容器也应用相对定位 */
         position: relative; /* 为渐变遮罩提供定位上下文 */
+        /* Add CSS Mask for fading effect */
+        -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+        mask-image: linear-gradient(to right, black 90%, transparent 100%);
     }
 
     .network-filter-container { 
@@ -207,28 +212,7 @@ h1 .update-date {
         display: none;
     }
     
-    /* **新增**: 渐变遮罩，用于提示可滚动 */
-    .network-filter-container::after,
-    .genre-filter-container::after,
-    #rating-filter-container::after { /* 新增：为评分容器应用渐变遮罩 */
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 60px; /* 渐变区域的宽度 */
-        height: 100%;
-        background: linear-gradient(to left, var(--imdb-bg), transparent);
-        pointer-events: none; /* 确保遮罩不会影响鼠标操作 */
-        transition: opacity 0.2s ease-in-out;
-        opacity: 1;
-    }
-
-    /* **新增**: 当滚动到末尾时，隐藏遮罩 */
-    .network-filter-container.scrolled-to-end::after,
-    .genre-filter-container.scrolled-to-end::after,
-    #rating-filter-container.scrolled-to-end::after { /* 新增：为评分容器应用隐藏逻辑 */
-        opacity: 0;
-    }
+    /* REMOVED the ::after pseudo-element for gradient overlay */
 
     .genre-tag {
         flex-shrink: 0; /* 防止标签在flex容器中被压缩 */

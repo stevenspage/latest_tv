@@ -243,7 +243,9 @@ document.addEventListener('DOMContentLoaded', () => {
                  filterAndRenderShows();
                  populateNetworkFilters(); // Re-populate network filters for the new region
             } else {
-                // Show a skeleton loader while waiting for the background fetch to complete
+                // Clear coming soon specifically, then show skeleton
+                comingSoonContainer.innerHTML = '';
+                comingSoonContainer.style.display = 'none';
                 showSkeletonLoader();
                 populateNetworkFilters(); // Also update filters UI instantly
             }
@@ -272,12 +274,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showSkeletonLoader() {
-        resultsContainer.innerHTML = ''; // Clear previous content
+        resultsContainer.innerHTML = ''; // Clear previous main content
         noResultsMessage.style.display = 'none';
+
+        // Restore the "Coming Soon" skeleton
+        comingSoonContainer.innerHTML = `
+            <h2 class="month-group-header skeleton">即将上映</h2>
+            <div class="scroller-wrapper">
+                <div class="scroller-container">
+                    <div class="horizontal-scroller">
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                        <div class="show-card skeleton"></div>
+                    </div>
+                </div>
+            </div>
+        `;
+        comingSoonContainer.style.display = 'block';
         
-        // Check if a skeleton container already exists, if not, create one
+        // Restore the main content skeleton
         let skeleton = document.getElementById('skeleton-container');
-        if (!skeleton) {
+        if (skeleton) {
+            skeleton.style.display = 'block';
+            // If the skeleton was detached, re-attach it.
+            if (!skeleton.parentElement) {
+                resultsContainer.appendChild(skeleton);
+            }
+        } else {
+             // Or recreate it if it was removed
             skeleton = document.createElement('div');
             skeleton.id = 'skeleton-container';
             skeleton.innerHTML = `
@@ -302,7 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             resultsContainer.appendChild(skeleton);
         }
-        skeleton.style.display = 'block';
         loader.style.display = 'none'; // Ensure the small loader is hidden
     }
 
