@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let gbSeasonsCache = [];
     let usUpdateDate = '';
     let gbUpdateDate = '';
+    let isUsCompleteLoaded = false;
+    let isGbCompleteLoaded = false;
     let currentRegion = 'us'; // 'us' or 'gb'
 
     // State variables
@@ -74,16 +76,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         if (!data || !Array.isArray(data.shows)) {
-            statusMessage.textContent = 'JSON文件格式不正确，需要包含 "shows" 数组。'; 
+            statusMessage.textContent = 'JSON文件格式不正确，需要包含 "shows" 数组。';
             statusMessage.style.color = '#F44336';
             return;
         }
 
         const flattenedSeasons = flattenSeasonsData(data);
-        
+
         // Use the initial data for the first render
         allSeasons = flattenedSeasons;
-        
+
         // The initial data is always US, so it populates the usSeasonsCache
         usSeasonsCache = flattenedSeasons;
 
@@ -116,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Could not load ${url}`);
             const data = await response.json();
-            
+
             const flattenedData = flattenSeasonsData(data);
 
             if (region === 'us') {
@@ -124,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (data.metadata && data.metadata.last_updated) {
                     usUpdateDate = data.metadata.last_updated;
                 }
+                isUsCompleteLoaded = true;
                 // If the current view is US, assimilate seamlessly
                 if (currentRegion === 'us') {
                     assimilateCompleteData(flattenedData);
@@ -134,6 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (data.metadata && data.metadata.last_updated) {
                     gbUpdateDate = data.metadata.last_updated;
                 }
+                isGbCompleteLoaded = true;
                 console.log("GB data loaded and cached.");
                  // If the user happens to switch to GB while it's loading, render it.
                 if (currentRegion === 'gb') {
@@ -143,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     populateNetworkFilters(); // Re-populate for GB
                 }
             }
+            checkAndNotifyCompletion(); // Check if all background tasks are done
         } catch (error) {
             console.error(`Background data load failed for ${region}:`, error);
         }
@@ -150,14 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function assimilateCompleteData(completeUsData) {
         console.log("Complete US data loaded. Assimilating into the app.");
-        
+
         // Replace master data source and cache
         allSeasons = completeUsData;
         usSeasonsCache = completeUsData;
 
         // Re-run filters with the new complete data to get an updated count for the timeline
         const { filteredPastAndPresentSeasons: newFilteredSeasons } = applyFilters();
-        
+
         // Update the global list that infinite scroll uses
         filteredPastAndPresentSeasons = newFilteredSeasons;
 
@@ -171,14 +176,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateSubtitleText();
 
-        // Show a confirmation toast
-        const toast = document.getElementById('toast-notification');
-        if (toast) {
-            toast.textContent = "已加载所有美剧";
-            toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000); // Hide after 3 seconds
+        // The toast notification is now handled by checkAndNotifyCompletion()
+    }
+
+    function checkAndNotifyCompletion() {
+        if (isUsCompleteLoaded && isGbCompleteLoaded) {
+            const toast = document.getElementById('toast-notification');
+            if (toast) {
+                toast.textContent = "已加载所有剧集";
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000); // Hide after 3 seconds
+            }
         }
     }
 
@@ -198,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Update state and data source
             currentRegion = newRegion;
-            
+
             if (currentRegion === 'us') {
                 allSeasons = usSeasonsCache;
             } else if (currentRegion === 'gb') {
@@ -308,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
             genreFilterContainer.appendChild(tag);
         });
     }
-    
+
     function createGenreTag(displayName, actualValue) {
         const tag = document.createElement('div');
         tag.className = 'genre-tag';
@@ -330,10 +340,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const gb_networks = ['全部', 'BBC', 'Netflix', 'Apple TV', 'Prime Video', 'Sky', 'ITV', 'Channel 4', 'Disney'];
 
         const displayOrder = currentRegion === 'gb' ? gb_networks : us_networks;
-        
+
         // Reset selected network to '全部' when re-populating, to avoid inconsistent state
         selectedNetwork = '全部';
-        
+
         networkFilterContainer.innerHTML = '';
         displayOrder.forEach(networkName => {
             const tag = createNetworkTag(networkName);
@@ -371,7 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const genreFiltered = selectedGenre === '全部'
             ? ratingFiltered
-            : ratingFiltered.filter(season => 
+            : ratingFiltered.filter(season =>
                 season.parentShow.genres.some(genre => genre.name === selectedGenre)
             );
 
@@ -389,7 +399,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return false;
                 }
                 const searchKeyword = selectedNetwork.toLowerCase();
-                return season.parentShow.networks.some(network => 
+                return season.parentShow.networks.some(network =>
                     network.name.toLowerCase().includes(searchKeyword)
                 );
             });
@@ -413,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const ratingB = parseFloat(b.douban_rating) || 0;
                 return ratingB - ratingA;
             });
-        
+
         return { futureSeasons, filteredPastAndPresentSeasons };
     }
 
@@ -423,11 +433,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Initially hide coming soon container until we know if there are future seasons
         comingSoonContainer.style.display = 'none';
-        
+
         renderComingSoon(futureSeasons);
         startRendering();
     }
-    
+
     function renderComingSoon(futureSeasons) {
         // Clear existing skeleton or real content
         comingSoonContainer.innerHTML = '';
@@ -466,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
         scroller.addEventListener('scroll', updateArrowVisibility);
         setTimeout(updateArrowVisibility, 100);
     }
-    
+
     function startRendering() {
         // Instead of clearing the whole container, just hide the skeleton.
         if (skeletonContainer) {
@@ -477,19 +487,19 @@ document.addEventListener('DOMContentLoaded', () => {
         interactiveTimeline.classList.remove('visible');
         currentPage = 1;
         lastRenderedMonth = null;
-        
+
         allAvailableYears = [...new Set(filteredPastAndPresentSeasons.map(s => s.air_date.substring(0, 4)))];
         if (comingSoonContainer.style.display === 'block') {
             allAvailableYears.unshift(FUTURE_TAG);
         }
-        
+
         visibleYearCount = Math.min(3, allAvailableYears.length);
         currentActiveYear = null;
-        
+
         if (filteredPastAndPresentSeasons.length === 0 && comingSoonContainer.style.display === 'none') {
             noResultsMessage.style.display = 'block';
         }
-        
+
         if (allAvailableYears.length > 0) {
             interactiveTimeline.classList.add('visible');
             renderTimeline(allAvailableYears[0]);
@@ -503,7 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadMoreItems() {
         if (isLoading) return;
         isLoading = true;
-        
+
         if (!loadingOverlay.classList.contains('visible') && !isScrollingProgrammatically) {
             loader.style.display = 'block';
         }
@@ -511,23 +521,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
         const endIndex = startIndex + ITEMS_PER_PAGE;
         const itemsToRender = filteredPastAndPresentSeasons.slice(startIndex, endIndex);
-        
+
         if (itemsToRender.length > 0) {
             appendItems(itemsToRender);
             currentPage++;
         }
-        
+
         isLoading = false;
         loader.style.display = 'none';
         updateActiveTimeline();
     }
-    
+
     function appendItems(seasonsToRender) {
         if (seasonsToRender.length === 0) return;
 
         let index = 0;
         let currentGrid;
-        
+
         function progressiveAppend() {
             if (index >= seasonsToRender.length) return;
 
@@ -542,7 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const date = new Date(monthKey + '-01');
                 header.textContent = `${date.getFullYear()}年 ${date.getMonth() + 1}月`;
                 resultsContainer.appendChild(header);
-                
+
                 currentGrid = document.createElement('div');
                 currentGrid.className = 'month-grid';
                 resultsContainer.appendChild(currentGrid);
@@ -558,11 +568,11 @@ document.addEventListener('DOMContentLoaded', () => {
                  }
             }
             currentGrid.appendChild(card);
-            
+
             index++;
             requestAnimationFrame(progressiveAppend);
         }
-        
+
         requestAnimationFrame(progressiveAppend);
     }
 
@@ -573,12 +583,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const posterUrl = posterPath ? `${TMDB_IMAGE_BASE_URL}${posterPath}` : 'https://via.placeholder.com/500x750.png?text=No+Image';
         const displayTitle = show.name !== show.original_name ? `${show.name} (${show.original_name})` : show.name;
         const fullTitle = `${displayTitle} - ${season.name}`;
-        
+
         // Extract Douban related info and verification status
         const doubanVerified = season.douban_link_verified;
         const doubanLink = season.douban_link_google;
         const doubanRating = season.douban_rating;
-        
+
         const tmdbLink = `https://www.themoviedb.org/tv/${show.id}/season/${season.season_number}`;
         const imdbLink = show.imdb_id ? `https://www.imdb.com/title/${show.imdb_id}/` : null;
 
@@ -589,11 +599,11 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             ratingElementHTML = `<div class="card-rating"><span class="imdb-gold">★</span> <span class="douban-green">豆瓣：</span><span class="no-rating-text">暂无</span></div>`;
         }
-        
+
         const airDateInfo = season.air_date ? `<div class="card-meta-info">上映日期：${season.air_date}</div>` : '';
         const card = document.createElement('div');
         card.className = 'show-card';
-        
+
         // Create poster HTML, wrapping it in a link if Douban link is verified
         const imageHTML = `<img src="${posterUrl}" alt="${fullTitle}" class="poster" loading="lazy">`;
         const posterContainerClass = (doubanVerified && doubanLink) ? 'card-poster-container clickable' : 'card-poster-container';
@@ -606,7 +616,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return card;
     }
     // --- MODIFICATION END ---
-    
+
     function renderTimeline(activeYear) {
         yearList.innerHTML = '';
         const yearsToShow = allAvailableYears.slice(0, visibleYearCount);
@@ -631,7 +641,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         scrollToYear(year);
     }
-    
+
     function updateActiveTimeline() {
         if (isScrollingProgrammatically) return;
         let topVisibleYear = null;
@@ -653,7 +663,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 topVisibleYear = FUTURE_TAG;
             }
         }
-        
+
         if (topVisibleYear && topVisibleYear !== currentActiveYear) {
             currentActiveYear = topVisibleYear;
             const currentIndex = allAvailableYears.indexOf(currentActiveYear);
@@ -663,12 +673,12 @@ document.addEventListener('DOMContentLoaded', () => {
             renderTimeline(currentActiveYear);
         }
     }
-    
+
     async function scrollToYear(year) {
         isScrollingProgrammatically = true;
         renderTimeline(year);
         currentActiveYear = year;
-        
+
         const currentYearIndex = allAvailableYears.indexOf(year);
         const nextYearToPreload = allAvailableYears[currentYearIndex + 1];
 
@@ -680,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             isScrollingProgrammatically = false;
-        }, 1000); 
+        }, 1000);
     }
 
     async function ensureYearIsLoadedAndScroll(year, preloadOnly = false) {
@@ -690,7 +700,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             targetElement = document.querySelector(`#results-container .month-group-header[id^="month-${year}"]`);
         }
-        
+
         if (!targetElement && year !== FUTURE_TAG) {
             if (!preloadOnly) loadingOverlay.classList.add('visible');
             while (!targetElement && (currentPage - 1) * ITEMS_PER_PAGE < filteredPastAndPresentSeasons.length) {
@@ -699,11 +709,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (!preloadOnly) loadingOverlay.classList.remove('visible');
         }
-        
+
         if (targetElement && !preloadOnly) {
             setTimeout(() => {
                 targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 50); 
+            }, 50);
         }
     }
 
@@ -733,7 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 使用 toggle 简化代码，第二个参数为 true 时添加class，为 false 时移除
             container.classList.toggle('scrolled-to-end', isAtEnd);
         }
-        
+
         // 首次加载时，延迟一小段时间再检查。
         // 这可以防止在浏览器完全渲染出内容前，脚本错误地计算了容器宽度，
         // 尤其是在移动端设备上。
@@ -741,7 +751,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 监听滚动事件，并使用 passive: true 优化性能
         container.addEventListener('scroll', updateFade, { passive: true });
-        
+
         // 监听窗口大小变化（例如手机横竖屏切换），重新检查
         window.addEventListener('resize', () => {
              setTimeout(updateFade, 100);
