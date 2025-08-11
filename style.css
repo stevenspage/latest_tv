@@ -97,6 +97,8 @@ h1 .update-date {
     background-color: var(--imdb-accent);
     color: #000;
     border-color: var(--imdb-accent);
+    position: relative; /* Add position to enable z-index */
+    z-index: 2; /* Lift the active tag above the gradient overlay */
 }
 
 /* Apply checkmark only to active tags within multi-select containers, but not to the "All" tag */

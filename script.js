@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (currentRegion === 'gb') {
                     allSeasons = gbSeasonsCache;
                     updateSubtitleText();
+                    // No need to hide skeleton here, filterAndRenderShows will do it.
                     filterAndRenderShows();
                     populateNetworkFilters(); // Re-populate for GB
                 }
@@ -242,10 +243,9 @@ document.addEventListener('DOMContentLoaded', () => {
                  filterAndRenderShows();
                  populateNetworkFilters(); // Re-populate network filters for the new region
             } else {
-                // Show a loader while waiting for the background fetch to complete
-                resultsContainer.innerHTML = '';
-                loader.style.display = 'block';
-                 populateNetworkFilters(); // Also update filters UI instantly
+                // Show a skeleton loader while waiting for the background fetch to complete
+                showSkeletonLoader();
+                populateNetworkFilters(); // Also update filters UI instantly
             }
         });
 
@@ -269,6 +269,41 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }, 50);
         });
+    }
+
+    function showSkeletonLoader() {
+        resultsContainer.innerHTML = ''; // Clear previous content
+        noResultsMessage.style.display = 'none';
+        
+        // Check if a skeleton container already exists, if not, create one
+        let skeleton = document.getElementById('skeleton-container');
+        if (!skeleton) {
+            skeleton = document.createElement('div');
+            skeleton.id = 'skeleton-container';
+            skeleton.innerHTML = `
+                <h2 class="month-group-header skeleton">&nbsp;</h2>
+                <div class="month-grid">
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                </div>
+                <h2 class="month-group-header skeleton">&nbsp;</h2>
+                <div class="month-grid">
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                    <div class="show-card skeleton"></div>
+                </div>
+            `;
+            resultsContainer.appendChild(skeleton);
+        }
+        skeleton.style.display = 'block';
+        loader.style.display = 'none'; // Ensure the small loader is hidden
     }
 
     function updateSubtitleText() {
@@ -391,6 +426,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             filterAndRenderShows();
+            
+            // Scroll the clicked tag into view if it's in a scrolling container
+            if (window.innerWidth <= 900) {
+                tag.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+            }
         });
         return tag;
     }
@@ -448,6 +488,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             filterAndRenderShows();
+            
+            // Scroll the clicked tag into view if it's in a scrolling container
+            if (window.innerWidth <= 900) {
+                tag.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+            }
         });
         return tag;
     }
