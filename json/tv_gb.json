@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2025-08-11T05:50:32+08:00",
+    "last_updated": "2025-08-15T14:59:02+08:00",
     "version": "1.0.0",
     "update_log": [
       {
@@ -14,8 +14,13 @@
       {
         "time": "2025-08-01T18:15:27+08:00",
         "summary": "执行豆瓣信息更新脚本。本次更新 1459 季。 文件总览：1022 部剧集，2627 季。 (评分完善 608 部, 仅有链接 103 部)"
+      },
+      {
+        "time": "2025-08-15T14:59:02+08:00",
+        "summary": "更新了 6 部正在制作中的剧集信息"
       }
-    ]
+    ],
+    "last_refreshed": "2025-08-15T14:59:02+08:00"
   },
   "shows": [
     {
@@ -38,8 +43,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.98,
-      "vote_count": 597,
+      "vote_average": 8.0,
+      "vote_count": 606,
       "origin_country": [
         "GB"
       ],
@@ -52,7 +57,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
-      "popularity": 58.1925,
+      "popularity": 28.7099,
       "number_of_seasons": 5,
       "number_of_episodes": 30,
       "first_air_date": "2022-04-01",
@@ -156,7 +161,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.31,
+      "vote_average": 7.3,
       "vote_count": 51,
       "origin_country": [
         "GB"
@@ -177,7 +182,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/professor-t/7a0171",
-      "popularity": 12.3442,
+      "popularity": 6.9825,
       "number_of_seasons": 4,
       "number_of_episodes": 24,
       "first_air_date": "2021-06-03",
@@ -272,10 +277,10 @@
       ],
       "type": "Scripted",
       "vote_average": 8.5,
-      "vote_count": 1568,
+      "vote_count": 1602,
       "origin_country": [
-        "IE",
         "GB",
+        "IE",
         "US"
       ],
       "original_language": "en",
@@ -294,13 +299,13 @@
         }
       ],
       "homepage": "https://www.cartoonnetworkhq.com/show/gumball",
-      "popularity": 84.8126,
+      "popularity": 41.772,
       "number_of_seasons": 7,
-      "number_of_episodes": 266,
+      "number_of_episodes": 280,
       "first_air_date": "2011-05-03",
-      "last_air_date": "2019-06-24",
+      "last_air_date": "2025-07-28",
       "in_production": true,
-      "status": "Returning Series",
+      "status": "Ended",
       "adult": false,
       "poster_path": "/VYnnyA2hyxi3VUPgCA71mMtt69.jpg",
       "backdrop_path": "/3PCVo8Wikg4wG6dqZHs4Ofp0laA.jpg",
@@ -426,8 +431,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.0,
-      "vote_count": 6,
+      "vote_average": 6.8,
+      "vote_count": 23,
       "origin_country": [
         "GB"
       ],
@@ -439,8 +444,8 @@
           "name": "Prime Video"
         }
       ],
-      "homepage": "",
-      "popularity": 18.7791,
+      "homepage": "https://www.amazon.co.uk/gp/video/detail/B0F8LWL532",
+      "popularity": 7.0657,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-07-25",
@@ -499,11 +504,11 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0byxbkn",
-      "popularity": 11.4916,
+      "popularity": 1.5367,
       "number_of_seasons": 3,
       "number_of_episodes": 19,
       "first_air_date": "2022-04-29",
-      "last_air_date": "2024-03-08",
+      "last_air_date": "2025-07-25",
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
@@ -546,7 +551,7 @@
           "air_date": "2025-07-25",
           "episode_count": 7,
           "vote_average": 0.0,
-          "poster_path": null,
+          "poster_path": "/yLiKDALiLOYsKGr6fuA2fuRXLUA.jpg",
           "douban_rating": null,
           "douban_link_google": "https://m.douban.com/movie/subject/36285439/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Here+We+Go+season+3&cat=1002",
@@ -567,8 +572,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.6,
-      "vote_count": 14,
+      "vote_average": 6.67,
+      "vote_count": 15,
       "origin_country": [
         "GB"
       ],
@@ -582,7 +587,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/mr-bigstuff",
-      "popularity": 3.6417,
+      "popularity": 2.1167,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-07-17",
