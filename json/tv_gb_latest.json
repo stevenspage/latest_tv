@@ -1,10 +1,26 @@
 {
   "metadata": {
-    "last_updated": "2025-08-23T16:13:11+00:00",
+    "last_updated": "2025-08-23T22:11:50+00:00",
     "version": "1.0.0",
     "update_log": [
       {
-        "time": "2025-08-23T16:13:11+00:00",
+        "time": "2025-08-24T01:55:38+08:00",
+        "summary": "执行豆瓣链接验证脚本。本次验证成功 0 个链接，失败 0 个链接。"
+      },
+      {
+        "time": "2025-08-24T01:13:34+08:00",
+        "summary": "执行豆瓣链接验证脚本。本次验证成功 3 个链接，失败 3 个链接。"
+      },
+      {
+        "time": "2025-08-24T01:06:56+08:00",
+        "summary": "执行从Google获取豆瓣信息更新脚本。本次更新 5 季。"
+      },
+      {
+        "time": "2025-08-24T00:43:33+08:00",
+        "summary": "执行从Google获取豆瓣信息更新脚本。本次更新 77 季。"
+      },
+      {
+        "time": "2025-08-23T22:11:50+00:00",
         "summary": "数据更新完成：更新了 226 部正在制作中的剧集信息"
       },
       {
@@ -28,11 +44,14 @@
         "summary": "更新了 6 部正在制作中的剧集信息"
       }
     ],
-    "last_refreshed": "2025-08-23T16:13:11+00:00",
+    "last_refreshed": "2025-08-23T22:11:50+00:00",
     "total_shows": 1022,
     "total_seasons": 2633,
     "earliest_show_date": "2000-01-09",
-    "latest_show_date": "2025-08-21"
+    "latest_show_date": "2025-08-21",
+    "total_douban_links": 1963,
+    "verified_douban_links": 1716,
+    "verified_no_rating_links": 548
   },
   "shows": [
     {
@@ -224,9 +243,12 @@
           "name": "第 2 季",
           "overview": "",
           "poster_path": null,
+          "douban_link_google": null,
           "season_number": 2,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Wolf+King+season+2&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Wolf+King+season+2&cat=1002",
+          "douban_rating": null,
+          "douban_link_verified": false
         }
       ]
     },
@@ -437,9 +459,12 @@
           "name": "第 4 季",
           "overview": "",
           "poster_path": null,
+          "douban_link_google": "https://m.douban.com/movie/subject/37173590/",
           "season_number": 4,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Sister+Boniface+Mysteries+season+4&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Sister+Boniface+Mysteries+season+4&cat=1002",
+          "douban_link_verified": true,
+          "douban_rating": null
         }
       ]
     },
@@ -983,7 +1008,7 @@
           "episode_count": 3,
           "vote_average": 4.5,
           "poster_path": "/rFXR73FLUU5duvHZCKzN2Umb8pP.jpg",
-          "douban_rating": null,
+          "douban_rating": "7.3",
           "douban_link_google": "https://m.douban.com/movie/subject/36254246/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Karen+Pirie+season+2&cat=1002",
           "overview": "",
@@ -1382,7 +1407,7 @@
           "episode_count": 8,
           "vote_average": 1.0,
           "poster_path": "/mRUhYrMQZmK3Ug36xZn3fx4Muv2.jpg",
-          "douban_rating": null,
+          "douban_rating": "5.6",
           "douban_link_google": "https://m.douban.com/movie/subject/36694685/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Buccaneers+season+2&cat=1002",
           "overview": "",
@@ -1640,11 +1665,11 @@
           "episode_count": 8,
           "vote_average": 7.3,
           "poster_path": "/skNTkznFNcmUmuWVNp0lpCofGdP.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/36069034/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Not+Going+Out+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 3 季",
@@ -1668,11 +1693,11 @@
           "episode_count": 6,
           "vote_average": 6.8,
           "poster_path": "/t39xHejxcBYCu9Ui5kT9HYzeQUR.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/37395350",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Not+Going+Out+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 5 季",
@@ -1682,8 +1707,8 @@
           "episode_count": 6,
           "vote_average": 5.2,
           "poster_path": "/ayZsOGJlRuMsRAfEOdU3D4k2pCX.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36069034/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Not+Going+Out+season+5&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -1696,8 +1721,8 @@
           "episode_count": 9,
           "vote_average": 6.8,
           "poster_path": "/4iJcs8r1q6Ybee9aFiznHh1aQoM.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/2256543/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Not+Going+Out+season+6&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -1794,11 +1819,11 @@
           "episode_count": 7,
           "vote_average": 7.5,
           "poster_path": "/su7rgb2g5vlQSFvznMrg9d9rj7i.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/37395350",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Not+Going+Out+season+13&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 14 季",
@@ -1900,8 +1925,8 @@
           "episode_count": 14,
           "vote_average": 0.0,
           "poster_path": "/4A9hzN8R93d6HPksNRaixhNQxMf.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35718303/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Creature+Cases+season+3&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -1914,8 +1939,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35718303/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Creature+Cases+season+4&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -1928,8 +1953,8 @@
           "episode_count": 9,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35718303/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Creature+Cases+season+5&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2043,8 +2068,8 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": "/avftAZ6o7xILu3y7HFQiSBw7HbP.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35296491/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Malory+Towers+season+5&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2057,8 +2082,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36758224/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Malory+Towers+season+6&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2349,8 +2374,8 @@
           "episode_count": 20,
           "vote_average": 10.0,
           "poster_path": "/g95pLNsViP0MUUBz3SPsmvBYzOr.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/26952865/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Octonauts+season+3&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2391,11 +2416,11 @@
           "episode_count": 26,
           "vote_average": 0.0,
           "poster_path": "/ihcWaop5M4AREFUSaHVKsGxXsN.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/35559275/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Octonauts+season+6&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 7 季",
@@ -2405,8 +2430,8 @@
           "episode_count": 26,
           "vote_average": 0.0,
           "poster_path": "/j18j0kvgMnpQOYzSvIVViBqgFaL.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36881444/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Octonauts+season+7&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2419,8 +2444,8 @@
           "episode_count": 26,
           "vote_average": 0.0,
           "poster_path": "/8WkPNcWY38dZzEndfZLkkmy1ZrS.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36881447/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Octonauts+season+8&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2433,11 +2458,11 @@
           "episode_count": 26,
           "vote_average": 0.0,
           "poster_path": "/5r2PAkUB5SRrS7ctsHb5NDFbdfD.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/35887500/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Octonauts+season+9&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 10 季",
@@ -2447,8 +2472,8 @@
           "episode_count": 26,
           "vote_average": 0.0,
           "poster_path": "/u6wDBuXNuGjKTPEsxP0DvxefrZ4.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36881447/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Octonauts+season+10&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2631,8 +2656,8 @@
           "episode_count": 6,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36237131/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Horne+Section+TV+Show+season+1&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -2645,11 +2670,10 @@
           "episode_count": 6,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_link_google": "",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Horne+Section+TV+Show+season+2&cat=1002",
           "overview": "",
-          "douban_rating": "",
-          "douban_link_last_checked": "2025-08-11T01:41:18+08:00",
           "douban_link_verified": false
         }
       ]
@@ -3278,7 +3302,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.28,
-      "vote_count": 5646,
+      "vote_count": 5647,
       "origin_country": [
         "GB"
       ],
@@ -3540,8 +3564,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.47,
-      "vote_count": 377,
+      "vote_average": 8.48,
+      "vote_count": 378,
       "origin_country": [
         "GB",
         "US"
@@ -3985,7 +4009,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.33,
+      "vote_average": 6.3,
       "vote_count": 12,
       "origin_country": [
         "AU",
@@ -4069,7 +4093,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.39,
+      "vote_average": 7.4,
       "vote_count": 100,
       "origin_country": [
         "GB"
@@ -4132,8 +4156,8 @@
           "episode_count": 6,
           "vote_average": 8.8,
           "poster_path": "/wQosp182j2axZHu4OWV0LfjgnKj.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36033617/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Miss+Scarlet+season+3&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -4146,8 +4170,8 @@
           "episode_count": 6,
           "vote_average": 6.5,
           "poster_path": "/bxEMMwGZj247kelubXLky7yaGFH.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36173878/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Miss+Scarlet+season+4&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -4464,8 +4488,8 @@
           "episode_count": 8,
           "vote_average": 7.3,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/30201289/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Dave+Gorman%27s+Modern+Life+is+Goodish+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -4478,11 +4502,10 @@
           "episode_count": 8,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_link_google": "",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Dave+Gorman%27s+Modern+Life+is+Goodish+season+3&cat=1002",
           "overview": "",
-          "douban_rating": "",
-          "douban_link_last_checked": "2025-08-11T02:57:17+08:00",
           "douban_link_verified": false
         },
         {
@@ -4493,8 +4516,8 @@
           "episode_count": 6,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/30201289/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Dave+Gorman%27s+Modern+Life+is+Goodish+season+4&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -4511,7 +4534,7 @@
           "douban_link_google": "",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Dave+Gorman%27s+Modern+Life+is+Goodish+season+5&cat=1002",
           "overview": "",
-          "douban_link_last_checked": "2025-08-11T02:57:45+08:00",
+          "douban_link_last_checked": "2025-08-24T00:30:34+08:00",
           "douban_link_verified": false
         },
         {
@@ -4522,8 +4545,8 @@
           "episode_count": 3,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/30201289/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Dave+Gorman%27s+Modern+Life+is+Goodish+season+6&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -4704,11 +4727,11 @@
           "episode_count": 12,
           "vote_average": 7.3,
           "poster_path": "/xN1Qos3U2FDnpItcYodem2AdMXc.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/36407249/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Waterloo+Road+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 3 季",
@@ -4718,11 +4741,11 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": "/zbwBg7Hrv3pUvn7ILREz6AEoNHD.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/25819720/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Waterloo+Road+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 4 季",
@@ -4732,8 +4755,8 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": "/3OyQfu6NYEeHJTJcbJUsET01wVV.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/2279076/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Waterloo+Road+season+4&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -4760,11 +4783,11 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": "/dTJjTBTX8QyUK4kBoabJ2LcmvRg.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/2279076/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Waterloo+Road+season+6&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 7 季",
@@ -4774,11 +4797,11 @@
           "episode_count": 30,
           "vote_average": 0.0,
           "poster_path": "/8rFYoci5ZUTmkblr7kO6oBwg3oh.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/36910632/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Waterloo+Road+season+7&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 8 季",
@@ -4788,11 +4811,11 @@
           "episode_count": 30,
           "vote_average": 0.0,
           "poster_path": "/vtazjFbKIY5D0KZu5UXB4vDTCov.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/2279076/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Waterloo+Road+season+8&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 9 季",
@@ -4816,11 +4839,11 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": "/sxLPcZ5HXxXhuEos5fh42jglJ74.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/36407249/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Waterloo+Road+season+10&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 11 季",
@@ -5382,8 +5405,8 @@
           "episode_count": 15,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/5172470/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Horrible+Histories+season+11&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -5457,8 +5480,8 @@
           "episode_count": 5,
           "vote_average": 0.0,
           "poster_path": "/6Xc0nmif3wGCUTe7fB3O6oETFO4.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36783946/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=G%27wed+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -5907,7 +5930,7 @@
           "episode_count": 8,
           "vote_average": 5.6,
           "poster_path": "/ilSaRNWOysGaPPwiSrtWzKWjaaX.jpg",
-          "douban_rating": null,
+          "douban_rating": "7.6",
           "douban_link_google": "https://m.douban.com/movie/subject/36284590/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Death+in+Paradise+season+14&cat=1002",
           "overview": "",
@@ -5965,8 +5988,8 @@
           "episode_count": 52,
           "vote_average": 0.0,
           "poster_path": "/kFtv8bl1s9ge15kJYcejioQfxUc.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/2349573/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Thomas+%26+Friends%3A+All+Engines+Go%21+season+1&cat=1002",
           "overview": "这个系列是对备受人们喜爱的《托马斯和他的朋友们》品牌进行的重塑，加入了更多轻松、欢乐的元素和挤压伸展动画效果。除了新的形象、感觉，以及朗朗上口的歌曲之外，托马斯和他的朋友们依旧是一群关系亲密、喜欢冒险的孩子，它们将在日常的运送工作中一起玩耍、探索、克服各种挑战。托马斯是这个团队的中心，而它的朋友们包括培西、妮娅、卡莱尔、达斯蒂，甚至还有使用著名的“哔哔”声帮助托马斯回到轨道上的狄塞尔。有时候托马斯会施展一些小魔法帮助陷入麻烦的伙伴们，他们总会在遇到困难的时候想出办法，大家齐心协力走出困境。每一集都会塑造鲜明的火车头角色形象，托马斯好奇心强，性子急，对拥有自己名字的铁路专线很是自豪；培西是个快乐的小家伙不像詹姆士那么好...",
           "douban_link_verified": false
@@ -5979,8 +6002,8 @@
           "episode_count": 52,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35638152/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Thomas+%26+Friends%3A+All+Engines+Go%21+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -5993,8 +6016,8 @@
           "episode_count": 26,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/26816156/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Thomas+%26+Friends%3A+All+Engines+Go%21+season+3&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6007,11 +6030,10 @@
           "episode_count": 26,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Thomas+%26+Friends%3A+All+Engines+Go%21+season+4&cat=1002",
           "overview": "",
-          "douban_link_last_checked": "2025-08-11T01:55:29+08:00",
           "douban_link_verified": false
         }
       ]
@@ -6558,11 +6580,11 @@
           "episode_count": 9,
           "vote_average": 6.8,
           "poster_path": "/zgVzCFhXe6K7W3WCWHlydGCvKqJ.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/35334469/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Would+I+Lie+to+You%3F+season+8&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 9 季",
@@ -6572,8 +6594,8 @@
           "episode_count": 9,
           "vote_average": 7.0,
           "poster_path": "/gDLqbesYsYBnfsNpD6b2W9QEZXo.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/5447436/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Would+I+Lie+to+You%3F+season+9&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6670,11 +6692,11 @@
           "episode_count": 11,
           "vote_average": 7.2,
           "poster_path": null,
-          "douban_link_google": "https://m.douban.com/movie/subject/5447436/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Would+I+Lie+to+You%3F+season+16&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 17 季",
@@ -6836,8 +6858,8 @@
           "episode_count": 12,
           "vote_average": 0.0,
           "poster_path": "/5X7e3bisyiIWs3NcqVc6ThxZe1f.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+1&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6864,8 +6886,8 @@
           "episode_count": 11,
           "vote_average": 0.0,
           "poster_path": "/jwA9nW91j8P6gZqVwej1Cq8Bs9s.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+3&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6878,8 +6900,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": "/xwZVy0c9j1zStSkCHoFZHUKnKF.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+4&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6892,8 +6914,8 @@
           "episode_count": 11,
           "vote_average": 0.0,
           "poster_path": "/z68cNgug6yhx2NJeAJcYiUwbMjE.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+5&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6906,8 +6928,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+6&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6920,8 +6942,8 @@
           "episode_count": 12,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+7&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6934,8 +6956,8 @@
           "episode_count": 12,
           "vote_average": 0.0,
           "poster_path": "/bQFUkrCzlIZIkwG5Fmp5dGaHpHT.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+8&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6962,8 +6984,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+10&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6976,8 +6998,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/25986291/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+11&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -6990,11 +7012,11 @@
           "episode_count": 9,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+12&cat=1002",
           "overview": "",
-          "douban_link_verified": false,
-          "douban_rating": ""
+          "douban_rating": null,
+          "douban_link_verified": false
         },
         {
           "name": "第 13 季",
@@ -7004,8 +7026,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+13&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -7018,8 +7040,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+14&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -7032,8 +7054,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": "/2nfbyvyHj0mSiyPBAxcnGxmwrfz.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+15&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -7046,8 +7068,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": "/5ZORMMl2FTzpIMNPVnbYXRj4Iue.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+16&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -7074,8 +7096,8 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": "/f1L2dmf8Kf41svjqWBdJlk1k9PZ.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+18&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -7088,8 +7110,8 @@
           "episode_count": 8,
           "vote_average": 0.0,
           "poster_path": "/8VKvwNifXBEYxcrUFBA7x93odFM.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34908008/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+League+of+Their+Own+season+19&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -7841,8 +7863,8 @@
           "episode_count": 6,
           "vote_average": 0.0,
           "poster_path": "/8754MSxLIVkc3BEPPPAljVRQMga.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/27163287/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Protection+season+1&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9089,8 +9111,8 @@
           "episode_count": 6,
           "vote_average": 0.0,
           "poster_path": "/v2257XBPIx07j6gFJeCt6JPvr2B.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/30284910/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Gone+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9361,8 +9383,8 @@
           "episode_count": 14,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/26957989/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9375,8 +9397,8 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/10756483/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+3&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9389,8 +9411,8 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/2171019/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+4&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9403,8 +9425,8 @@
           "episode_count": 24,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/5414534/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+5&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9417,8 +9439,8 @@
           "episode_count": 24,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/3153447/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+6&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9431,8 +9453,8 @@
           "episode_count": 24,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/34785017/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+7&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9445,10 +9467,10 @@
           "episode_count": 24,
           "vote_average": 0.0,
           "poster_path": null,
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+8&cat=1002",
           "overview": "",
-          "douban_link_last_checked": "2025-08-11T03:03:25+08:00",
-          "douban_rating": "",
           "douban_link_verified": false
         },
         {
@@ -9459,8 +9481,8 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/4149160/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+9&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -9473,10 +9495,10 @@
           "episode_count": 20,
           "vote_average": 0.0,
           "poster_path": null,
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+10&cat=1002",
           "overview": "",
-          "douban_link_last_checked": "2025-08-11T03:03:41+08:00",
-          "douban_rating": "",
           "douban_link_verified": false
         },
         {
@@ -9487,11 +9509,10 @@
           "episode_count": 10,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+11&cat=1002",
           "overview": "",
-          "douban_link_last_checked": "2025-08-11T03:03:50+08:00",
           "douban_link_verified": false
         },
         {
@@ -9506,7 +9527,7 @@
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dumping+Ground+season+12&cat=1002",
           "overview": "",
           "douban_rating": "",
-          "douban_link_last_checked": "2025-08-11T03:03:58+08:00",
+          "douban_link_last_checked": "2025-08-24T00:31:06+08:00",
           "douban_link_verified": false
         }
       ]
@@ -9773,8 +9794,8 @@
           "episode_count": 6,
           "vote_average": 7.0,
           "poster_path": "/4AUbCdE6TtIeuqVEk1LVFxH5tKY.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/30464268/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Curfew+season+1&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10035,8 +10056,8 @@
           "episode_count": 6,
           "vote_average": 0.0,
           "poster_path": "/yy9Rxc0jWAUEOn9idWeRPfYPAle.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36069280/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Cleaner+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10283,9 +10304,12 @@
           "name": "第 7 季",
           "overview": "",
           "poster_path": null,
+          "douban_link_google": "https://m.douban.com/movie/subject/36936798/",
           "season_number": 7,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Brassic+season+7&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Brassic+season+7&cat=1002",
+          "douban_link_verified": true,
+          "douban_rating": null
         }
       ]
     },
@@ -10522,8 +10546,8 @@
           "episode_count": 6,
           "vote_average": 0.0,
           "poster_path": "/14GtgdULUgXWIDsDxYh9xEa5Bhi.jpg",
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/36982260/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Wives+season+1&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10601,8 +10625,8 @@
           "episode_count": 3,
           "vote_average": 10.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10615,8 +10639,8 @@
           "episode_count": 3,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+3&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10629,8 +10653,8 @@
           "episode_count": 3,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+4&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10643,8 +10667,8 @@
           "episode_count": 3,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/37433733",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+5&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10657,8 +10681,8 @@
           "episode_count": 1,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+6&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10671,8 +10695,8 @@
           "episode_count": 3,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/10555304/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+7&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10685,8 +10709,8 @@
           "episode_count": 1,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+8&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10699,8 +10723,8 @@
           "episode_count": 1,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+9&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10713,8 +10737,8 @@
           "episode_count": 3,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+10&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10727,8 +10751,8 @@
           "episode_count": 1,
           "vote_average": 0.0,
           "poster_path": null,
-          "douban_rating": "",
-          "douban_link_google": "https://m.douban.com/movie/subject/35884105/",
+          "douban_rating": null,
+          "douban_link_google": null,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Cocomelon+season+11&cat=1002",
           "overview": "",
           "douban_link_verified": false
@@ -10817,9 +10841,12 @@
           "name": "第 3 季",
           "overview": "",
           "poster_path": null,
+          "douban_link_google": null,
           "season_number": 3,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Ridley+season+3&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Ridley+season+3&cat=1002",
+          "douban_rating": null,
+          "douban_link_verified": false
         }
       ]
     },
@@ -10957,7 +10984,7 @@
           "episode_count": 4,
           "vote_average": 8.0,
           "poster_path": "/hZBcxvm7ngNR4WZVNrokuDYsEkW.jpg",
-          "douban_rating": null,
+          "douban_rating": "8.1",
           "douban_link_google": "https://m.douban.com/movie/subject/36532829/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Funny+Woman+season+2&cat=1002",
           "overview": "",
