@@ -216,7 +216,8 @@ document.addEventListener('DOMContentLoaded', () => {
             selectedNetworks = [];
 
             // Reset UI for other filters
-            document.querySelectorAll('.filters-navigation .genre-tag.active').forEach(tag => {
+            // Clear all active tags from all filter containers except region filter
+            document.querySelectorAll('.genre-tag.active').forEach(tag => {
                 if (!tag.closest('#region-filter-container')) {
                     tag.classList.remove('active', 'multiselect-tick');
                 }
