@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Step 2: Silently fetch the complete US and GB data in the background
                 loadCompleteData('us', 'json/tv_us_complete.json'); // This will assimilate and cache
-                loadCompleteData('gb', 'json/tv_gb.json');      // This will just cache
+                loadCompleteData('gb', 'json/tv_gb_complete.json');      // This will just cache
             }
 
         } catch (error) {
