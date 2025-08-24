@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2025-08-24T09:03:50+08:00",
+    "last_updated": "2025-08-25T06:12:56+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2025-08-25T06:12:56+08:00",
+        "summary": "数据更新完成：更新了 566 部正在制作中的剧集信息"
+      },
+      {
+        "time": "2025-08-24T20:29:11+08:00",
+        "summary": "执行豆瓣链接验证脚本。本次验证成功 2 个链接，失败 265 个链接。"
+      },
       {
         "time": "2025-08-24T09:03:50+08:00",
         "summary": "数据更新完成：更新了 566 部正在制作中的剧集信息"
@@ -32,12 +40,15 @@
         "summary": "更新了 564 部正在制作中的剧集信息"
       }
     ],
-    "last_refreshed": "2025-08-24T09:03:50+08:00",
+    "last_refreshed": "2025-08-25T06:12:56+08:00",
     "last_fetched": "2025-08-23T06:52:10+00:00",
     "total_shows": 3410,
     "total_seasons": 8764,
     "earliest_show_date": "2000-01-01",
-    "latest_show_date": "2025-08-22"
+    "latest_show_date": "2025-08-22",
+    "total_douban_links": 8153,
+    "verified_douban_links": 5863,
+    "verified_no_rating_links": 1599
   },
   "shows": [
     {
@@ -71,7 +82,7 @@
         }
       ],
       "homepage": "https://www.syfy.com/the-ark",
-      "popularity": 6.373,
+      "popularity": 6.5666,
       "number_of_seasons": 2,
       "number_of_episodes": 24,
       "first_air_date": "2023-02-01",
@@ -108,7 +119,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36467841/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Ark+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:18:35+08:00"
         },
         {
           "name": "第 3 季",
@@ -142,7 +154,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.63,
-      "vote_count": 1439,
+      "vote_count": 1440,
       "origin_country": [
         "US"
       ],
@@ -155,7 +167,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81037371",
-      "popularity": 11.2664,
+      "popularity": 11.1378,
       "number_of_seasons": 5,
       "number_of_episodes": 40,
       "first_air_date": "2020-10-02",
@@ -256,7 +268,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.23,
-      "vote_count": 2015,
+      "vote_count": 2017,
       "origin_country": [
         "US"
       ],
@@ -269,7 +281,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CN4HV16N",
-      "popularity": 36.9641,
+      "popularity": 38.5336,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-04-10",
@@ -335,8 +347,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.4,
-      "vote_count": 576,
+      "vote_average": 7.35,
+      "vote_count": 578,
       "origin_country": [
         "US"
       ],
@@ -349,7 +361,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/percy-jackson-and-the-olympians/ql33aq42HBdr",
-      "popularity": 8.7542,
+      "popularity": 8.3837,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-12-19",
@@ -435,7 +447,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81423472",
-      "popularity": 3.559,
+      "popularity": 3.3943,
       "number_of_seasons": 5,
       "number_of_episodes": 18,
       "first_air_date": "2023-11-17",
@@ -503,7 +515,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37433733",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=CoComelon+Lane+season+5&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:18:39+08:00"
         },
         {
           "name": "第 6 季",
@@ -542,7 +555,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.6,
-      "vote_count": 18628,
+      "vote_count": 18634,
       "origin_country": [
         "US"
       ],
@@ -681,7 +694,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81557031",
-      "popularity": 10.8292,
+      "popularity": 10.2743,
       "number_of_seasons": 4,
       "number_of_episodes": 31,
       "first_air_date": "2024-05-24",
@@ -718,7 +731,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36920053/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Jurassic+World%3A+Chaos+Theory+season+2&cat=1002",
           "overview": "新恐龙、新威胁、新盟友。为了找寻答案并揪出那个神出鬼没的恶棍，冒险营展开了跨越全球的历险旅程。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:18:43+08:00"
         },
         {
           "name": "第 3 季",
@@ -731,7 +745,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37282261/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Jurassic+World%3A+Chaos+Theory+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:18:47+08:00"
         },
         {
           "name": "第 4 季",
@@ -765,8 +780,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.5,
-      "vote_count": 133,
+      "vote_average": 7.52,
+      "vote_count": 134,
       "origin_country": [
         "US"
       ],
@@ -779,7 +794,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81677257",
-      "popularity": 7.0711,
+      "popularity": 6.5539,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-11-21",
@@ -814,7 +829,8 @@
           "poster_path": null,
           "season_number": 2,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+Man+on+the+Inside+season+2&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=A+Man+on+the+Inside+season+2&cat=1002",
+          "douban_link_verified": false
         }
       ]
     },
@@ -852,7 +868,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81009946",
-      "popularity": 9.7599,
+      "popularity": 9.7971,
       "number_of_seasons": 12,
       "number_of_episodes": 77,
       "first_air_date": "2021-01-05",
@@ -988,7 +1004,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36825423/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Gabby%27s+Dollhouse+season+9&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:18:51+08:00"
         },
         {
           "name": "第 10 季",
@@ -1002,7 +1019,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36991542/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Gabby%27s+Dollhouse+season+10&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:18:55+08:00"
         },
         {
           "name": "第 11 季",
@@ -1046,8 +1064,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.97,
-      "vote_count": 251,
+      "vote_average": 7.96,
+      "vote_count": 252,
       "origin_country": [
         "US"
       ],
@@ -1120,7 +1138,7 @@
       ],
       "type": "Scripted",
       "vote_average": 6.3,
-      "vote_count": 60,
+      "vote_count": 61,
       "origin_country": [
         "US"
       ],
@@ -1133,7 +1151,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.6vwg3ce7ovsexa3a6r7f6qk49",
-      "popularity": 6.6613,
+      "popularity": 7.0648,
       "number_of_seasons": 2,
       "number_of_episodes": 11,
       "first_air_date": "2024-03-19",
@@ -1168,7 +1186,8 @@
           "poster_path": null,
           "season_number": 2,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Palm+Royale+season+2&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Palm+Royale+season+2&cat=1002",
+          "douban_link_verified": false
         }
       ]
     },
@@ -1203,7 +1222,7 @@
         }
       ],
       "homepage": "https://www.starz.com/us/en/series/power-book-iv-force/62261",
-      "popularity": 4.7953,
+      "popularity": 6.6483,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2022-02-06",
@@ -1286,7 +1305,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/happys-place",
-      "popularity": 1.4516,
+      "popularity": 2.0963,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2024-10-18",
@@ -1310,7 +1329,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36755139/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Happy%27s+Place+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:18:58+08:00"
         },
         {
           "air_date": "2025-11-07",
@@ -1354,7 +1374,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/st-denis-medical",
-      "popularity": 2.7566,
+      "popularity": 2.7334,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2024-11-12",
@@ -1421,7 +1441,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.69,
-      "vote_count": 1321,
+      "vote_count": 1322,
       "origin_country": [
         "US"
       ],
@@ -1434,7 +1454,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CLMPQTJ2",
-      "popularity": 20.0,
+      "popularity": 21.5989,
       "number_of_seasons": 2,
       "number_of_episodes": 9,
       "first_air_date": "2024-01-18",
@@ -1496,8 +1516,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.2,
-      "vote_count": 417,
+      "vote_average": 7.15,
+      "vote_count": 419,
       "origin_country": [
         "JP",
         "US"
@@ -1511,7 +1531,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/star-wars-visions/5AiiTRJ7OaKg",
-      "popularity": 7.5625,
+      "popularity": 7.2198,
       "number_of_seasons": 3,
       "number_of_episodes": 27,
       "first_air_date": "2021-09-22",
@@ -1583,8 +1603,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.85,
-      "vote_count": 510,
+      "vote_average": 7.84,
+      "vote_count": 512,
       "origin_country": [
         "US"
       ],
@@ -1598,7 +1618,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/mayor-of-kingstown/",
-      "popularity": 18.6273,
+      "popularity": 18.1025,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2021-11-14",
@@ -1684,8 +1704,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.52,
-      "vote_count": 186,
+      "vote_average": 7.53,
+      "vote_count": 187,
       "origin_country": [
         "US"
       ],
@@ -1698,7 +1718,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81591296",
-      "popularity": 5.2559,
+      "popularity": 5.7632,
       "number_of_seasons": 2,
       "number_of_episodes": 11,
       "first_air_date": "2024-09-26",
@@ -1755,8 +1775,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.55,
-      "vote_count": 208,
+      "vote_average": 7.53,
+      "vote_count": 209,
       "origin_country": [
         "US"
       ],
@@ -1770,7 +1790,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/tracker/",
-      "popularity": 17.1452,
+      "popularity": 17.0027,
       "number_of_seasons": 3,
       "number_of_episodes": 34,
       "first_air_date": "2024-02-11",
@@ -1808,7 +1828,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36796930/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Tracker+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:02+08:00"
         },
         {
           "name": "第 3 季",
@@ -1842,8 +1863,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.29,
-      "vote_count": 136,
+      "vote_average": 8.28,
+      "vote_count": 137,
       "origin_country": [
         "US"
       ],
@@ -1857,7 +1878,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/fire-country",
-      "popularity": 9.9772,
+      "popularity": 9.8827,
       "number_of_seasons": 4,
       "number_of_episodes": 54,
       "first_air_date": "2022-10-07",
@@ -1895,7 +1916,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36173882/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Fire+Country+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:06+08:00"
         },
         {
           "name": "第 3 季",
@@ -1909,7 +1931,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36809574/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Fire+Country+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:10+08:00"
         },
         {
           "name": "第 4 季",
@@ -1954,7 +1977,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/georgie-and-mandys-first-marriage",
-      "popularity": 7.9649,
+      "popularity": 9.6121,
       "number_of_seasons": 2,
       "number_of_episodes": 23,
       "first_air_date": "2024-10-17",
@@ -2023,7 +2046,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/ghosts/",
-      "popularity": 22.2733,
+      "popularity": 19.4632,
       "number_of_seasons": 5,
       "number_of_episodes": 73,
       "first_air_date": "2021-10-07",
@@ -2127,8 +2150,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.22,
-      "vote_count": 2652,
+      "vote_average": 8.2,
+      "vote_count": 2653,
       "origin_country": [
         "US"
       ],
@@ -2136,7 +2159,7 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         },
@@ -2148,7 +2171,7 @@
         }
       ],
       "homepage": "https://abc.com/shows/911",
-      "popularity": 37.0995,
+      "popularity": 38.8833,
       "number_of_seasons": 9,
       "number_of_episodes": 142,
       "first_air_date": "2018-01-03",
@@ -2301,7 +2324,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.2,
-      "vote_count": 10603,
+      "vote_count": 10604,
       "origin_country": [
         "US"
       ],
@@ -2309,13 +2332,13 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         }
       ],
       "homepage": "https://abc.com/show/b7d90f97-dbb2-4ab5-b141-f9cbeae53581",
-      "popularity": 141.2155,
+      "popularity": 144.7341,
       "number_of_seasons": 22,
       "number_of_episodes": 450,
       "first_air_date": "2005-03-27",
@@ -2653,8 +2676,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.53,
-      "vote_count": 326,
+      "vote_average": 7.54,
+      "vote_count": 328,
       "origin_country": [
         "US"
       ],
@@ -2667,7 +2690,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81288983",
-      "popularity": 5.9736,
+      "popularity": 6.2391,
       "number_of_seasons": 3,
       "number_of_episodes": 22,
       "first_air_date": "2023-04-20",
@@ -2739,8 +2762,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.61,
-      "vote_count": 35,
+      "vote_average": 7.43,
+      "vote_count": 36,
       "origin_country": [
         "US"
       ],
@@ -2754,7 +2777,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/ncis-origins/",
-      "popularity": 5.9472,
+      "popularity": 6.6139,
       "number_of_seasons": 2,
       "number_of_episodes": 19,
       "first_air_date": "2024-10-14",
@@ -2909,7 +2932,7 @@
         }
       ],
       "homepage": "http://www.cbs.com/shows/watson",
-      "popularity": 5.152,
+      "popularity": 5.8265,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2025-01-26",
@@ -2933,7 +2956,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36111166/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Watson+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:14+08:00"
         },
         {
           "name": "第 2 季",
@@ -2971,8 +2995,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.8,
-      "vote_count": 549,
+      "vote_average": 7.82,
+      "vote_count": 550,
       "origin_country": [
         "US"
       ],
@@ -2986,7 +3010,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/solar-opposites-f089664b-1a87-433b-86a5-24e7da5a246a",
-      "popularity": 8.3769,
+      "popularity": 8.8918,
       "number_of_seasons": 6,
       "number_of_episodes": 59,
       "first_air_date": "2020-05-08",
@@ -3111,7 +3135,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/the-neighborhood",
-      "popularity": 10.4987,
+      "popularity": 9.9152,
       "number_of_seasons": 8,
       "number_of_episodes": 136,
       "first_air_date": "2018-10-01",
@@ -3257,7 +3281,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.91,
+      "vote_average": 7.9,
       "vote_count": 852,
       "origin_country": [
         "US"
@@ -3415,7 +3439,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.61,
-      "vote_count": 80,
+      "vote_count": 81,
       "origin_country": [
         "US"
       ],
@@ -3429,7 +3453,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/matlock/",
-      "popularity": 7.0339,
+      "popularity": 7.359,
       "number_of_seasons": 2,
       "number_of_episodes": 21,
       "first_air_date": "2024-09-22",
@@ -3616,7 +3640,7 @@
         }
       ],
       "homepage": "https://critrole.com/",
-      "popularity": 10.8093,
+      "popularity": 13.1812,
       "number_of_seasons": 4,
       "number_of_episodes": 381,
       "first_air_date": "2015-03-12",
@@ -3696,8 +3720,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.16,
-      "vote_count": 44,
+      "vote_average": 6.11,
+      "vote_count": 45,
       "origin_country": [
         "US"
       ],
@@ -3705,7 +3729,7 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         }
@@ -3774,13 +3798,13 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         }
       ],
       "homepage": "https://abc.com/shows/abbott-elementary",
-      "popularity": 9.6106,
+      "popularity": 9.7058,
       "number_of_seasons": 5,
       "number_of_episodes": 72,
       "first_air_date": "2021-12-07",
@@ -3876,7 +3900,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.29,
+      "vote_average": 8.3,
       "vote_count": 1199,
       "origin_country": [
         "US"
@@ -4027,7 +4051,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36353257/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Chicago+Med+season+9&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:18+08:00"
         },
         {
           "name": "第 10 季",
@@ -4041,7 +4066,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36823420/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Chicago+Med+season+10&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:22+08:00"
         },
         {
           "air_date": "2025-10-01",
@@ -4074,7 +4100,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.41,
-      "vote_count": 2482,
+      "vote_count": 2483,
       "origin_country": [
         "US"
       ],
@@ -4313,7 +4339,7 @@
         }
       ],
       "homepage": "https://www.fox.com/bobs-burgers/",
-      "popularity": 28.7122,
+      "popularity": 27.4986,
       "number_of_seasons": 16,
       "number_of_episodes": 299,
       "first_air_date": "2011-01-09",
@@ -4533,7 +4559,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36220860/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Bob%27s+Burgers+season+15&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:26+08:00"
         },
         {
           "name": "第 16 季",
@@ -4586,7 +4613,7 @@
         }
       ],
       "homepage": "https://www.fox.com/krapopolis/",
-      "popularity": 6.8761,
+      "popularity": 6.4965,
       "number_of_seasons": 3,
       "number_of_episodes": 46,
       "first_air_date": "2023-09-24",
@@ -4623,7 +4650,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36290910/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Krapopolis+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:30+08:00"
         },
         {
           "air_date": "2025-09-28",
@@ -4655,13 +4683,13 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         }
       ],
       "homepage": "https://abc.com/shows/celebrity-wheel-of-fortune",
-      "popularity": 3.4405,
+      "popularity": 3.803,
       "number_of_seasons": 6,
       "number_of_episodes": 56,
       "first_air_date": "2021-01-07",
@@ -4771,8 +4799,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.5,
-      "vote_count": 36,
+      "vote_average": 7.43,
+      "vote_count": 37,
       "origin_country": [
         "US"
       ],
@@ -4786,7 +4814,7 @@
         }
       ],
       "homepage": "https://www.fox.com/detail/series/SER003214BDSJ/doc",
-      "popularity": 9.0084,
+      "popularity": 9.121,
       "number_of_seasons": 2,
       "number_of_episodes": 11,
       "first_air_date": "2025-01-07",
@@ -4810,7 +4838,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36344524/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Doc+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:33+08:00"
         },
         {
           "name": "第 2 季",
@@ -4866,7 +4895,7 @@
         }
       ],
       "homepage": "https://www.fox.com/murder-in-a-small-town",
-      "popularity": 3.7761,
+      "popularity": 4.1376,
       "number_of_seasons": 2,
       "number_of_episodes": 9,
       "first_air_date": "2024-09-24",
@@ -4938,7 +4967,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81662216",
-      "popularity": 9.0425,
+      "popularity": 4.0858,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2025-04-07",
@@ -4962,7 +4991,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37295113/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Blippi%27s+Job+Show+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:36+08:00"
         },
         {
           "air_date": "2025-09-22",
@@ -5006,7 +5036,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/brilliant-minds",
-      "popularity": 5.7932,
+      "popularity": 5.3279,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2024-09-23",
@@ -5069,7 +5099,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.34,
-      "vote_count": 2205,
+      "vote_count": 2207,
       "origin_country": [
         "US"
       ],
@@ -5083,7 +5113,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/tulsa-king",
-      "popularity": 40.9814,
+      "popularity": 40.4444,
       "number_of_seasons": 3,
       "number_of_episodes": 29,
       "first_air_date": "2022-11-13",
@@ -5204,7 +5234,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36961949/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Reasonable+Doubt+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:40+08:00"
         },
         {
           "name": "第 3 季",
@@ -5242,8 +5273,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.02,
-      "vote_count": 289,
+      "vote_average": 8.03,
+      "vote_count": 291,
       "origin_country": [
         "US"
       ],
@@ -5251,13 +5282,13 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         }
       ],
       "homepage": "https://abc.com/show/a9a37c58-9d88-452f-9ac6-0a95e5a4176e",
-      "popularity": 23.6351,
+      "popularity": 33.8298,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-09-17",
@@ -5320,7 +5351,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.8,
-      "vote_count": 1080,
+      "vote_count": 1083,
       "origin_country": [
         "US"
       ],
@@ -5333,7 +5364,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CBFTRGPZ",
-      "popularity": 20.1564,
+      "popularity": 18.9055,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-09-28",
@@ -5400,7 +5431,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m",
-      "popularity": 23.7666,
+      "popularity": 23.6929,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2019-11-01",
@@ -5492,7 +5523,7 @@
         }
       ],
       "homepage": "https://www.fox.com/name-that-tune/",
-      "popularity": 2.6019,
+      "popularity": 2.6457,
       "number_of_seasons": 5,
       "number_of_episodes": 54,
       "first_air_date": "2021-01-06",
@@ -5609,7 +5640,7 @@
         }
       ],
       "homepage": "https://disneynow.com/show/16d9c912-7ba3-4b9b-8d6f-1246307b0cb6",
-      "popularity": 3.737,
+      "popularity": 3.8696,
       "number_of_seasons": 2,
       "number_of_episodes": 23,
       "first_air_date": "2024-10-29",
@@ -5633,7 +5664,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36741720/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Wizards+Beyond+Waverly+Place+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:44+08:00"
         },
         {
           "air_date": "2025-09-12",
@@ -5677,7 +5709,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81764523",
-      "popularity": 9.512,
+      "popularity": 8.5524,
       "number_of_seasons": 2,
       "number_of_episodes": 24,
       "first_air_date": "2024-10-24",
@@ -5701,7 +5733,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36795362/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Beauty+in+Black+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:48+08:00"
         },
         {
           "name": "第 2 季",
@@ -5757,7 +5790,7 @@
         }
       ],
       "homepage": "https://spindlehorse.com/helluva-boss",
-      "popularity": 13.9796,
+      "popularity": 13.8749,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2020-10-31",
@@ -5833,8 +5866,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.5,
-      "vote_count": 1839,
+      "vote_average": 8.45,
+      "vote_count": 1840,
       "origin_country": [
         "US"
       ],
@@ -5848,7 +5881,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/only-murders-in-the-building-ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
-      "popularity": 15.5555,
+      "popularity": 15.1284,
       "number_of_seasons": 5,
       "number_of_episodes": 50,
       "first_air_date": "2021-08-31",
@@ -5967,7 +6000,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/the-walking-dead-daryl-dixon--1060742",
-      "popularity": 11.8985,
+      "popularity": 12.13,
       "number_of_seasons": 3,
       "number_of_episodes": 19,
       "first_air_date": "2023-09-10",
@@ -6059,7 +6092,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/mike-judges-beavis-and-butt-head/",
-      "popularity": 5.25,
+      "popularity": 5.7681,
       "number_of_seasons": 3,
       "number_of_episodes": 47,
       "first_air_date": "2022-08-04",
@@ -6127,8 +6160,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.8,
-      "vote_count": 263,
+      "vote_average": 7.81,
+      "vote_count": 264,
       "origin_country": [
         "US"
       ],
@@ -6141,7 +6174,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81426967",
-      "popularity": 14.143,
+      "popularity": 15.6281,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2023-12-07",
@@ -6174,7 +6207,7 @@
           "air_date": "2025-08-28",
           "episode_count": 1,
           "vote_average": 0.0,
-          "poster_path": null,
+          "poster_path": "/4o9ICW8TxzqiQXfEzyFytBumA2i.jpg",
           "douban_link_google": "https://m.douban.com/movie/subject/36697091/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=My+Life+with+the+Walter+Boys+season+2&cat=1002",
           "overview": "",
@@ -6216,7 +6249,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.40xdlw2jijoj95c3a6y2m3738",
-      "popularity": 2.8975,
+      "popularity": 2.4912,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2023-01-19",
@@ -6278,8 +6311,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.85,
-      "vote_count": 1269,
+      "vote_average": 7.9,
+      "vote_count": 1271,
       "origin_country": [
         "US"
       ],
@@ -6292,7 +6325,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0858ZPY17",
-      "popularity": 21.1552,
+      "popularity": 22.0767,
       "number_of_seasons": 4,
       "number_of_episodes": 29,
       "first_air_date": "2020-04-30",
@@ -6378,8 +6411,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.2,
-      "vote_count": 1027,
+      "vote_average": 7.15,
+      "vote_count": 1029,
       "origin_country": [
         "US"
       ],
@@ -6392,7 +6425,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-      "popularity": 70.281,
+      "popularity": 77.0857,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2021-10-21",
@@ -6444,7 +6477,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36707362/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Invasion+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:52+08:00"
         }
       ]
     },
@@ -6469,7 +6503,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.2,
-      "vote_count": 2867,
+      "vote_count": 2878,
       "origin_country": [
         "US"
       ],
@@ -6487,7 +6521,7 @@
         }
       ],
       "homepage": "https://www.hbomax.com/shows/peacemaker-2022/a939d96b-7ffb-4481-96f6-472838d104ca",
-      "popularity": 149.4831,
+      "popularity": 142.703,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2022-01-13",
@@ -6525,7 +6559,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35773267/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Peacemaker+season+2&cat=1002",
           "overview": "和平使者在平行时空中发现更加美好的世界后，不得不去面对伤痕累累的过去并主动掌控未来。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:56+08:00"
         }
       ]
     },
@@ -6560,7 +6595,7 @@
         }
       ],
       "homepage": "https://www.usanetwork.com/the-rainmaker",
-      "popularity": 10.8627,
+      "popularity": 11.5238,
       "number_of_seasons": 1,
       "number_of_episodes": 5,
       "first_air_date": "2025-08-15",
@@ -6581,7 +6616,8 @@
           "poster_path": "/q8l0lj20amBFi0SBs8NI9yJpaHq.jpg",
           "season_number": 1,
           "vote_average": 10.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Rainmaker+season+1&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Rainmaker+season+1&cat=1002",
+          "douban_link_verified": false
         }
       ]
     },
@@ -6661,7 +6697,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36876795/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Sausage+Party%3A+Foodtopia+season+2&cat=1002",
           "overview": "弗兰克、巴里和塞米被流放后不久，意外闯入了新食物城——一个对食物和人类而言都闪烁着光芒的乌托邦。但在这座城市光鲜亮丽的冰箱和灿烂笑容背后，却隐藏着一个足以颠覆整个有感知食物社会的黑暗秘密。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:19:59+08:00"
         }
       ]
     },
@@ -6681,8 +6718,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.7,
-      "vote_count": 50,
+      "vote_average": 7.65,
+      "vote_count": 51,
       "origin_country": [
         "US"
       ],
@@ -6695,7 +6732,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0FDK7VRFF",
-      "popularity": 106.0816,
+      "popularity": 100.8469,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-08-13",
@@ -6719,7 +6756,8 @@
           "vote_average": 8.8,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Butterfly+season+1&cat=1002",
           "douban_link_verified": true,
-          "douban_rating": null
+          "douban_rating": "6.0",
+          "last_douban_rating_fetch": "2025-08-24T20:20:03+08:00"
         }
       ]
     },
@@ -6739,8 +6777,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.86,
-      "vote_count": 225,
+      "vote_average": 7.8,
+      "vote_count": 232,
       "origin_country": [
         "US"
       ],
@@ -6760,7 +6798,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/alien-earth",
-      "popularity": 353.8469,
+      "popularity": 334.9768,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-08-12",
@@ -6804,8 +6842,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.3,
-      "vote_count": 6,
+      "vote_average": 6.86,
+      "vote_count": 7,
       "origin_country": [
         "CA",
         "US"
@@ -6844,7 +6882,8 @@
           "vote_average": 8.0,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Irish+Blood+season+1&cat=1002",
           "douban_link_verified": true,
-          "douban_rating": null
+          "douban_rating": null,
+          "last_douban_rating_fetch": "2025-08-24T20:20:07+08:00"
         }
       ]
     },
@@ -6883,7 +6922,7 @@
         }
       ],
       "homepage": "https://disneynow.com/show/2421314c-161d-45a3-be83-6f0f7b988632",
-      "popularity": 2.9888,
+      "popularity": 2.8965,
       "number_of_seasons": 1,
       "number_of_episodes": 20,
       "first_air_date": "2025-08-11",
@@ -6941,7 +6980,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 6.4899,
+      "popularity": 4.2163,
       "number_of_seasons": 1,
       "number_of_episodes": 20,
       "first_air_date": "2024-09-25",
@@ -6976,7 +7015,8 @@
           "poster_path": null,
           "season_number": 2,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Everybody+Still+Hates+Chris+season+2&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Everybody+Still+Hates+Chris+season+2&cat=1002",
+          "douban_link_verified": false
         }
       ]
     },
@@ -6992,8 +7032,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 9.42,
-      "vote_count": 27,
+      "vote_average": 9.17,
+      "vote_count": 29,
       "origin_country": [
         "US"
       ],
@@ -7007,11 +7047,11 @@
         }
       ],
       "homepage": "https://www.starz.com/us/en/series/outlander-blood-of-my-blood/69342",
-      "popularity": 56.1338,
+      "popularity": 57.6071,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-08-08",
-      "last_air_date": "2025-08-15",
+      "last_air_date": "2025-08-22",
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
@@ -7031,7 +7071,8 @@
           "vote_average": 6.5,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Outlander%3A+Blood+of+My+Blood+season+1&cat=1002",
           "douban_link_verified": true,
-          "douban_rating": null
+          "douban_rating": null,
+          "last_douban_rating_fetch": "2025-08-24T20:20:10+08:00"
         }
       ]
     },
@@ -7056,7 +7097,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.4,
-      "vote_count": 9481,
+      "vote_count": 9489,
       "origin_country": [
         "US"
       ],
@@ -7069,7 +7110,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81231974",
-      "popularity": 402.137,
+      "popularity": 391.7456,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2022-11-23",
@@ -7145,7 +7186,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/the-proud-family-louder-and-prouder/3e1FFRyoPEOs",
-      "popularity": 3.8087,
+      "popularity": 3.8589,
       "number_of_seasons": 3,
       "number_of_episodes": 29,
       "first_air_date": "2022-02-23",
@@ -7197,7 +7238,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37418539",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Proud+Family%3A+Louder+and+Prouder+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:13+08:00"
         }
       ]
     },
@@ -7227,7 +7269,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.y7bc18x7co813l8i2tlsyb4l",
-      "popularity": 33.4184,
+      "popularity": 32.3854,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2023-05-23",
@@ -7265,7 +7307,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36689790/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Platonic+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:17+08:00"
         }
       ]
     },
@@ -7286,7 +7329,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.82,
-      "vote_count": 432,
+      "vote_count": 433,
       "origin_country": [
         "US"
       ],
@@ -7337,7 +7380,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36679965/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Twisted+Metal+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:21+08:00"
         }
       ]
     },
@@ -7371,7 +7415,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.3czcagetjq31vvbgkkyp1xiao",
-      "popularity": 5.439,
+      "popularity": 5.514,
       "number_of_seasons": 4,
       "number_of_episodes": 35,
       "first_air_date": "2020-12-04",
@@ -7437,7 +7481,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37441988/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Stillwater+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:24+08:00"
         }
       ]
     },
@@ -7467,7 +7512,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81752004",
-      "popularity": 3.837,
+      "popularity": 3.6879,
       "number_of_seasons": 1,
       "number_of_episodes": 16,
       "first_air_date": "2025-07-31",
@@ -7520,7 +7565,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.54,
-      "vote_count": 1608,
+      "vote_count": 1609,
       "origin_country": [
         "DE",
         "US",
@@ -7652,7 +7697,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35797539/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Amazing+World+of+Gumball+season+7&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:28+08:00"
         }
       ]
     },
@@ -7687,7 +7733,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/digman",
-      "popularity": 3.6112,
+      "popularity": 3.5593,
       "number_of_seasons": 2,
       "number_of_episodes": 9,
       "first_air_date": "2023-03-22",
@@ -7724,7 +7770,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37408219",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Digman%21+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:31+08:00"
         }
       ]
     },
@@ -7758,7 +7805,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.8xrkg9zywke7g6a9ahmvpr3l",
-      "popularity": 22.827,
+      "popularity": 22.6525,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2021-10-08",
@@ -7810,7 +7857,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36224178/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Acapulco+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:35+08:00"
         },
         {
           "name": "第 4 季",
@@ -7824,7 +7872,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37019478/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Acapulco+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:38+08:00"
         }
       ]
     },
@@ -7844,8 +7893,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.67,
-      "vote_count": 27,
+      "vote_average": 6.57,
+      "vote_count": 28,
       "origin_country": [
         "US"
       ],
@@ -7917,11 +7966,11 @@
         }
       ],
       "homepage": "http://pbskids.org/dinosaurtrain",
-      "popularity": 8.7282,
+      "popularity": 8.7965,
       "number_of_seasons": 6,
       "number_of_episodes": 206,
       "first_air_date": "2009-09-07",
-      "last_air_date": "2025-07-25",
+      "last_air_date": "2025-08-22",
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
@@ -8032,7 +8081,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.08,
-      "vote_count": 645,
+      "vote_count": 647,
       "origin_country": [
         "US"
       ],
@@ -8046,11 +8095,11 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds",
-      "popularity": 40.0862,
+      "popularity": 38.9785,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2022-05-05",
-      "last_air_date": "2025-08-14",
+      "last_air_date": "2025-08-21",
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
@@ -8098,7 +8147,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36340848/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Star+Trek%3A+Strange+New+Worlds+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:42+08:00"
         }
       ]
     },
@@ -8119,7 +8169,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.43,
-      "vote_count": 222,
+      "vote_count": 225,
       "origin_country": [
         "US"
       ],
@@ -8132,7 +8182,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81575641",
-      "popularity": 32.4,
+      "popularity": 30.5646,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-07-17",
@@ -8186,8 +8236,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.2,
-      "vote_count": 903,
+      "vote_average": 8.17,
+      "vote_count": 907,
       "origin_country": [
         "US"
       ],
@@ -8200,7 +8250,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B09NF5J6JX",
-      "popularity": 218.2517,
+      "popularity": 216.9115,
       "number_of_seasons": 3,
       "number_of_episodes": 26,
       "first_air_date": "2022-06-16",
@@ -8287,7 +8337,7 @@
         }
       ],
       "homepage": "https://www.bet.com/shows/tyler-perrys-sistas",
-      "popularity": 11.6358,
+      "popularity": 11.5236,
       "number_of_seasons": 9,
       "number_of_episodes": 182,
       "first_air_date": "2019-10-23",
@@ -8450,8 +8500,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.9,
-      "vote_count": 144,
+      "vote_average": 8.94,
+      "vote_count": 146,
       "origin_country": [
         "US"
       ],
@@ -8465,7 +8515,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/dexter-resurrection/",
-      "popularity": 89.1327,
+      "popularity": 87.891,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-07-13",
@@ -8509,8 +8559,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.1,
-      "vote_count": 47,
+      "vote_average": 7.96,
+      "vote_count": 52,
       "origin_country": [
         "US"
       ],
@@ -8524,7 +8574,7 @@
         }
       ],
       "homepage": "https://www.mgmplus.com/series/the-institute",
-      "popularity": 38.2186,
+      "popularity": 38.3817,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-07-13",
@@ -8545,7 +8595,8 @@
           "poster_path": "/7JXZdWifaa6wL0XLRi0GJOlOA8y.jpg",
           "season_number": 1,
           "vote_average": 8.3,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Institute+season+1&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Institute+season+1&cat=1002",
+          "douban_link_verified": false
         }
       ]
     },
@@ -8580,7 +8631,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81671844",
-      "popularity": 5.7803,
+      "popularity": 6.364,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-07-10",
@@ -8624,8 +8675,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.75,
-      "vote_count": 1465,
+      "vote_average": 7.8,
+      "vote_count": 1466,
       "origin_country": [
         "US"
       ],
@@ -8638,7 +8689,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.5983fipzqbicvrve6jdfep4x3",
-      "popularity": 76.6298,
+      "popularity": 77.1168,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2021-09-23",
@@ -8711,7 +8762,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.26,
-      "vote_count": 96,
+      "vote_count": 97,
       "origin_country": [
         "US"
       ],
@@ -8724,7 +8775,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0F58T7KW7",
-      "popularity": 23.6488,
+      "popularity": 24.0633,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-07-09",
@@ -8765,7 +8816,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.28,
-      "vote_count": 1195,
+      "vote_count": 1196,
       "origin_country": [
         "US"
       ],
@@ -8785,7 +8836,7 @@
         }
       ],
       "homepage": "http://www.fxnetworks.com/shows/its-always-sunny-in-philadelphia",
-      "popularity": 45.4009,
+      "popularity": 53.1337,
       "number_of_seasons": 17,
       "number_of_episodes": 177,
       "first_air_date": "2005-08-04",
@@ -9033,7 +9084,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35287015/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=It%27s+Always+Sunny+in+Philadelphia+season+17&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:46+08:00"
         }
       ]
     },
@@ -9063,7 +9115,7 @@
         }
       ],
       "homepage": "http://youtube.com/rhettandlink2",
-      "popularity": 14.3724,
+      "popularity": 14.6517,
       "number_of_seasons": 28,
       "number_of_episodes": 3168,
       "first_air_date": "2012-01-09",
@@ -9512,7 +9564,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.91,
-      "vote_count": 2347,
+      "vote_count": 2348,
       "origin_country": [
         "US"
       ],
@@ -9525,7 +9577,7 @@
         }
       ],
       "homepage": "https://thesandman.com",
-      "popularity": 31.9022,
+      "popularity": 32.9084,
       "number_of_seasons": 2,
       "number_of_episodes": 23,
       "first_air_date": "2022-08-05",
@@ -9602,7 +9654,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/dora",
-      "popularity": 3.0299,
+      "popularity": 2.9763,
       "number_of_seasons": 3,
       "number_of_episodes": 78,
       "first_air_date": "2024-04-12",
@@ -9692,7 +9744,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0F4R1QJMY",
-      "popularity": 46.6111,
+      "popularity": 48.5473,
       "number_of_seasons": 1,
       "number_of_episodes": 13,
       "first_air_date": "2025-06-25",
@@ -9736,8 +9788,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.16,
-      "vote_count": 1444,
+      "vote_average": 8.15,
+      "vote_count": 1448,
       "origin_country": [
         "US"
       ],
@@ -9751,7 +9803,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/the-bear",
-      "popularity": 22.2431,
+      "popularity": 21.7055,
       "number_of_seasons": 4,
       "number_of_episodes": 38,
       "first_air_date": "2022-06-23",
@@ -9833,8 +9885,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.7,
-      "vote_count": 221,
+      "vote_average": 7.66,
+      "vote_count": 222,
       "origin_country": [
         "US"
       ],
@@ -9848,7 +9900,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/the-gilded-age",
-      "popularity": 15.1891,
+      "popularity": 14.2895,
       "number_of_seasons": 3,
       "number_of_episodes": 25,
       "first_air_date": "2022-01-24",
@@ -9920,8 +9972,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.32,
-      "vote_count": 48,
+      "vote_average": 7.17,
+      "vote_count": 50,
       "origin_country": [
         "US"
       ],
@@ -9934,7 +9986,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81745063",
-      "popularity": 7.1694,
+      "popularity": 6.8788,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-06-19",
@@ -9978,8 +10030,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.3,
-      "vote_count": 91,
+      "vote_average": 7.25,
+      "vote_count": 95,
       "origin_country": [
         "US"
       ],
@@ -10057,7 +10109,7 @@
         }
       ],
       "homepage": "https://disneynow.com/shows/spidey-and-his-amazing-friends",
-      "popularity": 10.3394,
+      "popularity": 10.1725,
       "number_of_seasons": 4,
       "number_of_episodes": 180,
       "first_air_date": "2021-08-06",
@@ -10109,7 +10161,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36733960/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Spidey+and+His+Amazing+Friends+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:49+08:00"
         },
         {
           "name": "第 4 季",
@@ -10179,7 +10232,8 @@
           "vote_average": 10.0,
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Ninjago+Legends%3A+Monstrosity+season+1&cat=1002",
           "douban_link_verified": true,
-          "douban_rating": null
+          "douban_rating": null,
+          "last_douban_rating_fetch": "2025-08-24T20:20:52+08:00"
         }
       ]
     },
@@ -10203,8 +10257,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.7,
-      "vote_count": 611,
+      "vote_average": 8.69,
+      "vote_count": 612,
       "origin_country": [
         "US"
       ],
@@ -10300,7 +10354,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36701854/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Chosen+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:20:56+08:00"
         },
         {
           "name": "第 5 季",
@@ -10338,8 +10393,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.46,
-      "vote_count": 35,
+      "vote_average": 7.27,
+      "vote_count": 37,
       "origin_country": [
         "CA",
         "US"
@@ -10360,7 +10415,7 @@
         }
       ],
       "homepage": "https://www.syfy.com/revival",
-      "popularity": 17.5002,
+      "popularity": 16.8399,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-06-12",
@@ -10408,8 +10463,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.66,
-      "vote_count": 464,
+      "vote_average": 6.65,
+      "vote_count": 465,
       "origin_country": [
         "US"
       ],
@@ -10422,7 +10477,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81397077",
-      "popularity": 8.6638,
+      "popularity": 8.0735,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-05-25",
@@ -10495,7 +10550,7 @@
         }
       ],
       "homepage": "https://acorn.tv/artdetectives",
-      "popularity": 1.5827,
+      "popularity": 1.8455,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-06-09",
@@ -10550,7 +10605,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/tyler-perrys-divorced-sistas",
-      "popularity": 1.6404,
+      "popularity": 1.7059,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-06-10",
@@ -10609,7 +10664,7 @@
         }
       ],
       "homepage": "https://starz.com/us/en/series/bmf/62264",
-      "popularity": 14.0037,
+      "popularity": 13.1047,
       "number_of_seasons": 4,
       "number_of_episodes": 38,
       "first_air_date": "2021-09-26",
@@ -10675,7 +10730,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37275249/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=BMF+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:00+08:00"
         }
       ]
     },
@@ -10692,7 +10748,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.82,
-      "vote_count": 857,
+      "vote_count": 859,
       "origin_country": [
         "US"
       ],
@@ -10712,7 +10768,7 @@
         }
       ],
       "homepage": "https://www.syfy.com/resident-alien",
-      "popularity": 19.0489,
+      "popularity": 18.534,
       "number_of_seasons": 4,
       "number_of_episodes": 44,
       "first_air_date": "2021-01-27",
@@ -10846,7 +10902,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36901112/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Tires+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:04+08:00"
         }
       ]
     },
@@ -10893,7 +10950,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81628818",
-      "popularity": 7.6597,
+      "popularity": 7.1405,
       "number_of_seasons": 3,
       "number_of_episodes": 60,
       "first_air_date": "2023-05-15",
@@ -10979,7 +11036,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81025696",
-      "popularity": 23.1615,
+      "popularity": 22.5896,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2021-02-24",
@@ -11051,8 +11108,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.26,
-      "vote_count": 64,
+      "vote_average": 7.24,
+      "vote_count": 65,
       "origin_country": [
         "US"
       ],
@@ -11065,7 +11122,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.52w04zy67tiv11p8xvbc57wmc",
-      "popularity": 21.7692,
+      "popularity": 21.9393,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-06-03",
@@ -11113,8 +11170,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.96,
-      "vote_count": 228,
+      "vote_average": 7.95,
+      "vote_count": 229,
       "origin_country": [
         "GB",
         "US"
@@ -11128,7 +11185,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81487660",
-      "popularity": 12.0036,
+      "popularity": 12.4701,
       "number_of_seasons": 1,
       "number_of_episodes": 9,
       "first_air_date": "2025-05-29",
@@ -11172,8 +11229,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.31,
-      "vote_count": 511,
+      "vote_average": 7.3,
+      "vote_count": 512,
       "origin_country": [
         "US"
       ],
@@ -11196,7 +11253,7 @@
         }
       ],
       "homepage": "https://www.hbomax.com/shows/and-just-like-that/b9c27771-247a-459d-b751-85460d3fd5a2",
-      "popularity": 13.8692,
+      "popularity": 12.8164,
       "number_of_seasons": 3,
       "number_of_episodes": 33,
       "first_air_date": "2021-12-09",
@@ -11264,8 +11321,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 5.95,
-      "vote_count": 30,
+      "vote_average": 5.92,
+      "vote_count": 31,
       "origin_country": [
         "US"
       ],
@@ -11279,7 +11336,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/adults",
-      "popularity": 9.1528,
+      "popularity": 9.2715,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-05-28",
@@ -11341,7 +11398,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/gp/video/detail/B0CKFL3BQX",
-      "popularity": 3.5475,
+      "popularity": 4.273,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-02-22",
@@ -11379,7 +11436,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36941036/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Second+Best+Hospital+in+the+Galaxy+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:07+08:00"
         }
       ]
     },
@@ -11408,7 +11466,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.9,
-      "vote_count": 939,
+      "vote_count": 940,
       "origin_country": [
         "US"
       ],
@@ -11428,7 +11486,7 @@
         }
       ],
       "homepage": "https://disneynow.com/shows/phineas-and-ferb",
-      "popularity": 37.4776,
+      "popularity": 45.487,
       "number_of_seasons": 5,
       "number_of_episodes": 249,
       "first_air_date": "2007-08-17",
@@ -11508,7 +11566,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36318017/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Phineas+and+Ferb+season+5&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:11+08:00"
         }
       ]
     },
@@ -11543,7 +11602,7 @@
         }
       ],
       "homepage": "https://www.tntdrama.com/shows/the-librarians-the-next-chapter",
-      "popularity": 6.1178,
+      "popularity": 6.2907,
       "number_of_seasons": 1,
       "number_of_episodes": 12,
       "first_air_date": "2025-05-25",
@@ -11567,7 +11626,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36474576/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Librarians%3A+The+Next+Chapter+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:14+08:00"
         }
       ]
     },
@@ -11606,7 +11666,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m002cg39",
-      "popularity": 1.8621,
+      "popularity": 2.16,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-05-25",
@@ -11626,11 +11686,12 @@
           "episode_count": 6,
           "vote_average": 2.5,
           "poster_path": "/xgTZi6WF5YoNjBSbKf5Ui5PMYQy.jpg",
-          "douban_rating": null,
+          "douban_rating": "6.6",
           "douban_link_google": "https://m.douban.com/movie/subject/36897913/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Death+Valley+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:18+08:00"
         }
       ]
     },
@@ -11659,7 +11720,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.69,
-      "vote_count": 10361,
+      "vote_count": 10364,
       "origin_country": [
         "US"
       ],
@@ -11673,7 +11734,7 @@
         }
       ],
       "homepage": "http://www.adultswim.com/videos/rick-and-morty",
-      "popularity": 69.7145,
+      "popularity": 71.9959,
       "number_of_seasons": 8,
       "number_of_episodes": 81,
       "first_air_date": "2013-12-02",
@@ -11951,7 +12012,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36377252/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Big+Mouth+season+8&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:22+08:00"
         }
       ]
     },
@@ -11985,7 +12047,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81784283",
-      "popularity": 7.068,
+      "popularity": 6.4399,
       "number_of_seasons": 1,
       "number_of_episodes": 16,
       "first_air_date": "2025-05-22",
@@ -12029,8 +12091,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.96,
-      "vote_count": 531,
+      "vote_average": 7.0,
+      "vote_count": 532,
       "origin_country": [
         "US"
       ],
@@ -12044,7 +12106,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/nine-perfect-strangers-2be55e1a-4c31-4af6-aa25-e5c85528b73a",
-      "popularity": 6.2718,
+      "popularity": 7.0838,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2021-08-18",
@@ -12112,7 +12174,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0DZJ6YQB6",
-      "popularity": 15.6169,
+      "popularity": 15.7124,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-05-20",
@@ -12136,7 +12198,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36654374/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Motorheads+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:26+08:00"
         }
       ]
     },
@@ -12171,7 +12234,7 @@
         }
       ],
       "homepage": "https://www.telemundo.com/shows/velvet-el-nuevo-imperio",
-      "popularity": 4.2047,
+      "popularity": 3.9237,
       "number_of_seasons": 1,
       "number_of_episodes": 46,
       "first_air_date": "2025-05-19",
@@ -12195,7 +12258,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37227484/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Velvet%2C+El+Nuevo+Imperio+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:29+08:00"
         }
       ]
     },
@@ -12232,7 +12296,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/the-chi",
-      "popularity": 11.3662,
+      "popularity": 10.4684,
       "number_of_seasons": 7,
       "number_of_episodes": 78,
       "first_air_date": "2018-01-07",
@@ -12365,7 +12429,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.37,
-      "vote_count": 279,
+      "vote_count": 281,
       "origin_country": [
         "US"
       ],
@@ -12378,7 +12442,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.5owrzntj9v1gpg31wshflud03",
-      "popularity": 32.0275,
+      "popularity": 29.9543,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-05-15",
@@ -12432,7 +12496,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0DJ1YBFMM",
-      "popularity": 14.9387,
+      "popularity": 14.022,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-05-15",
@@ -12514,7 +12578,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35776111/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Duster+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:33+08:00"
         }
       ]
     },
@@ -12535,7 +12600,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.23,
-      "vote_count": 3649,
+      "vote_count": 3651,
       "origin_country": [
         "US"
       ],
@@ -12548,7 +12613,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80174608",
-      "popularity": 30.7897,
+      "popularity": 29.7101,
       "number_of_seasons": 4,
       "number_of_episodes": 45,
       "first_air_date": "2019-03-15",
@@ -12644,7 +12709,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81740857",
-      "popularity": 6.3029,
+      "popularity": 4.0736,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-05-13",
@@ -12707,7 +12772,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.2973,
+      "popularity": 2.8635,
       "number_of_seasons": 3,
       "number_of_episodes": 43,
       "first_air_date": "2023-06-17",
@@ -12791,7 +12856,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81418639",
-      "popularity": 9.8448,
+      "popularity": 7.6257,
       "number_of_seasons": 2,
       "number_of_episodes": 8,
       "first_air_date": "2025-05-08",
@@ -12864,7 +12929,7 @@
         }
       ],
       "homepage": "https://www.peacocktv.com/stream-tv/poker-face",
-      "popularity": 14.4593,
+      "popularity": 19.6691,
       "number_of_seasons": 2,
       "number_of_episodes": 22,
       "first_air_date": "2023-01-26",
@@ -13016,7 +13081,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.31,
+      "vote_average": 8.3,
       "vote_count": 3911,
       "origin_country": [
         "US"
@@ -13037,7 +13102,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/criminal_minds",
-      "popularity": 93.9552,
+      "popularity": 99.1835,
       "number_of_seasons": 18,
       "number_of_episodes": 354,
       "first_air_date": "2005-09-22",
@@ -13341,7 +13406,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81637333",
-      "popularity": 2.8222,
+      "popularity": 2.7896,
       "number_of_seasons": 2,
       "number_of_episodes": 52,
       "first_air_date": "2024-10-14",
@@ -13365,7 +13430,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36940768/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Mighty+Monsterwheelies+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:36+08:00"
         },
         {
           "name": "第 2 季",
@@ -13418,7 +13484,7 @@
         }
       ],
       "homepage": "https://acorn.tv/harrywild",
-      "popularity": 3.4748,
+      "popularity": 3.8279,
       "number_of_seasons": 4,
       "number_of_episodes": 26,
       "first_air_date": "2022-04-04",
@@ -13470,7 +13536,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36803280/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Harry+Wild+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:39+08:00"
         },
         {
           "name": "第 4 季",
@@ -13484,7 +13551,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36988757/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Harry+Wild+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:43+08:00"
         }
       ]
     },
@@ -13523,7 +13591,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/the-walking-dead-dead-city--1060741",
-      "popularity": 13.375,
+      "popularity": 13.5767,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2023-06-18",
@@ -13590,7 +13658,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81750702",
-      "popularity": 9.1732,
+      "popularity": 6.4739,
       "number_of_seasons": 2,
       "number_of_episodes": 8,
       "first_air_date": "2025-05-01",
@@ -13659,7 +13727,7 @@
         }
       ],
       "homepage": "https://www.bet.com/shows/tyler-perrys-assisted-living",
-      "popularity": 3.0471,
+      "popularity": 3.7617,
       "number_of_seasons": 6,
       "number_of_episodes": 116,
       "first_air_date": "2020-09-02",
@@ -13853,7 +13921,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.2ghd8ombh4fd37rfs27ivfa94",
-      "popularity": 9.8144,
+      "popularity": 10.1608,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2024-06-27",
@@ -13890,7 +13958,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36913562/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=WondLa+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:46+08:00"
         }
       ]
     },
@@ -14102,8 +14171,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.12,
-      "vote_count": 67,
+      "vote_average": 7.09,
+      "vote_count": 68,
       "origin_country": [
         "US"
       ],
@@ -14116,7 +14185,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81459107",
-      "popularity": 3.2601,
+      "popularity": 4.7795,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-04-17",
@@ -14174,7 +14243,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0DMQSR6NZ",
-      "popularity": 5.7263,
+      "popularity": 3.9766,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-04-17",
@@ -14198,7 +14267,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36402951/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=%231+Happy+Family+USA+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:50+08:00"
         }
       ]
     },
@@ -14236,7 +14306,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81519765",
-      "popularity": 22.5225,
+      "popularity": 21.7773,
       "number_of_seasons": 3,
       "number_of_episodes": 60,
       "first_air_date": "2023-06-01",
@@ -14288,7 +14358,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37327727/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=LEGO+Ninjago%3A+Dragons+Rising+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:21:53+08:00"
         }
       ]
     },
@@ -14361,7 +14432,8 @@
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Jane+season+2&cat=1002",
           "overview": "",
           "douban_link_verified": true,
-          "douban_rating": null
+          "douban_rating": null,
+          "last_douban_rating_fetch": "2025-08-24T20:21:56+08:00"
         },
         {
           "name": "第 3 季",
@@ -14425,7 +14497,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B095VS668Y",
-      "popularity": 7.9919,
+      "popularity": 9.0334,
       "number_of_seasons": 3,
       "number_of_episodes": 39,
       "first_air_date": "2021-07-08",
@@ -14477,7 +14549,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36678056/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Leverage%3A+Redemption+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:01+08:00"
         }
       ]
     },
@@ -14518,7 +14591,7 @@
         }
       ],
       "homepage": "https://www.peacocktv.com/stream-tv/law-and-order-organized-crime",
-      "popularity": 12.1666,
+      "popularity": 12.0227,
       "number_of_seasons": 5,
       "number_of_episodes": 75,
       "first_air_date": "2021-04-01",
@@ -14584,7 +14657,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36353269/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Law+%26+Order%3A+Organized+Crime+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:04+08:00"
         },
         {
           "name": "第 5 季",
@@ -14598,7 +14672,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36877429/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Law+%26+Order%3A+Organized+Crime+season+5&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:08+08:00"
         }
       ]
     },
@@ -14618,8 +14693,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.0,
-      "vote_count": 24,
+      "vote_average": 6.96,
+      "vote_count": 25,
       "origin_country": [
         "US"
       ],
@@ -14633,7 +14708,7 @@
         }
       ],
       "homepage": "https://www.cwtv.com/shows/sherlock-and-daughter/",
-      "popularity": 9.0588,
+      "popularity": 8.9036,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-04-16",
@@ -14691,7 +14766,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.1pgdmfreds5kuzmeo3xii0746",
-      "popularity": 6.1552,
+      "popularity": 5.3656,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-04-15",
@@ -14715,7 +14790,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36686192/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Government+Cheese+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:11+08:00"
         }
       ]
     },
@@ -14756,7 +14832,7 @@
         }
       ],
       "homepage": "https://mgmplus.com/series/godfather-of-harlem",
-      "popularity": 12.8647,
+      "popularity": 13.3676,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2019-09-29",
@@ -14822,7 +14898,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36666158/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Godfather+of+Harlem+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:15+08:00"
         }
       ]
     },
@@ -14838,8 +14915,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.5,
-      "vote_count": 6391,
+      "vote_average": 8.49,
+      "vote_count": 6395,
       "origin_country": [
         "US"
       ],
@@ -14853,7 +14930,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/the-last-of-us",
-      "popularity": 34.1573,
+      "popularity": 34.6076,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-01-15",
@@ -14907,8 +14984,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.2,
-      "vote_count": 107,
+      "vote_average": 7.23,
+      "vote_count": 108,
       "origin_country": [
         "US"
       ],
@@ -14921,7 +14998,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.74o37kzay0yuuub8iumddjsg",
-      "popularity": 21.7729,
+      "popularity": 18.987,
       "number_of_seasons": 1,
       "number_of_episodes": 9,
       "first_air_date": "2025-04-10",
@@ -14965,8 +15042,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.49,
-      "vote_count": 276,
+      "vote_average": 7.48,
+      "vote_count": 277,
       "origin_country": [
         "US"
       ],
@@ -14984,7 +15061,7 @@
         }
       ],
       "homepage": "https://www.max.com/shows/hacks/67e940b7-aab2-46ce-a62b-c7308cde9de7",
-      "popularity": 16.7981,
+      "popularity": 16.1225,
       "number_of_seasons": 4,
       "number_of_episodes": 37,
       "first_air_date": "2021-05-13",
@@ -15366,8 +15443,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.06,
-      "vote_count": 232,
+      "vote_average": 8.05,
+      "vote_count": 233,
       "origin_country": [
         "US"
       ],
@@ -15380,7 +15457,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81506915",
-      "popularity": 20.9729,
+      "popularity": 16.5937,
       "number_of_seasons": 2,
       "number_of_episodes": 8,
       "first_air_date": "2025-04-03",
@@ -15555,8 +15632,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.48,
-      "vote_count": 378,
+      "vote_average": 8.47,
+      "vote_count": 379,
       "origin_country": [
         "GB",
         "US"
@@ -15577,7 +15654,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/mobland",
-      "popularity": 49.4304,
+      "popularity": 48.6384,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-03-30",
@@ -15690,7 +15767,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81354524",
-      "popularity": 1.9098,
+      "popularity": 1.7747,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-07-13",
@@ -15728,7 +15805,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37219330/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Survival+of+the+Thickest+season+2&cat=1002",
           "overview": "造型品牌越来越火，爱情生活却摇摇欲坠 — 梅维斯大胆冒险，准备在高定时尚界大干一场。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:19+08:00"
         }
       ]
     },
@@ -16089,7 +16167,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36710974/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Conners+season+6&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:23+08:00"
         },
         {
           "name": "第 7 季",
@@ -16103,7 +16182,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36889403/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Conners+season+7&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:26+08:00"
         }
       ]
     },
@@ -16123,8 +16203,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.68,
-      "vote_count": 178,
+      "vote_average": 7.7,
+      "vote_count": 179,
       "origin_country": [
         "US"
       ],
@@ -16137,7 +16217,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.7518algxc4lsoobtsx30dqb52",
-      "popularity": 25.5503,
+      "popularity": 26.1478,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2025-03-25",
@@ -16243,7 +16323,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36328195/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Alert%3A+Missing+Persons+Unit+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:30+08:00"
         },
         {
           "name": "第 3 季",
@@ -16257,7 +16338,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36889396/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Alert%3A+Missing+Persons+Unit+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:35+08:00"
         }
       ]
     },
@@ -16344,7 +16426,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36228065/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Cleaning+Lady+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:40+08:00"
         },
         {
           "name": "第 4 季",
@@ -16358,7 +16441,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36890763/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Cleaning+Lady+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:44+08:00"
         }
       ]
     },
@@ -16471,7 +16555,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35263097/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Happy+Face+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:47+08:00"
         }
       ]
     },
@@ -16506,7 +16591,7 @@
         }
       ],
       "homepage": "https://www.nickjr.com/shows/rubble-crew",
-      "popularity": 6.4905,
+      "popularity": 8.5412,
       "number_of_seasons": 3,
       "number_of_episodes": 107,
       "first_air_date": "2023-02-03",
@@ -16543,7 +16628,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37347643/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Rubble+%26+Crew+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:50+08:00"
         },
         {
           "name": "第 3 季",
@@ -16593,7 +16679,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 6.5087,
+      "popularity": 6.1688,
       "number_of_seasons": 2,
       "number_of_episodes": 97,
       "first_air_date": "2023-03-10",
@@ -16756,7 +16842,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/dark-winds--1053387",
-      "popularity": 4.535,
+      "popularity": 4.5392,
       "number_of_seasons": 3,
       "number_of_episodes": 20,
       "first_air_date": "2022-06-12",
@@ -16808,7 +16894,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36568362/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Dark+Winds+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:54+08:00"
         }
       ]
     },
@@ -16895,7 +16982,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37191526/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=YOLO+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:22:57+08:00"
         }
       ]
     },
@@ -16996,7 +17084,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36493953/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Righteous+Gemstones+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:01+08:00"
         }
       ]
     },
@@ -17031,7 +17120,7 @@
         }
       ],
       "homepage": "https://www.starz.com/us/en/series/power-book-iii-raising-kanan/58458",
-      "popularity": 5.9114,
+      "popularity": 5.6975,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2021-07-18",
@@ -17097,7 +17186,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36929519/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Power+Book+III%3A+Raising+Kanan+season+4&cat=1002",
           "overview": "在第四季中，托马斯一家发现自己陷入了一个忠诚冲突、道德困境和个人危机的网中，这动摇了他们身份的根基。卡南在合作伙伴罗尼去世的打击下，决心寻求报复，同时开辟一条摆脱母亲操控的道路。著名人物低调行事，在危险的毒品游戏中周旋，而独立于女子组合的 Jukebox 开始了一段自我发现的旅程。随着他们的道路交汇和分离，每个家庭成员都面临着一场将塑造他们未来并考验他们关系的清算。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:05+08:00"
         }
       ]
     },
@@ -17128,7 +17218,7 @@
         }
       ],
       "homepage": "https://www.shudder.com/series/watch/the-last-drive-in-with-joe-bob-briggs/d7e1edc651c7f9b7",
-      "popularity": 3.9953,
+      "popularity": 3.2029,
       "number_of_seasons": 7,
       "number_of_episodes": 109,
       "first_air_date": "2019-03-29",
@@ -17277,7 +17367,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/9c3eebbe-95f7-479b-b730-ca5a0633a979",
-      "popularity": 3.1204,
+      "popularity": 3.2034,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-03-06",
@@ -17301,7 +17391,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36911417/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Deli+Boys+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:08+08:00"
         }
       ]
     },
@@ -17336,7 +17427,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/lil-kev",
-      "popularity": 1.0887,
+      "popularity": 1.2895,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-03-06",
@@ -17380,7 +17471,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.01,
+      "vote_average": 8.0,
       "vote_count": 532,
       "origin_country": [
         "US"
@@ -17394,7 +17485,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/daredevil-born-again/6Eu8fmI0MaUk",
-      "popularity": 15.9989,
+      "popularity": 15.3847,
       "number_of_seasons": 1,
       "number_of_episodes": 9,
       "first_air_date": "2025-03-04",
@@ -17456,7 +17547,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81566729",
-      "popularity": 4.0672,
+      "popularity": 4.4905,
       "number_of_seasons": 3,
       "number_of_episodes": 20,
       "first_air_date": "2024-03-04",
@@ -17479,7 +17570,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36788983/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Hot+Wheels+Let%27s+Race+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:11+08:00"
         },
         {
           "name": "第 2 季",
@@ -17493,7 +17585,8 @@
           "douban_link_google": "https://movie.douban.com/subject/37199396/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Hot+Wheels+Let%27s+Race+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:14+08:00"
         },
         {
           "name": "第 3 季",
@@ -17506,7 +17599,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37259459/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Hot+Wheels+Let%27s+Race+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:17+08:00"
         }
       ]
     },
@@ -17553,7 +17647,7 @@
         }
       ],
       "homepage": "https://www.cartoonnetwork.com/video/teen-titans-go/index.html",
-      "popularity": 30.8188,
+      "popularity": 29.7302,
       "number_of_seasons": 9,
       "number_of_episodes": 425,
       "first_air_date": "2013-04-23",
@@ -17689,7 +17783,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37283814/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Teen+Titans+Go%21+season+9&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:20+08:00"
         }
       ]
     },
@@ -17719,7 +17814,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CNJWRXHZ",
-      "popularity": 25.5971,
+      "popularity": 27.2603,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-02-27",
@@ -17759,8 +17854,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.22,
-      "vote_count": 90,
+      "vote_average": 7.2,
+      "vote_count": 92,
       "origin_country": [
         "US"
       ],
@@ -17846,7 +17941,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/beyond-the-gates",
-      "popularity": 2.7817,
+      "popularity": 2.5844,
       "number_of_seasons": 1,
       "number_of_episodes": 76,
       "first_air_date": "2025-02-24",
@@ -17870,7 +17965,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37210684/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Beyond+the+Gates+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:24+08:00"
         }
       ]
     },
@@ -18171,7 +18267,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.1,
-      "vote_count": 2426,
+      "vote_count": 2428,
       "origin_country": [
         "US"
       ],
@@ -18271,7 +18367,7 @@
         }
       ],
       "homepage": "https://www.cwtv.com/shows/good-cop-bad-cop/",
-      "popularity": 2.9096,
+      "popularity": 2.4523,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-02-19",
@@ -18295,7 +18391,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36809369/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Good+Cop%2FBad+Cop+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:27+08:00"
         }
       ]
     },
@@ -18329,7 +18426,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.dzqzvmbvizbedk91cvrq5pvw",
-      "popularity": 7.0257,
+      "popularity": 7.8505,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2022-07-28",
@@ -18367,7 +18464,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36176421/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Surface+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:31+08:00"
         }
       ]
     },
@@ -18406,7 +18504,7 @@
         }
       ],
       "homepage": "https://www.fox.com/grimsburg",
-      "popularity": 2.3348,
+      "popularity": 2.2487,
       "number_of_seasons": 3,
       "number_of_episodes": 26,
       "first_air_date": "2024-01-07",
@@ -18429,7 +18527,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36006569/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Grimsburg+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:35+08:00"
         },
         {
           "name": "第 2 季",
@@ -18475,8 +18574,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.5,
-      "vote_count": 852,
+      "vote_average": 7.47,
+      "vote_count": 854,
       "origin_country": [
         "US"
       ],
@@ -18496,7 +18595,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/yellowjackets/",
-      "popularity": 13.0046,
+      "popularity": 11.2293,
       "number_of_seasons": 4,
       "number_of_episodes": 29,
       "first_air_date": "2021-11-14",
@@ -18587,7 +18686,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.62,
-      "vote_count": 1155,
+      "vote_count": 1156,
       "origin_country": [
         "US"
       ],
@@ -18601,7 +18700,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/the-white-lotus",
-      "popularity": 35.6148,
+      "popularity": 34.6388,
       "number_of_seasons": 3,
       "number_of_episodes": 21,
       "first_air_date": "2021-07-11",
@@ -18707,7 +18806,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/34953703/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Clean+Slate+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:39+08:00"
         }
       ]
     },
@@ -18736,7 +18836,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.63,
-      "vote_count": 5069,
+      "vote_count": 5071,
       "origin_country": [
         "US"
       ],
@@ -18749,7 +18849,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B08WJP55PR",
-      "popularity": 36.3962,
+      "popularity": 37.4387,
       "number_of_seasons": 3,
       "number_of_episodes": 24,
       "first_air_date": "2021-03-25",
@@ -18817,8 +18917,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.77,
-      "vote_count": 248,
+      "vote_average": 7.76,
+      "vote_count": 249,
       "origin_country": [
         "US"
       ],
@@ -18897,7 +18997,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36893924/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Sweet+Magnolias+season+4&cat=1002",
           "overview": "在这个十分具有宁静镇特色的假期，甜木兰组合从万圣节到圣诞节的几周里经历了悲剧、小镇危机和大风暴。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:42+08:00"
         }
       ]
     },
@@ -18941,7 +19042,7 @@
         }
       ],
       "homepage": "http://www.nickjr.com/blaze-and-the-monster-machines/",
-      "popularity": 11.7162,
+      "popularity": 11.6185,
       "number_of_seasons": 9,
       "number_of_episodes": 165,
       "first_air_date": "2014-10-13",
@@ -19116,7 +19217,7 @@
         }
       ],
       "homepage": "https://www.howitshouldhaveended.com/",
-      "popularity": 0.9601,
+      "popularity": 1.4464,
       "number_of_seasons": 17,
       "number_of_episodes": 223,
       "first_air_date": "2005-04-23",
@@ -19402,7 +19503,7 @@
         }
       ],
       "homepage": "https://www.cwtv.com/shows/all-american/",
-      "popularity": 13.1058,
+      "popularity": 11.0826,
       "number_of_seasons": 7,
       "number_of_episodes": 119,
       "first_air_date": "2018-10-10",
@@ -19496,7 +19597,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36774388/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=All+American+season+6&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:46+08:00"
         },
         {
           "name": "第 7 季",
@@ -19554,7 +19656,7 @@
         }
       ],
       "homepage": "https://roosterteeth.com/series/death-battle",
-      "popularity": 1.1765,
+      "popularity": 1.1089,
       "number_of_seasons": 12,
       "number_of_episodes": 201,
       "first_air_date": "2010-12-06",
@@ -19777,7 +19879,7 @@
         }
       ],
       "homepage": "https://www.adultswim.com/videos/common-side-effects",
-      "popularity": 5.9383,
+      "popularity": 5.1821,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2025-02-02",
@@ -19835,8 +19937,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.8,
-      "vote_count": 199,
+      "vote_average": 7.79,
+      "vote_count": 200,
       "origin_country": [
         "US"
       ],
@@ -19850,7 +19952,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/school-spirits/",
-      "popularity": 6.7534,
+      "popularity": 6.397,
       "number_of_seasons": 3,
       "number_of_episodes": 16,
       "first_air_date": "2023-03-09",
@@ -19888,7 +19990,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36460353/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=School+Spirits+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:50+08:00"
         },
         {
           "name": "第 3 季",
@@ -20092,7 +20195,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/your-friendly-neighborhood-spider-man/7e5MeUbivjlO",
-      "popularity": 6.2839,
+      "popularity": 7.4248,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-01-29",
@@ -20212,7 +20315,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35639928/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Mythic+Quest+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:54+08:00"
         }
       ]
     },
@@ -20246,7 +20350,7 @@
       "original_language": "en",
       "networks": [],
       "homepage": "https://www.thomasandfriends.jp",
-      "popularity": 1.7668,
+      "popularity": 1.7874,
       "number_of_seasons": 4,
       "number_of_episodes": 156,
       "first_air_date": "2021-08-23",
@@ -20333,8 +20437,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.59,
-      "vote_count": 249,
+      "vote_average": 7.58,
+      "vote_count": 250,
       "origin_country": [
         "US"
       ],
@@ -20348,7 +20452,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/2b4b8988-50c9-4097-bf93-bc34a99a5b4f",
-      "popularity": 9.672,
+      "popularity": 9.451,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-01-26",
@@ -20597,7 +20701,7 @@
       "original_language": "en",
       "networks": [],
       "homepage": "",
-      "popularity": 1.3936,
+      "popularity": 1.6932,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-01-23",
@@ -20645,8 +20749,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.8,
-      "vote_count": 966,
+      "vote_average": 7.77,
+      "vote_count": 968,
       "origin_country": [
         "US"
       ],
@@ -20659,7 +20763,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81450827",
-      "popularity": 14.1332,
+      "popularity": 14.5154,
       "number_of_seasons": 3,
       "number_of_episodes": 20,
       "first_air_date": "2023-03-23",
@@ -20793,7 +20897,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37194192",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Harlem+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:23:57+08:00"
         }
       ]
     },
@@ -20832,7 +20937,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.7931,
+      "popularity": 4.7476,
       "number_of_seasons": 2,
       "number_of_episodes": 26,
       "first_air_date": "2025-01-22",
@@ -20905,7 +21010,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/the-hunting-party",
-      "popularity": 6.5886,
+      "popularity": 7.4749,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-01-19",
@@ -20964,7 +21069,7 @@
         }
       ],
       "homepage": "https://disneynow.com/shows/chibiverse",
-      "popularity": 2.6838,
+      "popularity": 2.81,
       "number_of_seasons": 3,
       "number_of_episodes": 19,
       "first_air_date": "2022-07-30",
@@ -21016,7 +21121,8 @@
           "douban_link_google": "https://movie.douban.com/subject/37311295/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Chibiverse+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:00+08:00"
         }
       ]
     },
@@ -21040,7 +21146,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.86,
+      "vote_average": 7.85,
       "vote_count": 222,
       "origin_country": [
         "US"
@@ -21054,7 +21160,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81436901",
-      "popularity": 5.2539,
+      "popularity": 4.63,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-09-28",
@@ -21111,8 +21217,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.07,
-      "vote_count": 535,
+      "vote_average": 8.06,
+      "vote_count": 536,
       "origin_country": [
         "US"
       ],
@@ -21125,7 +21231,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81324724",
-      "popularity": 12.739,
+      "popularity": 12.6259,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2023-05-18",
@@ -21188,7 +21294,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.4,
-      "vote_count": 2130,
+      "vote_count": 2131,
       "origin_country": [
         "US"
       ],
@@ -21201,7 +21307,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.1srk2goyh2q2zdxcx605w8vtx",
-      "popularity": 33.683,
+      "popularity": 34.1781,
       "number_of_seasons": 3,
       "number_of_episodes": 19,
       "first_air_date": "2022-02-17",
@@ -21421,7 +21527,7 @@
         }
       ],
       "homepage": "https://www.max.com/shows/the-pitt/e6e7bad9-d48d-4434-b334-7c651ffc4bdf",
-      "popularity": 23.7626,
+      "popularity": 23.3514,
       "number_of_seasons": 2,
       "number_of_episodes": 15,
       "first_air_date": "2025-01-09",
@@ -21456,7 +21562,8 @@
           "poster_path": null,
           "season_number": 2,
           "vote_average": 0.0,
-          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Pitt+season+2&cat=1002"
+          "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Pitt+season+2&cat=1002",
+          "douban_link_verified": false
         }
       ]
     },
@@ -21494,7 +21601,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81028174",
-      "popularity": 4.3359,
+      "popularity": 3.7145,
       "number_of_seasons": 4,
       "number_of_episodes": 48,
       "first_air_date": "2021-05-12",
@@ -21560,7 +21667,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36519712/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Upshaws+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:03+08:00"
         }
       ]
     },
@@ -21655,13 +21763,13 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         }
       ],
       "homepage": "https://abc.com/shows/will-trent",
-      "popularity": 9.6285,
+      "popularity": 9.3708,
       "number_of_seasons": 3,
       "number_of_episodes": 41,
       "first_air_date": "2023-01-03",
@@ -21711,7 +21819,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36841524/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Will+Trent+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:07+08:00"
         }
       ]
     },
@@ -21746,7 +21855,7 @@
         }
       ],
       "homepage": "https://www.bet.com/shows/tyler-perrys-the-oval.html",
-      "popularity": 7.7313,
+      "popularity": 6.5141,
       "number_of_seasons": 6,
       "number_of_episodes": 124,
       "first_air_date": "2019-10-23",
@@ -21867,7 +21976,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.53,
+      "vote_average": 8.5,
       "vote_count": 2644,
       "origin_country": [
         "US"
@@ -21876,7 +21985,7 @@
       "networks": [
         {
           "id": 2,
-          "logo_path": "/2uy2ZWcplrSObIyt4x0Y9rkG6qO.png",
+          "logo_path": "/f7O9f9rp4z7aliU0h1vG98lTNF.png",
           "name": "ABC",
           "origin_country": "US"
         }
@@ -22063,7 +22172,7 @@
         }
       ],
       "homepage": "https://www.cwtv.com/shows/wwe-nxt",
-      "popularity": 15.891,
+      "popularity": 15.225,
       "number_of_seasons": 19,
       "number_of_episodes": 844,
       "first_air_date": "2010-02-23",
@@ -22375,7 +22484,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.32,
+      "vote_average": 7.3,
       "vote_count": 291,
       "origin_country": [
         "US"
@@ -22390,7 +22499,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/mayfair-witches--1059404",
-      "popularity": 5.5982,
+      "popularity": 5.9791,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-01-08",
@@ -22398,7 +22507,7 @@
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
-      "poster_path": "/eDl1veju2Hf3tyFmGAedtGXb9Yv.jpg",
+      "poster_path": "/azUhTuVKAkDoPKIc1PBE57Yqnhz.jpg",
       "backdrop_path": "/9DHo5qXkG0titQmr2PF92N3aYYk.jpg",
       "overview": "故事讲述直觉敏锐的年轻神经外科医生Rowan Fielding，她发现自己是一个女巫家族意料之外的继承人。她在努力面对新获得的力量时，还必须应对一种困扰了自己家族几代人的邪恶存在。",
       "seasons": [
@@ -22463,7 +22572,7 @@
         }
       ],
       "homepage": "http://www.hallmarkchannel.com/when-calls-the-heart",
-      "popularity": 12.8685,
+      "popularity": 12.8093,
       "number_of_seasons": 12,
       "number_of_episodes": 127,
       "first_air_date": "2014-01-11",
@@ -22627,7 +22736,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36281058/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=When+Calls+the+Heart+season+11&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:11+08:00"
         },
         {
           "name": "第 12 季",
@@ -22641,7 +22751,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37168345",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=When+Calls+the+Heart+season+12&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:15+08:00"
         }
       ]
     },
@@ -22676,7 +22787,7 @@
         }
       ],
       "homepage": "https://www.tntdrama.com/shows/all-elite-wrestling-collision",
-      "popularity": 8.6594,
+      "popularity": 8.6145,
       "number_of_seasons": 3,
       "number_of_episodes": 114,
       "first_air_date": "2023-06-17",
@@ -22769,7 +22880,7 @@
         }
       ],
       "homepage": "https://www.hallmarkchannel.com/the-way-home",
-      "popularity": 2.5355,
+      "popularity": 2.9162,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2023-01-15",
@@ -22806,7 +22917,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36788878/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Way+Home+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:17+08:00"
         },
         {
           "name": "第 3 季",
@@ -22851,7 +22963,7 @@
         }
       ],
       "homepage": "https://www.fox.com/going-dutch",
-      "popularity": 1.6711,
+      "popularity": 1.7178,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2025-01-02",
@@ -22875,7 +22987,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36741372/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Going+Dutch+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:21+08:00"
         },
         {
           "air_date": null,
@@ -22919,7 +23032,7 @@
         }
       ],
       "homepage": "https://www.fox.com/animal-control/",
-      "popularity": 3.4421,
+      "popularity": 3.0494,
       "number_of_seasons": 4,
       "number_of_episodes": 31,
       "first_air_date": "2023-02-16",
@@ -22971,7 +23084,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36792409/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Animal+Control+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:24+08:00"
         },
         {
           "air_date": null,
@@ -23057,7 +23171,7 @@
         }
       ],
       "homepage": "https://tnawrestling.com/",
-      "popularity": 4.8167,
+      "popularity": 4.4574,
       "number_of_seasons": 22,
       "number_of_episodes": 1120,
       "first_air_date": "2004-06-04",
@@ -23437,7 +23551,7 @@
         }
       ],
       "homepage": "https://www.tbs.com/allelitewrestling",
-      "popularity": 14.8191,
+      "popularity": 15.0418,
       "number_of_seasons": 7,
       "number_of_episodes": 326,
       "first_air_date": "2019-10-02",
@@ -23675,7 +23789,7 @@
         }
       ],
       "homepage": "https://www.fox.com/the-great-north/",
-      "popularity": 7.4429,
+      "popularity": 7.4038,
       "number_of_seasons": 5,
       "number_of_episodes": 94,
       "first_air_date": "2021-01-03",
@@ -23741,7 +23855,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36720732/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Great+North+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:28+08:00"
         },
         {
           "name": "第 5 季",
@@ -23755,7 +23870,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37033125",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Great+North+season+5&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:31+08:00"
         }
       ]
     },
@@ -23960,7 +24076,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37045511/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Dragon+Prince+season+7&cat=1002",
           "overview": "整个世界仍处在毁灭和心碎的余波之中，此时卡勒姆、艾斯兰和朋友们直面最艰难的挑战：彻底阻止阿拉沃斯，以绝后患。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:35+08:00"
         }
       ]
     },
@@ -23976,8 +24093,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.9,
-      "vote_count": 554,
+      "vote_average": 7.94,
+      "vote_count": 555,
       "origin_country": [
         "US"
       ],
@@ -23990,7 +24107,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80240027",
-      "popularity": 8.0412,
+      "popularity": 7.2965,
       "number_of_seasons": 6,
       "number_of_episodes": 64,
       "first_air_date": "2019-12-06",
@@ -24084,7 +24201,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36413544/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Virgin+River+season+6&cat=1002",
           "overview": "全新的开始、暴露的秘密、重重的顾虑：在筹备婚礼的过程中，梅尔和杰克加深了对彼此的了解，也对他们的亲人有了更多的认识。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:38+08:00"
         }
       ]
     },
@@ -24239,7 +24357,7 @@
         }
       ],
       "homepage": "http://www.adultswim.com/videos/off-the-air",
-      "popularity": 0.5822,
+      "popularity": 0.5958,
       "number_of_seasons": 14,
       "number_of_episodes": 53,
       "first_air_date": "2011-01-01",
@@ -24465,8 +24583,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.29,
-      "vote_count": 265,
+      "vote_average": 8.3,
+      "vote_count": 268,
       "origin_country": [
         "US"
       ],
@@ -24480,7 +24598,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/dexter-original-sin",
-      "popularity": 13.003,
+      "popularity": 13.8515,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2024-12-15",
@@ -24524,8 +24642,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.22,
-      "vote_count": 90,
+      "vote_average": 6.17,
+      "vote_count": 91,
       "origin_country": [
         "US"
       ],
@@ -24597,7 +24715,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36832415/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Die+Hart+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:42+08:00"
         }
       ]
     },
@@ -24790,7 +24909,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37135394",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Wonder+Pets%3A+In+the+City+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:46+08:00"
         }
       ]
     },
@@ -24883,7 +25003,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.39,
-      "vote_count": 391,
+      "vote_count": 395,
       "origin_country": [
         "US"
       ],
@@ -24896,7 +25016,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0DJPRYRDL",
-      "popularity": 19.7539,
+      "popularity": 20.0852,
       "number_of_seasons": 1,
       "number_of_episodes": 15,
       "first_air_date": "2024-12-10",
@@ -25004,7 +25124,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.8,
-      "vote_count": 225,
+      "vote_count": 227,
       "origin_country": [
         "US"
       ],
@@ -25083,7 +25203,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81310438",
-      "popularity": 4.4067,
+      "popularity": 3.8287,
       "number_of_seasons": 1,
       "number_of_episodes": 13,
       "first_air_date": "2024-12-05",
@@ -25145,7 +25265,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/star-wars-skeleton-crew/5V2Mi4qOaO77",
-      "popularity": 8.0621,
+      "popularity": 10.7973,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2024-12-02",
@@ -25190,7 +25310,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.13,
-      "vote_count": 150,
+      "vote_count": 151,
       "origin_country": [
         "US"
       ],
@@ -25204,7 +25324,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/the-agency-central-intelligence",
-      "popularity": 9.1235,
+      "popularity": 8.7536,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2024-12-01",
@@ -25259,7 +25379,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/all-the-queens-men",
-      "popularity": 12.0195,
+      "popularity": 11.4383,
       "number_of_seasons": 4,
       "number_of_episodes": 59,
       "first_air_date": "2021-09-09",
@@ -25626,7 +25746,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36878664/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Night+Court+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:49+08:00"
         }
       ]
     },
@@ -25651,7 +25772,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.36,
-      "vote_count": 449,
+      "vote_count": 450,
       "origin_country": [
         "US"
       ],
@@ -25726,7 +25847,7 @@
         }
       ],
       "homepage": "https://www.shudder.com/series/watch/the-creep-tapes/567b706159e95f20",
-      "popularity": 0.9728,
+      "popularity": 1.0356,
       "number_of_seasons": 2,
       "number_of_episodes": 6,
       "first_air_date": "2024-11-15",
@@ -25750,7 +25871,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36914430/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Creep+Tapes+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:53+08:00"
         },
         {
           "air_date": null,
@@ -25802,7 +25924,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0D6HFBLMP",
-      "popularity": 11.957,
+      "popularity": 10.2011,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2024-11-14",
@@ -25846,8 +25968,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.1,
-      "vote_count": 1670,
+      "vote_average": 8.13,
+      "vote_count": 1672,
       "origin_country": [
         "US"
       ],
@@ -25860,7 +25982,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.3yksgc857px0k0rqe5zd4jice",
-      "popularity": 39.6617,
+      "popularity": 40.5837,
       "number_of_seasons": 4,
       "number_of_episodes": 20,
       "first_air_date": "2023-05-04",
@@ -26106,7 +26228,7 @@
         }
       ],
       "homepage": "https://www.adultswim.com/videos/invincible-fight-girl",
-      "popularity": 2.1542,
+      "popularity": 2.2372,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2024-11-03",
@@ -26130,7 +26252,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36888740",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Invincible+Fight+Girl+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:24:57+08:00"
         }
       ]
     },
@@ -26151,7 +26274,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.03,
-      "vote_count": 1038,
+      "vote_count": 1040,
       "origin_country": [
         "US"
       ],
@@ -26311,7 +26434,7 @@
       ],
       "type": "Scripted",
       "vote_average": 6.98,
-      "vote_count": 2237,
+      "vote_count": 2240,
       "origin_country": [
         "US"
       ],
@@ -26331,7 +26454,7 @@
         }
       ],
       "homepage": "http://www.tbs.com/shows/american-dad",
-      "popularity": 76.2722,
+      "popularity": 95.149,
       "number_of_seasons": 21,
       "number_of_episodes": 388,
       "first_air_date": "2005-02-06",
@@ -26694,7 +26817,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/transformers-earthspark/",
-      "popularity": 3.4845,
+      "popularity": 6.2076,
       "number_of_seasons": 3,
       "number_of_episodes": 38,
       "first_air_date": "2022-11-11",
@@ -26732,7 +26855,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36893036/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Transformers%3A+EarthSpark+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:01+08:00"
         },
         {
           "name": "第 3 季",
@@ -26746,7 +26870,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37093661/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Transformers%3A+EarthSpark+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:05+08:00"
         }
       ]
     },
@@ -26988,7 +27113,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36436422/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Poppa%27s+House+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:08+08:00"
         }
       ]
     },
@@ -27075,7 +27201,8 @@
           "douban_link_google": "https://movie.douban.com/subject/37418509/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Tiny+Chef+Show+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:11+08:00"
         }
       ]
     },
@@ -27305,7 +27432,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36752836/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Equalizer+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:15+08:00"
         },
         {
           "name": "第 5 季",
@@ -27319,7 +27447,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36877430/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Equalizer+season+5&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:18+08:00"
         }
       ]
     },
@@ -27378,7 +27507,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36054395/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Hysteria%21+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:22+08:00"
         }
       ]
     },
@@ -27502,7 +27632,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37348298/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Lopez+vs+Lopez+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:25+08:00"
         },
         {
           "name": "第 3 季",
@@ -27677,7 +27808,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36850559/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=S.W.A.T.+season+8&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:28+08:00"
         }
       ]
     },
@@ -27712,7 +27844,7 @@
         }
       ],
       "homepage": "https://allblk.tv/wickedcity/",
-      "popularity": 1.7549,
+      "popularity": 1.7184,
       "number_of_seasons": 3,
       "number_of_episodes": 21,
       "first_air_date": "2022-12-01",
@@ -27785,7 +27917,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.68,
-      "vote_count": 388,
+      "vote_count": 389,
       "origin_country": [
         "US"
       ],
@@ -27798,7 +27930,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81303831",
-      "popularity": 13.4055,
+      "popularity": 14.0864,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2022-05-13",
@@ -27914,7 +28046,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36421552/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Pradeeps+of+Pittsburgh+season+1&cat=1002",
           "overview": "一个印度家庭，以及他们抵达匹兹堡两年来发生的喧闹而又幽默的事件。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:32+08:00"
         }
       ]
     },
@@ -27931,7 +28064,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.77,
-      "vote_count": 456,
+      "vote_count": 458,
       "origin_country": [
         "US"
       ],
@@ -27944,7 +28077,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.apzybj6eqf6pzccd97kev7bs",
-      "popularity": 21.6729,
+      "popularity": 20.9396,
       "number_of_seasons": 2,
       "number_of_episodes": 22,
       "first_air_date": "2023-01-26",
@@ -28069,7 +28202,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35981716/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=FBI%3A+International+season+3&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:36+08:00"
         },
         {
           "name": "第 4 季",
@@ -28083,7 +28217,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36850991/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=FBI%3A+International+season+4&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:39+08:00"
         }
       ]
     },
@@ -28198,7 +28333,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35981606/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=FBI%3A+Most+Wanted+season+5&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:44+08:00"
         },
         {
           "name": "第 6 季",
@@ -28212,7 +28348,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36850992/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=FBI%3A+Most+Wanted+season+6&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:47+08:00"
         }
       ]
     },
@@ -28630,7 +28767,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/spellbound-e4c77dc7-8d4a-4041-afaf-2b8599fffb1e",
-      "popularity": 2.2547,
+      "popularity": 2.0142,
       "number_of_seasons": 2,
       "number_of_episodes": 39,
       "first_air_date": "2023-08-31",
@@ -28779,7 +28916,7 @@
         }
       ],
       "homepage": "https://www.youtube.com/playlist?list=PL4nWU0IcZ3kgr0WQ-XYamIb-dI150AUQU",
-      "popularity": 1.4649,
+      "popularity": 1.741,
       "number_of_seasons": 3,
       "number_of_episodes": 13,
       "first_air_date": "2022-12-11",
@@ -28815,7 +28952,8 @@
           "douban_link_google": "https://movie.douban.com/subject/36893698/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Hello+Neighbor%3A+Welcome+to+Raven+Brooks+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:50+08:00"
         },
         {
           "name": "第3季",
@@ -28854,8 +28992,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.34,
-      "vote_count": 1083,
+      "vote_average": 8.3,
+      "vote_count": 1084,
       "origin_country": [
         "US"
       ],
@@ -28868,7 +29006,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80236318",
-      "popularity": 35.5221,
+      "popularity": 34.28,
       "number_of_seasons": 5,
       "number_of_episodes": 41,
       "first_air_date": "2020-04-15",
@@ -28934,7 +29072,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36251204/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Outer+Banks+season+4&cat=1002",
           "overview": "小鱼儿回到家，过上了美好的生活。但没过多久，他们又回归老本行：寻宝。",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:55+08:00"
         },
         {
           "name": "第 5 季",
@@ -28982,7 +29121,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81361105",
-      "popularity": 4.135,
+      "popularity": 3.8724,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2024-10-10",
@@ -29308,7 +29447,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36932243/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=The+Irrational+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:25:58+08:00"
         }
       ]
     },
@@ -29391,7 +29531,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37071621/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Curses%21+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:26:02+08:00"
         }
       ]
     },
@@ -29463,7 +29604,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36930452/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Found+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:26:05+08:00"
         }
       ]
     },
@@ -29505,7 +29647,7 @@
         }
       ],
       "homepage": "https://www.max.com/show/40451920-1f13-444c-90cd-02bb28a22532",
-      "popularity": 4.8977,
+      "popularity": 7.4658,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2023-05-23",
@@ -29577,7 +29719,7 @@
         }
       ],
       "homepage": "http://www.bet.com/shows/tyler-perrys-zatima",
-      "popularity": 2.544,
+      "popularity": 2.3262,
       "number_of_seasons": 3,
       "number_of_episodes": 50,
       "first_air_date": "2022-09-21",
@@ -29652,7 +29794,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.23,
-      "vote_count": 517,
+      "vote_count": 518,
       "origin_country": [
         "US"
       ],
@@ -29962,8 +30104,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.29,
-      "vote_count": 224,
+      "vote_average": 7.28,
+      "vote_count": 225,
       "origin_country": [
         "US"
       ],
@@ -29977,7 +30119,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/grotesquerie",
-      "popularity": 7.084,
+      "popularity": 8.0296,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2024-09-25",
@@ -30017,7 +30159,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.41,
+      "vote_average": 8.4,
       "vote_count": 2291,
       "origin_country": [
         "US"
@@ -30032,7 +30174,7 @@
         }
       ],
       "homepage": "http://www.nbc.com/chicago-fire",
-      "popularity": 58.4228,
+      "popularity": 60.9632,
       "number_of_seasons": 14,
       "number_of_episodes": 275,
       "first_air_date": "2012-10-10",
@@ -30224,7 +30366,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36823419/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Chicago+Fire+season+13&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:26:09+08:00"
         },
         {
           "air_date": null,
@@ -30348,7 +30491,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36391160/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Rescue%3A+HI-Surf+season+1&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:26:13+08:00"
         }
       ]
     },
@@ -30373,7 +30517,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.19,
-      "vote_count": 2074,
+      "vote_count": 2076,
       "origin_country": [
         "US"
       ],
@@ -30393,7 +30537,7 @@
         }
       ],
       "homepage": "https://www.mgmplus.com/series/from",
-      "popularity": 65.8665,
+      "popularity": 66.1424,
       "number_of_seasons": 4,
       "number_of_episodes": 30,
       "first_air_date": "2022-02-20",
@@ -30608,7 +30752,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.gs1b84yx68istiomnshllt1i",
-      "popularity": 2.7143,
+      "popularity": 2.6107,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2024-09-19",
@@ -30805,7 +30949,7 @@
         }
       ],
       "homepage": "http://pawpatrol.com",
-      "popularity": 49.7226,
+      "popularity": 52.5789,
       "number_of_seasons": 11,
       "number_of_episodes": 510,
       "first_air_date": "2013-08-12",
@@ -31602,8 +31746,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.45,
-      "vote_count": 165,
+      "vote_average": 7.43,
+      "vote_count": 166,
       "origin_country": [
         "US"
       ],
@@ -31617,7 +31761,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/tell-me-lies-bad099c4-b88d-486a-8e83-b6a5cb1fa6d3",
-      "popularity": 5.1098,
+      "popularity": 5.3594,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2022-09-07",
@@ -31655,7 +31799,8 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36998785/",
           "douban_search_link": "https://search.douban.com/movie/subject_search?search_text=Tell+Me+Lies+season+2&cat=1002",
           "overview": "",
-          "douban_link_verified": true
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-08-24T20:26:17+08:00"
         }
       ]
     },
@@ -31686,7 +31831,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/english-teacher",
-      "popularity": 2.4199,
+      "popularity": 2.5193,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2024-09-02",
@@ -31745,7 +31890,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 0.789,
+      "popularity": 0.8883,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2024-09-02",
@@ -31794,7 +31939,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.29,
-      "vote_count": 3390,
+      "vote_count": 3392,
       "origin_country": [
         "US"
       ],
@@ -31888,7 +32033,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.17vf6g68dy89kk1l1nnb6min4",
-      "popularity": 11.4388,
+      "popularity": 11.5772,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2022-03-24",
