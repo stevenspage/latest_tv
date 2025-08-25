@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const updateDate = data.metadata.last_updated.substring(0, 10);
             const updateDateElement = mainTitle.querySelector('.update-date');
             if (updateDateElement) {
-                updateDateElement.textContent = updateDate;
+                updateDateElement.textContent = `数据更新于：${updateDate}`;
                 updateDateElement.classList.remove('skeleton');
             }
         }
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (dateToDisplay) {
-            updateDateElement.textContent = dateToDisplay.substring(0, 10);
+            updateDateElement.textContent = `数据更新于：${dateToDisplay.substring(0, 10)}`;
             updateDateElement.classList.remove('skeleton');
         } else {
             updateDateElement.textContent = '';
