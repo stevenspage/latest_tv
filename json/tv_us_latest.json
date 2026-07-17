@@ -1,8 +1,12 @@
 {
   "metadata": {
-    "last_updated": "2026-07-17T06:51:35+08:00",
+    "last_updated": "2026-07-18T06:41:31+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2026-07-18T06:41:31+08:00",
+        "summary": "数据更新完成：更新了 591 部正在制作中的剧集信息"
+      },
       {
         "time": "2026-07-17T06:51:35+08:00",
         "summary": "数据更新完成：更新了 591 部正在制作中的剧集信息"
@@ -38,18 +42,14 @@
       {
         "time": "2026-07-09T06:58:00+08:00",
         "summary": "数据更新完成：更新了 591 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-07-08T06:54:22+08:00",
-        "summary": "数据更新完成：更新了 591 部正在制作中的剧集信息"
       }
     ],
-    "last_refreshed": "2026-07-17T06:51:35+08:00",
+    "last_refreshed": "2026-07-18T06:41:31+08:00",
     "last_fetched": "2025-09-11T15:03:48+08:00",
     "total_shows": 3921,
-    "total_seasons": 9492,
+    "total_seasons": 9494,
     "earliest_show_date": "2000-01-01",
-    "latest_show_date": "2026-07-15",
+    "latest_show_date": "2026-07-16",
     "total_douban_links": 8571,
     "verified_douban_links": 7466,
     "verified_no_rating_links": 2450
@@ -76,7 +76,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.2,
-      "vote_count": 583,
+      "vote_count": 585,
       "origin_country": [
         "US"
       ],
@@ -90,7 +90,7 @@
         }
       ],
       "homepage": "https://abc.com/show/a9a37c58-9d88-452f-9ac6-0a95e5a4176e",
-      "popularity": 50.422,
+      "popularity": 63.8823,
       "number_of_seasons": 3,
       "number_of_episodes": 32,
       "first_air_date": "2024-09-17",
@@ -162,7 +162,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.77,
-      "vote_count": 921,
+      "vote_count": 922,
       "origin_country": [
         "US"
       ],
@@ -192,7 +192,7 @@
         }
       ],
       "homepage": "https://watch.thechosen.tv",
-      "popularity": 62.1515,
+      "popularity": 42.8927,
       "number_of_seasons": 6,
       "number_of_episodes": 47,
       "first_air_date": "2019-04-21",
@@ -310,7 +310,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.23,
-      "vote_count": 3781,
+      "vote_count": 3785,
       "origin_country": [
         "US"
       ],
@@ -323,7 +323,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B09QHC2LZM",
-      "popularity": 39.7864,
+      "popularity": 32.0415,
       "number_of_seasons": 3,
       "number_of_episodes": 17,
       "first_air_date": "2022-09-01",
@@ -397,8 +397,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.67,
-      "vote_count": 46,
+      "vote_average": 6.7,
+      "vote_count": 47,
       "origin_country": [
         "US"
       ],
@@ -412,7 +412,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/st-denis-medical",
-      "popularity": 8.5656,
+      "popularity": 4.0631,
       "number_of_seasons": 3,
       "number_of_episodes": 37,
       "first_air_date": "2024-11-12",
@@ -504,7 +504,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/american-horror-story",
-      "popularity": 65.1548,
+      "popularity": 51.8815,
       "number_of_seasons": 13,
       "number_of_episodes": 133,
       "first_air_date": "2011-10-05",
@@ -713,7 +713,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/happys-place",
-      "popularity": 4.2541,
+      "popularity": 3.0464,
       "number_of_seasons": 3,
       "number_of_episodes": 36,
       "first_air_date": "2024-10-18",
@@ -800,7 +800,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B09HZ4BV5X",
-      "popularity": 13.1921,
+      "popularity": 10.7354,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2022-06-30",
@@ -841,6 +841,109 @@
       ]
     },
     {
+      "name": "奇思妙探",
+      "original_name": "Elsbeth",
+      "id": 226285,
+      "imdb_id": "tt26591110",
+      "genres": [
+        {
+          "id": 80,
+          "name": "犯罪"
+        },
+        {
+          "id": 18,
+          "name": "剧情"
+        },
+        {
+          "id": 35,
+          "name": "喜剧"
+        },
+        {
+          "id": 9648,
+          "name": "悬疑"
+        }
+      ],
+      "type": "Scripted",
+      "vote_average": 6.7,
+      "vote_count": 125,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "networks": [
+        {
+          "id": 16,
+          "logo_path": "/wju8KhOUsR5y4bH9p3Jc50hhaLO.png",
+          "name": "CBS",
+          "origin_country": "US"
+        }
+      ],
+      "homepage": "https://cbs.com/shows/elsbeth",
+      "popularity": 38.0726,
+      "number_of_seasons": 4,
+      "number_of_episodes": 50,
+      "first_air_date": "2024-02-29",
+      "last_air_date": "2026-05-21",
+      "in_production": true,
+      "status": "Returning Series",
+      "adult": false,
+      "poster_path": "/lWOzxR1orgiXwCMI77qSY25dC5o.jpg",
+      "backdrop_path": "/ezQSOeu9uj4bWulxHR7D5CSNv3r.jpg",
+      "overview": "",
+      "seasons": [
+        {
+          "name": "第 1 季",
+          "season_number": 1,
+          "id": 340471,
+          "air_date": "2024-02-29",
+          "episode_count": 10,
+          "vote_average": 7.8,
+          "poster_path": "/q6RxCjj3I8FUPQHSkXnnE1xG2wn.jpg",
+          "douban_rating": "7.5",
+          "douban_link_google": "https://m.douban.com/movie/subject/36226799/",
+          "overview": "",
+          "douban_link_verified": true
+        },
+        {
+          "name": "第 2 季",
+          "season_number": 2,
+          "id": 402116,
+          "air_date": "2024-10-17",
+          "episode_count": 20,
+          "vote_average": 6.9,
+          "poster_path": "/4sbCGmIHInP6EiLhvpMC6SxBnYd.jpg",
+          "douban_rating": "7.6",
+          "douban_link_google": "https://m.douban.com/movie/subject/36860501/",
+          "overview": "",
+          "douban_link_verified": true
+        },
+        {
+          "name": "第 3 季",
+          "season_number": 3,
+          "id": 465503,
+          "air_date": "2025-10-12",
+          "episode_count": 2,
+          "vote_average": 0.0,
+          "poster_path": "/7lnNSbT90qwtrn1h9TvEkVFMz2P.jpg",
+          "douban_link_google": "https://m.douban.com/movie/subject/37245791/",
+          "overview": "",
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-11-05T01:02:56+08:00",
+          "douban_rating": "7.7"
+        },
+        {
+          "air_date": "2026-10-08",
+          "episode_count": 1,
+          "id": 530473,
+          "name": "第 4 季",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 4,
+          "vote_average": 0.0
+        }
+      ]
+    },
+    {
       "name": "芝加哥急救",
       "original_name": "Chicago Med",
       "id": 62650,
@@ -867,7 +970,7 @@
         }
       ],
       "homepage": "http://www.nbc.com/chicago-med",
-      "popularity": 54.2468,
+      "popularity": 32.1803,
       "number_of_seasons": 12,
       "number_of_episodes": 220,
       "first_air_date": "2015-11-17",
@@ -1070,7 +1173,7 @@
         }
       ],
       "homepage": "http://www.nbc.com/chicago-pd",
-      "popularity": 72.7065,
+      "popularity": 57.4888,
       "number_of_seasons": 14,
       "number_of_episodes": 265,
       "first_air_date": "2014-01-08",
@@ -1293,7 +1396,7 @@
         }
       ],
       "homepage": "http://www.nbc.com/chicago-fire",
-      "popularity": 86.2085,
+      "popularity": 67.4348,
       "number_of_seasons": 15,
       "number_of_episodes": 296,
       "first_air_date": "2012-10-10",
@@ -1537,7 +1640,7 @@
         }
       ],
       "homepage": "https://www.fox.com/grimsburg",
-      "popularity": 2.7555,
+      "popularity": 3.6447,
       "number_of_seasons": 3,
       "number_of_episodes": 27,
       "first_air_date": "2024-01-07",
@@ -1606,7 +1709,7 @@
       ],
       "type": "Scripted",
       "vote_average": 6.1,
-      "vote_count": 69,
+      "vote_count": 70,
       "origin_country": [
         "US"
       ],
@@ -1620,7 +1723,7 @@
         }
       ],
       "homepage": "https://www.fox.com/animal-control/",
-      "popularity": 6.381,
+      "popularity": 8.2568,
       "number_of_seasons": 5,
       "number_of_episodes": 43,
       "first_air_date": "2023-02-16",
@@ -1725,7 +1828,7 @@
         }
       ],
       "homepage": "https://www.fox.com/detail/series/SER003214BDSJ/doc",
-      "popularity": 13.3982,
+      "popularity": 9.8437,
       "number_of_seasons": 3,
       "number_of_episodes": 33,
       "first_air_date": "2025-01-07",
@@ -1804,7 +1907,7 @@
         }
       ],
       "homepage": "https://www.fox.com/name-that-tune/",
-      "popularity": 3.0741,
+      "popularity": 3.9465,
       "number_of_seasons": 6,
       "number_of_episodes": 69,
       "first_air_date": "2021-01-06",
@@ -1930,7 +2033,7 @@
         }
       ],
       "homepage": "https://www.starz.com/us/en/series/outlander-blood-of-my-blood/69342",
-      "popularity": 8.8281,
+      "popularity": 6.8894,
       "number_of_seasons": 2,
       "number_of_episodes": 11,
       "first_air_date": "2025-08-08",
@@ -1985,7 +2088,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.35,
-      "vote_count": 727,
+      "vote_count": 730,
       "origin_country": [
         "GB",
         "US"
@@ -2006,7 +2109,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/mobland",
-      "popularity": 41.092,
+      "popularity": 27.5843,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2025-03-30",
@@ -2073,7 +2176,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/82013700",
-      "popularity": 9.0895,
+      "popularity": 6.9002,
       "number_of_seasons": 2,
       "number_of_episodes": 8,
       "first_air_date": "2025-07-21",
@@ -2141,7 +2244,7 @@
         }
       ],
       "homepage": "https://www.peacocktv.com/stream-tv/the-paper",
-      "popularity": 6.6543,
+      "popularity": 5.4411,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2025-09-04",
@@ -2212,7 +2315,7 @@
         }
       ],
       "homepage": "https://www.syfy.com/the-ark",
-      "popularity": 13.9554,
+      "popularity": 11.0793,
       "number_of_seasons": 3,
       "number_of_episodes": 36,
       "first_air_date": "2023-02-01",
@@ -2290,7 +2393,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81752004",
-      "popularity": 3.512,
+      "popularity": 2.2832,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2025-07-31",
@@ -2359,7 +2462,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.4luj45vtqpmjsvb6sc2675oeg",
-      "popularity": 12.2866,
+      "popularity": 9.9694,
       "number_of_seasons": 2,
       "number_of_episodes": 19,
       "first_air_date": "2024-05-07",
@@ -2429,7 +2532,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/adults",
-      "popularity": 6.7382,
+      "popularity": 4.0018,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2025-05-28",
@@ -2471,6 +2574,113 @@
       ]
     },
     {
+      "name": "熊猫静水",
+      "original_name": "Stillwater",
+      "id": 111834,
+      "imdb_id": "tt13135714",
+      "genres": [
+        {
+          "id": 10762,
+          "name": "儿童"
+        },
+        {
+          "id": 16,
+          "name": "动画"
+        }
+      ],
+      "type": "Scripted",
+      "vote_average": 7.5,
+      "vote_count": 22,
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "networks": [
+        {
+          "id": 2552,
+          "logo_path": "/bngHRFi794mnMq34gfVcm9nDxN1.png",
+          "name": "Apple TV"
+        }
+      ],
+      "homepage": "https://tv.apple.com/show/umc.cmc.3czcagetjq31vvbgkkyp1xiao",
+      "popularity": 3.7612,
+      "number_of_seasons": 5,
+      "number_of_episodes": 35,
+      "first_air_date": "2020-12-04",
+      "last_air_date": "2025-07-31",
+      "in_production": true,
+      "status": "Returning Series",
+      "adult": false,
+      "poster_path": "/t6tcFn0LiyKRqR76XwNfErK81cw.jpg",
+      "backdrop_path": "/jESGW5K8tvjkbUbnrtJOygrMGYt.jpg",
+      "overview": "",
+      "seasons": [
+        {
+          "name": "第 1 季",
+          "season_number": 1,
+          "id": 166342,
+          "air_date": "2020-12-04",
+          "episode_count": 13,
+          "vote_average": 9.5,
+          "poster_path": "/hFvYDuR1lzm8HFMb12NWZ1ZvPEU.jpg",
+          "douban_rating": null,
+          "douban_link_google": "https://m.douban.com/movie/subject/35253671/",
+          "overview": "",
+          "douban_link_verified": true
+        },
+        {
+          "name": "第 2 季",
+          "season_number": 2,
+          "id": 282682,
+          "air_date": "2022-03-17",
+          "episode_count": 7,
+          "vote_average": 0.0,
+          "poster_path": "/t6tcFn0LiyKRqR76XwNfErK81cw.jpg",
+          "douban_rating": null,
+          "douban_link_google": "https://m.douban.com/movie/subject/35796891/",
+          "overview": "",
+          "douban_link_verified": true
+        },
+        {
+          "name": "第 3 季",
+          "season_number": 3,
+          "id": 326077,
+          "air_date": "2023-05-19",
+          "episode_count": 10,
+          "vote_average": 0.0,
+          "poster_path": "/w2ZuT3hUSLvmAuY08koM44Kkhld.jpg",
+          "douban_rating": null,
+          "douban_link_google": "https://m.douban.com/movie/subject/36402551/",
+          "overview": "",
+          "douban_link_verified": true
+        },
+        {
+          "name": "第 4 季",
+          "season_number": 4,
+          "id": 462446,
+          "air_date": "2025-07-31",
+          "episode_count": 1,
+          "vote_average": 0.0,
+          "poster_path": "/pCYYfDoF9FW4alydnDTE7bZa4xN.jpg",
+          "douban_rating": null,
+          "douban_link_google": "https://m.douban.com/movie/subject/37441988/",
+          "overview": "",
+          "douban_link_verified": true,
+          "last_douban_rating_fetch": "2025-11-26T01:32:34+08:00"
+        },
+        {
+          "air_date": "2026-08-20",
+          "episode_count": 5,
+          "id": 530369,
+          "name": "第 5 季",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 5,
+          "vote_average": 0.0
+        }
+      ]
+    },
+    {
       "name": "外滩探秘",
       "original_name": "Outer Banks",
       "id": 100757,
@@ -2504,7 +2714,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80236318",
-      "popularity": 17.362,
+      "popularity": 13.84,
       "number_of_seasons": 5,
       "number_of_episodes": 50,
       "first_air_date": "2020-04-15",
@@ -2621,7 +2831,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/average-joe",
-      "popularity": 1.5642,
+      "popularity": 1.7375,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2023-06-26",
@@ -2684,7 +2894,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81758875",
-      "popularity": 7.7932,
+      "popularity": 4.1834,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2024-05-23",
@@ -2771,7 +2981,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B09ML1ZF3D",
-      "popularity": 89.9075,
+      "popularity": 77.4914,
       "number_of_seasons": 4,
       "number_of_episodes": 32,
       "first_air_date": "2022-02-03",
@@ -2846,7 +3056,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.77,
+      "vote_average": 7.8,
       "vote_count": 374,
       "origin_country": [
         "US"
@@ -2860,7 +3070,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81426967",
-      "popularity": 15.4466,
+      "popularity": 13.5335,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2023-12-07",
@@ -2946,7 +3156,7 @@
         }
       ],
       "homepage": "https://disneynow.com/show/16d9c912-7ba3-4b9b-8d6f-1246307b0cb6",
-      "popularity": 6.3822,
+      "popularity": 9.404,
       "number_of_seasons": 3,
       "number_of_episodes": 35,
       "first_air_date": "2024-10-29",
@@ -3015,7 +3225,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.35,
-      "vote_count": 2428,
+      "vote_count": 2430,
       "origin_country": [
         "US"
       ],
@@ -3028,7 +3238,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.vtoh0mn0xn7t3c643xqonfzy",
-      "popularity": 40.5494,
+      "popularity": 32.0177,
       "number_of_seasons": 4,
       "number_of_episodes": 44,
       "first_air_date": "2020-08-14",
@@ -3125,7 +3335,7 @@
         }
       ],
       "homepage": "https://www.tntdrama.com/shows/the-librarians-the-next-chapter",
-      "popularity": 4.1622,
+      "popularity": 2.856,
       "number_of_seasons": 2,
       "number_of_episodes": 24,
       "first_air_date": "2025-05-25",
@@ -3180,7 +3390,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.99,
-      "vote_count": 1235,
+      "vote_count": 1238,
       "origin_country": [
         "US"
       ],
@@ -3194,7 +3404,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/special-ops-lioness/",
-      "popularity": 31.757,
+      "popularity": 45.9959,
       "number_of_seasons": 3,
       "number_of_episodes": 24,
       "first_air_date": "2023-07-23",
@@ -3274,8 +3484,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.2,
-      "vote_count": 257,
+      "vote_average": 7.24,
+      "vote_count": 258,
       "origin_country": [
         "US"
       ],
@@ -3288,7 +3498,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CYFLCXSQ",
-      "popularity": 11.7037,
+      "popularity": 9.1289,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2024-08-01",
@@ -3359,7 +3569,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/the-proud-family-louder-and-prouder/3e1FFRyoPEOs",
-      "popularity": 3.3295,
+      "popularity": 4.5943,
       "number_of_seasons": 4,
       "number_of_episodes": 30,
       "first_air_date": "2022-02-23",
@@ -3460,7 +3670,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/diarra-from-detroit",
-      "popularity": 1.3173,
+      "popularity": 1.4304,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-03-21",
@@ -3543,7 +3753,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/the-walking-dead-dead-city--1060741",
-      "popularity": 17.0093,
+      "popularity": 15.0113,
       "number_of_seasons": 3,
       "number_of_episodes": 22,
       "first_air_date": "2023-06-18",
@@ -3627,7 +3837,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/star-trek-strange-new-worlds",
-      "popularity": 18.1042,
+      "popularity": 13.7813,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2022-05-05",
@@ -3725,7 +3935,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81459107",
-      "popularity": 5.6205,
+      "popularity": 4.8299,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2025-04-17",
@@ -3807,7 +4017,7 @@
         }
       ],
       "homepage": "https://disneynow.com/shows/spidey-and-his-amazing-friends",
-      "popularity": 11.1298,
+      "popularity": 16.6288,
       "number_of_seasons": 5,
       "number_of_episodes": 216,
       "first_air_date": "2021-08-06",
@@ -3904,7 +4114,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.12,
-      "vote_count": 487,
+      "vote_count": 488,
       "origin_country": [
         "US"
       ],
@@ -3918,7 +4128,7 @@
         }
       ],
       "homepage": "https://www.cwtv.com/shows/all-american/",
-      "popularity": 14.9006,
+      "popularity": 21.0219,
       "number_of_seasons": 8,
       "number_of_episodes": 132,
       "first_air_date": "2018-10-10",
@@ -4081,7 +4291,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81397437",
-      "popularity": 9.4522,
+      "popularity": 8.4475,
       "number_of_seasons": 7,
       "number_of_episodes": 96,
       "first_air_date": "2020-10-03",
@@ -4231,7 +4441,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81354524",
-      "popularity": 4.5111,
+      "popularity": 5.2415,
       "number_of_seasons": 3,
       "number_of_episodes": 24,
       "first_air_date": "2023-07-13",
@@ -4298,8 +4508,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.2,
-      "vote_count": 2253,
+      "vote_average": 8.18,
+      "vote_count": 2259,
       "origin_country": [
         "US"
       ],
@@ -4312,7 +4522,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.3yksgc857px0k0rqe5zd4jice",
-      "popularity": 313.7124,
+      "popularity": 236.5473,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2023-05-04",
@@ -4397,8 +4607,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.63,
-      "vote_count": 768,
+      "vote_average": 8.6,
+      "vote_count": 771,
       "origin_country": [
         "US"
       ],
@@ -4411,7 +4621,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/x-men-97/vc1XIz90ZNH5",
-      "popularity": 83.293,
+      "popularity": 67.639,
       "number_of_seasons": 2,
       "number_of_episodes": 19,
       "first_air_date": "2024-03-20",
@@ -4485,7 +4695,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/tyler-perrys-ruthless",
-      "popularity": 3.6538,
+      "popularity": 5.0801,
       "number_of_seasons": 6,
       "number_of_episodes": 107,
       "first_air_date": "2020-03-19",
@@ -4600,7 +4810,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.14,
-      "vote_count": 1816,
+      "vote_count": 1817,
       "origin_country": [
         "US"
       ],
@@ -4614,7 +4824,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/the-bear",
-      "popularity": 66.8563,
+      "popularity": 57.7022,
       "number_of_seasons": 5,
       "number_of_episodes": 46,
       "first_air_date": "2022-06-23",
@@ -4715,7 +4925,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.79,
-      "vote_count": 1262,
+      "vote_count": 1264,
       "origin_country": [
         "US"
       ],
@@ -4728,7 +4938,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80237957",
-      "popularity": 153.8711,
+      "popularity": 126.828,
       "number_of_seasons": 2,
       "number_of_episodes": 15,
       "first_air_date": "2024-02-22",
@@ -4819,7 +5029,7 @@
         }
       ],
       "homepage": "https://acorn.tv/harrywild",
-      "popularity": 10.9704,
+      "popularity": 10.4217,
       "number_of_seasons": 5,
       "number_of_episodes": 32,
       "first_air_date": "2022-04-04",
@@ -4934,7 +5144,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/the-agency",
-      "popularity": 58.3175,
+      "popularity": 48.8966,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2024-12-01",
@@ -4992,7 +5202,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.37,
-      "vote_count": 6623,
+      "vote_count": 6626,
       "origin_country": [
         "US"
       ],
@@ -5006,7 +5216,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/content/house-of-the-dragon",
-      "popularity": 383.121,
+      "popularity": 335.4058,
       "number_of_seasons": 3,
       "number_of_episodes": 26,
       "first_air_date": "2022-08-21",
@@ -5103,7 +5313,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.4r6q7tdquewehwvb3rzl0k3dt",
-      "popularity": 28.6229,
+      "popularity": 24.6373,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-04-04",
@@ -5161,7 +5371,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.17,
-      "vote_count": 248,
+      "vote_count": 249,
       "origin_country": [
         "US"
       ],
@@ -5175,7 +5385,7 @@
         }
       ],
       "homepage": "https://www.adultswim.com/videos/my-adventures-with-superman",
-      "popularity": 33.3219,
+      "popularity": 41.7863,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2023-07-07",
@@ -5256,7 +5466,7 @@
         }
       ],
       "homepage": "https://www.starz.com/us/en/series/power-book-iii-raising-kanan/58458",
-      "popularity": 24.7535,
+      "popularity": 20.4294,
       "number_of_seasons": 5,
       "number_of_episodes": 48,
       "first_air_date": "2021-07-18",
@@ -5359,7 +5569,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80239866",
-      "popularity": 12.7941,
+      "popularity": 9.7708,
       "number_of_seasons": 5,
       "number_of_episodes": 50,
       "first_air_date": "2020-05-19",
@@ -5469,7 +5679,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/all-the-queens-men",
-      "popularity": 5.1985,
+      "popularity": 6.3733,
       "number_of_seasons": 5,
       "number_of_episodes": 70,
       "first_air_date": "2021-09-09",
@@ -5585,7 +5795,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/interview-with-the-vampire--1053259",
-      "popularity": 20.5124,
+      "popularity": 17.5604,
       "number_of_seasons": 2,
       "number_of_episodes": 15,
       "first_air_date": "2022-10-02",
@@ -5665,7 +5875,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.22,
-      "vote_count": 679,
+      "vote_count": 680,
       "origin_country": [
         "US"
       ],
@@ -5678,7 +5888,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B09PZG6ZGP",
-      "popularity": 16.9177,
+      "popularity": 24.0561,
       "number_of_seasons": 4,
       "number_of_episodes": 48,
       "first_air_date": "2022-01-27",
@@ -5779,7 +5989,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.3,
-      "vote_count": 4121,
+      "vote_count": 4122,
       "origin_country": [
         "US"
       ],
@@ -5799,11 +6009,11 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/criminal_minds",
-      "popularity": 167.4819,
+      "popularity": 141.7576,
       "number_of_seasons": 19,
       "number_of_episodes": 364,
       "first_air_date": "2005-09-22",
-      "last_air_date": "2026-07-09",
+      "last_air_date": "2026-07-16",
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
@@ -6090,7 +6300,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81750702",
-      "popularity": 9.2641,
+      "popularity": 7.8551,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2025-05-01",
@@ -6161,7 +6371,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/9c3eebbe-95f7-479b-b730-ca5a0633a979",
-      "popularity": 5.2655,
+      "popularity": 3.0006,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2025-03-06",
@@ -6224,7 +6434,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.7,
-      "vote_count": 11112,
+      "vote_count": 11116,
       "origin_country": [
         "US"
       ],
@@ -6238,7 +6448,7 @@
         }
       ],
       "homepage": "http://www.adultswim.com/videos/rick-and-morty",
-      "popularity": 185.0047,
+      "popularity": 151.6592,
       "number_of_seasons": 9,
       "number_of_episodes": 91,
       "first_air_date": "2013-12-02",
@@ -6392,7 +6602,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81740857",
-      "popularity": 4.5933,
+      "popularity": 2.9631,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2025-05-13",
@@ -6462,7 +6672,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/the-chi",
-      "popularity": 39.1678,
+      "popularity": 56.1965,
       "number_of_seasons": 8,
       "number_of_episodes": 88,
       "first_air_date": "2018-01-07",
@@ -6614,7 +6824,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0029db3",
-      "popularity": 4.8491,
+      "popularity": 4.3546,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2025-05-25",
@@ -6686,7 +6896,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81506915",
-      "popularity": 9.7886,
+      "popularity": 11.9769,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2025-04-03",
@@ -6761,7 +6971,7 @@
         }
       ],
       "homepage": "http://everyoneisdoinggreat.com",
-      "popularity": 2.3709,
+      "popularity": 1.6601,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2021-01-13",
@@ -6839,7 +7049,7 @@
         }
       ],
       "homepage": "https://disneynow.com/shows/chibiverse",
-      "popularity": 9.2684,
+      "popularity": 7.8118,
       "number_of_seasons": 4,
       "number_of_episodes": 25,
       "first_air_date": "2022-07-30",
@@ -6925,7 +7135,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.36,
-      "vote_count": 1014,
+      "vote_count": 1016,
       "origin_country": [
         "US"
       ],
@@ -6939,7 +7149,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 11.211,
+      "popularity": 13.3673,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2018-03-26",
@@ -7023,7 +7233,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0B8TQTZ99",
-      "popularity": 16.8097,
+      "popularity": 13.0785,
       "number_of_seasons": 2,
       "number_of_episodes": 13,
       "first_air_date": "2023-04-27",
@@ -7088,7 +7298,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81483318",
-      "popularity": 4.6045,
+      "popularity": 7.0223,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2025-02-27",
@@ -7158,7 +7368,7 @@
         }
       ],
       "homepage": "https://thefreakbrothers.com/",
-      "popularity": 3.1272,
+      "popularity": 2.2627,
       "number_of_seasons": 3,
       "number_of_episodes": 22,
       "first_air_date": "2021-11-14",
@@ -7230,7 +7440,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.51,
-      "vote_count": 3998,
+      "vote_count": 4006,
       "origin_country": [
         "US"
       ],
@@ -7250,7 +7460,7 @@
         }
       ],
       "homepage": "https://www.mgmplus.com/series/from",
-      "popularity": 289.9313,
+      "popularity": 243.2911,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2022-02-20",
@@ -7377,7 +7587,7 @@
         }
       ],
       "homepage": "http://pbskids.org/cyberchase/",
-      "popularity": 14.3174,
+      "popularity": 10.387,
       "number_of_seasons": 16,
       "number_of_episodes": 156,
       "first_air_date": "2002-01-21",
@@ -7655,7 +7865,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 1.0479,
+      "popularity": 1.9296,
       "number_of_seasons": 4,
       "number_of_episodes": 53,
       "first_air_date": "2023-06-17",
@@ -7763,7 +7973,7 @@
         }
       ],
       "homepage": "https://www.bet.com/shows/tyler-perrys-the-oval.html",
-      "popularity": 13.6882,
+      "popularity": 10.6735,
       "number_of_seasons": 7,
       "number_of_episodes": 157,
       "first_air_date": "2019-10-23",
@@ -7908,7 +8118,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81447461",
-      "popularity": 32.3927,
+      "popularity": 27.1609,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2023-04-06",
@@ -7958,7 +8168,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.28,
-      "vote_count": 10949,
+      "vote_count": 10952,
       "origin_country": [
         "US"
       ],
@@ -7972,7 +8182,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/content/euphoria",
-      "popularity": 105.424,
+      "popularity": 88.0315,
       "number_of_seasons": 3,
       "number_of_episodes": 24,
       "first_air_date": "2019-06-16",
@@ -8038,7 +8248,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.47,
+      "vote_average": 7.5,
       "vote_count": 368,
       "origin_country": [
         "US"
@@ -8062,7 +8272,7 @@
         }
       ],
       "homepage": "https://www.hbomax.com/shows/hacks/67e940b7-aab2-46ce-a62b-c7308cde9de7",
-      "popularity": 41.2611,
+      "popularity": 36.2367,
       "number_of_seasons": 5,
       "number_of_episodes": 47,
       "first_air_date": "2021-05-13",
@@ -8155,7 +8365,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.44,
-      "vote_count": 13128,
+      "vote_count": 13131,
       "origin_country": [
         "US"
       ],
@@ -8168,7 +8378,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B07QQQHK1Y",
-      "popularity": 154.2251,
+      "popularity": 127.012,
       "number_of_seasons": 5,
       "number_of_episodes": 40,
       "first_air_date": "2019-07-25",
@@ -8290,7 +8500,7 @@
         }
       ],
       "homepage": "https://www.hallmarkchannel.com/when-hope-calls",
-      "popularity": 2.3769,
+      "popularity": 3.4516,
       "number_of_seasons": 3,
       "number_of_episodes": 24,
       "first_air_date": "2019-08-30",
@@ -8376,7 +8586,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81519765",
-      "popularity": 126.6465,
+      "popularity": 60.9595,
       "number_of_seasons": 4,
       "number_of_episodes": 80,
       "first_air_date": "2023-06-01",
@@ -8483,7 +8693,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81324724",
-      "popularity": 42.6243,
+      "popularity": 35.849,
       "number_of_seasons": 3,
       "number_of_episodes": 26,
       "first_air_date": "2023-05-18",
@@ -8564,7 +8774,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 3.5464,
+      "popularity": 1.7747,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2024-04-07",
@@ -8629,7 +8839,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.78,
-      "vote_count": 297,
+      "vote_count": 298,
       "origin_country": [
         "US"
       ],
@@ -8642,7 +8852,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.74o37kzay0yuuub8iumddjsg",
-      "popularity": 28.0885,
+      "popularity": 22.0286,
       "number_of_seasons": 2,
       "number_of_episodes": 19,
       "first_air_date": "2025-04-10",
@@ -8691,8 +8901,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.28,
-      "vote_count": 271,
+      "vote_average": 8.29,
+      "vote_count": 272,
       "origin_country": [
         "US"
       ],
@@ -8711,7 +8921,7 @@
         }
       ],
       "homepage": "https://www.thewonderproject.com/house-of-david-series",
-      "popularity": 12.5431,
+      "popularity": 14.9988,
       "number_of_seasons": 3,
       "number_of_episodes": 16,
       "first_air_date": "2025-02-27",
@@ -8798,7 +9008,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.6wsi780sz5tdbqcf11k76mkp7",
-      "popularity": 50.1448,
+      "popularity": 40.3195,
       "number_of_seasons": 5,
       "number_of_episodes": 50,
       "first_air_date": "2019-11-01",
@@ -8909,7 +9119,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/content/the-comeback",
-      "popularity": 8.53,
+      "popularity": 7.7338,
       "number_of_seasons": 3,
       "number_of_episodes": 29,
       "first_air_date": "2005-06-05",
@@ -8998,7 +9208,7 @@
         }
       ],
       "homepage": "https://www.iyanutheseries.com",
-      "popularity": 2.5235,
+      "popularity": 1.6756,
       "number_of_seasons": 2,
       "number_of_episodes": 21,
       "first_air_date": "2025-04-05",
@@ -9070,7 +9280,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0B8JVS7Y8",
-      "popularity": 6.8862,
+      "popularity": 5.7796,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2023-04-07",
@@ -9141,7 +9351,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.dsa24wciry96i1e8dcq0b9sm",
-      "popularity": 1.1562,
+      "popularity": 1.5655,
       "number_of_seasons": 2,
       "number_of_episodes": 26,
       "first_air_date": "2024-12-12",
@@ -9204,7 +9414,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.64,
-      "vote_count": 5934,
+      "vote_count": 5936,
       "origin_country": [
         "US"
       ],
@@ -9217,7 +9427,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B08WJP55PR",
-      "popularity": 66.837,
+      "popularity": 52.1307,
       "number_of_seasons": 5,
       "number_of_episodes": 32,
       "first_air_date": "2021-03-25",
@@ -9324,7 +9534,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80240027",
-      "popularity": 15.5243,
+      "popularity": 12.7135,
       "number_of_seasons": 7,
       "number_of_episodes": 74,
       "first_air_date": "2019-12-06",
@@ -9443,8 +9653,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.0,
-      "vote_count": 813,
+      "vote_average": 6.98,
+      "vote_count": 814,
       "origin_country": [
         "US"
       ],
@@ -9458,7 +9668,7 @@
         }
       ],
       "homepage": "http://pawpatrol.com",
-      "popularity": 67.3674,
+      "popularity": 94.4558,
       "number_of_seasons": 13,
       "number_of_episodes": 553,
       "first_air_date": "2013-08-12",
@@ -9674,7 +9884,7 @@
         }
       ],
       "homepage": "https://www.starz.com/us/en/series/outlander/21796",
-      "popularity": 40.5817,
+      "popularity": 54.2878,
       "number_of_seasons": 8,
       "number_of_episodes": 101,
       "first_air_date": "2014-08-09",
@@ -9813,7 +10023,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.17,
-      "vote_count": 1011,
+      "vote_count": 1012,
       "origin_country": [
         "US"
       ],
@@ -9826,7 +10036,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/daredevil-born-again/6Eu8fmI0MaUk",
-      "popularity": 37.1255,
+      "popularity": 29.112,
       "number_of_seasons": 2,
       "number_of_episodes": 17,
       "first_air_date": "2025-03-04",
@@ -9875,8 +10085,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.94,
-      "vote_count": 702,
+      "vote_average": 7.95,
+      "vote_count": 703,
       "origin_country": [
         "US"
       ],
@@ -9890,7 +10100,7 @@
         }
       ],
       "homepage": "https://www.peacocktv.com/stream-tv/ted",
-      "popularity": 22.3456,
+      "popularity": 18.0992,
       "number_of_seasons": 2,
       "number_of_episodes": 15,
       "first_air_date": "2024-01-11",
@@ -9965,7 +10175,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81009946",
-      "popularity": 6.2741,
+      "popularity": 8.9472,
       "number_of_seasons": 13,
       "number_of_episodes": 86,
       "first_air_date": "2021-01-05",
@@ -10200,7 +10410,7 @@
         }
       ],
       "homepage": "https://www.nick.com/shows/loud-house",
-      "popularity": 44.5093,
+      "popularity": 14.6991,
       "number_of_seasons": 10,
       "number_of_episodes": 413,
       "first_air_date": "2016-05-02",
@@ -10401,7 +10611,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.62l8x0ixrhyq3yaqa5y8yo7ew",
-      "popularity": 29.9627,
+      "popularity": 22.9399,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2023-11-16",
@@ -10469,7 +10679,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/2b4b8988-50c9-4097-bf93-bc34a99a5b4f",
-      "popularity": 30.8522,
+      "popularity": 24.8961,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2025-01-26",
@@ -10550,7 +10760,7 @@
         }
       ],
       "homepage": "https://www.fox.com/detail/series/SER001101XODY/american-dad",
-      "popularity": 62.2135,
+      "popularity": 83.1253,
       "number_of_seasons": 22,
       "number_of_episodes": 399,
       "first_air_date": "2005-02-06",
@@ -10919,7 +11129,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81450827",
-      "popularity": 51.0561,
+      "popularity": 45.405,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2023-03-23",
@@ -11002,7 +11212,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.5dkcy23fuhcdhw1zcmqn10rc5",
-      "popularity": 13.24,
+      "popularity": 10.9366,
       "number_of_seasons": 2,
       "number_of_episodes": 15,
       "first_air_date": "2023-04-13",
@@ -11059,8 +11269,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.4,
-      "vote_count": 198,
+      "vote_average": 7.45,
+      "vote_count": 199,
       "origin_country": [
         "US"
       ],
@@ -11074,7 +11284,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/dark-winds--1053387",
-      "popularity": 46.3323,
+      "popularity": 39.384,
       "number_of_seasons": 5,
       "number_of_episodes": 28,
       "first_air_date": "2022-06-12",
@@ -11182,7 +11392,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0D6HFBLMP",
-      "popularity": 9.2284,
+      "popularity": 12.8994,
       "number_of_seasons": 3,
       "number_of_episodes": 16,
       "first_air_date": "2024-11-14",
@@ -11269,7 +11479,7 @@
         }
       ],
       "homepage": "https://roosterteeth.com/series/death-battle",
-      "popularity": 17.371,
+      "popularity": 11.5142,
       "number_of_seasons": 13,
       "number_of_episodes": 214,
       "first_air_date": "2010-12-06",
@@ -11486,7 +11696,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.2,
+      "vote_average": 8.25,
       "vote_count": 1359,
       "origin_country": [
         "US"
@@ -11513,7 +11723,7 @@
         }
       ],
       "homepage": "http://www.fxnetworks.com/shows/its-always-sunny-in-philadelphia",
-      "popularity": 40.8119,
+      "popularity": 37.0537,
       "number_of_seasons": 18,
       "number_of_episodes": 178,
       "first_air_date": "2005-08-04",
@@ -11791,7 +12001,7 @@
         }
       ],
       "homepage": "https://www.howitshouldhaveended.com/",
-      "popularity": 11.2338,
+      "popularity": 3.6528,
       "number_of_seasons": 18,
       "number_of_episodes": 227,
       "first_air_date": "2005-04-23",
@@ -12097,7 +12307,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80232398",
-      "popularity": 50.0846,
+      "popularity": 40.9035,
       "number_of_seasons": 5,
       "number_of_episodes": 32,
       "first_air_date": "2020-12-25",
@@ -12200,7 +12410,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.8,
-      "vote_count": 272,
+      "vote_count": 273,
       "origin_country": [
         "US"
       ],
@@ -12214,7 +12424,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/school-spirits/",
-      "popularity": 6.6363,
+      "popularity": 8.0722,
       "number_of_seasons": 4,
       "number_of_episodes": 24,
       "first_air_date": "2023-03-09",
@@ -12308,7 +12518,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.apzybj6eqf6pzccd97kev7bs",
-      "popularity": 27.1324,
+      "popularity": 21.6583,
       "number_of_seasons": 3,
       "number_of_episodes": 33,
       "first_air_date": "2023-01-26",
@@ -12378,7 +12588,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.54,
+      "vote_average": 6.5,
       "vote_count": 22,
       "origin_country": [
         "US"
@@ -12393,7 +12603,7 @@
         }
       ],
       "homepage": "https://disneynow.com/shows/playdate-with-winnie-the-pooh",
-      "popularity": 2.3697,
+      "popularity": 1.8303,
       "number_of_seasons": 3,
       "number_of_episodes": 39,
       "first_air_date": "2023-08-18",
@@ -12481,7 +12691,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81028174",
-      "popularity": 9.8575,
+      "popularity": 7.3564,
       "number_of_seasons": 5,
       "number_of_episodes": 60,
       "first_air_date": "2021-05-12",
@@ -12585,7 +12795,7 @@
         }
       ],
       "homepage": "https://www.fox.com/going-dutch",
-      "popularity": 3.9565,
+      "popularity": 3.0612,
       "number_of_seasons": 2,
       "number_of_episodes": 22,
       "first_air_date": "2025-01-02",
@@ -12647,7 +12857,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.08,
+      "vote_average": 7.1,
       "vote_count": 66,
       "origin_country": [
         "US"
@@ -12721,11 +12931,11 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/tna-impact--1073900",
-      "popularity": 17.9016,
+      "popularity": 6.9652,
       "number_of_seasons": 23,
-      "number_of_episodes": 1147,
+      "number_of_episodes": 1156,
       "first_air_date": "2004-06-04",
-      "last_air_date": "2026-04-23",
+      "last_air_date": "2026-07-16",
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
@@ -13110,7 +13320,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/tell-me-lies-bad099c4-b88d-486a-8e83-b6a5cb1fa6d3",
-      "popularity": 12.5506,
+      "popularity": 9.8164,
       "number_of_seasons": 3,
       "number_of_episodes": 26,
       "first_air_date": "2022-09-07",
@@ -13188,7 +13398,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/content/industry",
-      "popularity": 20.6293,
+      "popularity": 15.3755,
       "number_of_seasons": 4,
       "number_of_episodes": 32,
       "first_air_date": "2020-11-09",
@@ -13285,7 +13495,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/the-hunting-party",
-      "popularity": 15.5405,
+      "popularity": 13.9595,
       "number_of_seasons": 2,
       "number_of_episodes": 23,
       "first_air_date": "2025-01-19",
@@ -13353,7 +13563,7 @@
         }
       ],
       "homepage": "https://www.bet.com/shows/tyler-perrys-sistas",
-      "popularity": 6.0874,
+      "popularity": 10.5478,
       "number_of_seasons": 10,
       "number_of_episodes": 212,
       "first_air_date": "2019-10-23",
@@ -13559,7 +13769,7 @@
         }
       ],
       "homepage": "https://www.tbs.com/allelitewrestling",
-      "popularity": 42.548,
+      "popularity": 33.9633,
       "number_of_seasons": 8,
       "number_of_episodes": 360,
       "first_air_date": "2019-10-02",
@@ -13717,7 +13927,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/the-ms-pat-show",
-      "popularity": 4.7739,
+      "popularity": 4.5235,
       "number_of_seasons": 5,
       "number_of_episodes": 46,
       "first_air_date": "2021-08-12",
@@ -13830,7 +14040,7 @@
         }
       ],
       "homepage": "https://abc.com/shows/will-trent",
-      "popularity": 17.7501,
+      "popularity": 23.3501,
       "number_of_seasons": 4,
       "number_of_episodes": 59,
       "first_air_date": "2023-01-03",
@@ -13927,7 +14137,7 @@
         }
       ],
       "homepage": "https://abc.com/show/ada4e644-ce0b-4590-9dac-b04ce0a446e8",
-      "popularity": 219.7338,
+      "popularity": 185.4502,
       "number_of_seasons": 9,
       "number_of_episodes": 144,
       "first_air_date": "2018-10-16",
@@ -14120,7 +14330,7 @@
         }
       ],
       "homepage": "https://www.cwtv.com/shows/wwe-nxt",
-      "popularity": 62.0031,
+      "popularity": 49.7229,
       "number_of_seasons": 20,
       "number_of_episodes": 887,
       "first_air_date": "2010-02-23",
@@ -14465,7 +14675,7 @@
         }
       ],
       "homepage": "http://youtube.com/rhettandlink2",
-      "popularity": 173.8574,
+      "popularity": 43.9228,
       "number_of_seasons": 30,
       "number_of_episodes": 3439,
       "first_air_date": "2012-01-09",
@@ -14963,7 +15173,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81628818",
-      "popularity": 12.9906,
+      "popularity": 7.6989,
       "number_of_seasons": 3,
       "number_of_episodes": 60,
       "first_air_date": "2023-05-15",
@@ -15071,7 +15281,7 @@
         }
       ],
       "homepage": "http://www.hallmarkchannel.com/when-calls-the-heart",
-      "popularity": 22.9226,
+      "popularity": 17.0169,
       "number_of_seasons": 13,
       "number_of_episodes": 139,
       "first_air_date": "2014-01-11",
@@ -15294,7 +15504,7 @@
         }
       ],
       "homepage": "https://www.tntdrama.com/shows/all-elite-wrestling-collision",
-      "popularity": 18.7372,
+      "popularity": 11.704,
       "number_of_seasons": 4,
       "number_of_episodes": 169,
       "first_air_date": "2023-06-17",
@@ -15407,7 +15617,7 @@
         }
       ],
       "homepage": "https://www.hallmarkchannel.com/the-way-home",
-      "popularity": 8.0846,
+      "popularity": 6.5502,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2023-01-15",
@@ -15489,7 +15699,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.65,
-      "vote_count": 1590,
+      "vote_count": 1591,
       "origin_country": [
         "US"
       ],
@@ -15503,7 +15713,7 @@
         }
       ],
       "homepage": "https://www.adultswim.com/videos/primal",
-      "popularity": 11.0056,
+      "popularity": 8.0942,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2019-10-08",
@@ -15588,7 +15798,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/beyond-the-gates",
-      "popularity": 21.8572,
+      "popularity": 7.5711,
       "number_of_seasons": 2,
       "number_of_episodes": 317,
       "first_air_date": "2025-02-24",
@@ -15638,8 +15848,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.7,
-      "vote_count": 838,
+      "vote_average": 8.73,
+      "vote_count": 841,
       "origin_country": [
         "US"
       ],
@@ -15657,7 +15867,7 @@
         }
       ],
       "homepage": "https://www.hbomax.com/shows/pitt-2024/e6e7bad9-d48d-4434-b334-7c651ffc4bdf",
-      "popularity": 52.0002,
+      "popularity": 41.3458,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2025-01-09",
@@ -15725,7 +15935,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.12,
-      "vote_count": 1846,
+      "vote_count": 1848,
       "origin_country": [
         "US"
       ],
@@ -15738,7 +15948,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80217863",
-      "popularity": 35.8986,
+      "popularity": 30.3465,
       "number_of_seasons": 3,
       "number_of_episodes": 17,
       "first_air_date": "2023-08-31",
@@ -15818,7 +16028,7 @@
         }
       ],
       "homepage": "http://www.adultswim.com/videos/off-the-air",
-      "popularity": 3.1395,
+      "popularity": 1.4927,
       "number_of_seasons": 15,
       "number_of_episodes": 55,
       "first_air_date": "2011-01-01",
@@ -16079,7 +16289,7 @@
         }
       ],
       "homepage": "https://www.amcplus.com/shows/sanctuary-a-witch-s-tale--1065357",
-      "popularity": 3.8494,
+      "popularity": 2.8056,
       "number_of_seasons": 2,
       "number_of_episodes": 13,
       "first_air_date": "2024-01-04",
@@ -16136,8 +16346,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.6,
-      "vote_count": 1560,
+      "vote_average": 7.56,
+      "vote_count": 1561,
       "origin_country": [
         "US"
       ],
@@ -16150,7 +16360,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81037371",
-      "popularity": 10.3537,
+      "popularity": 14.0691,
       "number_of_seasons": 6,
       "number_of_episodes": 50,
       "first_air_date": "2020-10-02",
@@ -16260,7 +16470,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.1,
-      "vote_count": 2935,
+      "vote_count": 2938,
       "origin_country": [
         "US"
       ],
@@ -16273,7 +16483,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CN4HV16N",
-      "popularity": 31.7707,
+      "popularity": 25.0833,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-04-10",
@@ -16356,7 +16566,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/tales-of-the-teenage-mutant-ninja-turtles/",
-      "popularity": 3.9552,
+      "popularity": 3.2032,
       "number_of_seasons": 2,
       "number_of_episodes": 24,
       "first_air_date": "2024-08-08",
@@ -16430,7 +16640,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81361105",
-      "popularity": 9.1951,
+      "popularity": 9.4766,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-10-10",
@@ -16516,7 +16726,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/browse/entity-f1c31566-ec05-4d30-b23f-3177442233f4",
-      "popularity": 22.8831,
+      "popularity": 18.1468,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-12-19",
@@ -16608,7 +16818,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/star-wars-young-jedi-adventures/1k04oXMTzL2n",
-      "popularity": 17.0342,
+      "popularity": 14.0486,
       "number_of_seasons": 3,
       "number_of_episodes": 55,
       "first_air_date": "2023-05-04",
@@ -16709,7 +16919,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/transformers-earthspark/",
-      "popularity": 7.0621,
+      "popularity": 7.0819,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2022-11-11",
@@ -16804,7 +17014,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81423472",
-      "popularity": 2.5573,
+      "popularity": 3.4514,
       "number_of_seasons": 6,
       "number_of_episodes": 23,
       "first_air_date": "2023-11-17",
@@ -16928,7 +17138,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/its-florida-man",
-      "popularity": 4.015,
+      "popularity": 2.9643,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-10-18",
@@ -16987,7 +17197,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.56,
-      "vote_count": 21457,
+      "vote_count": 21459,
       "origin_country": [
         "US"
       ],
@@ -17000,7 +17210,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80057281",
-      "popularity": 113.9746,
+      "popularity": 71.4329,
       "number_of_seasons": 5,
       "number_of_episodes": 42,
       "first_air_date": "2016-07-15",
@@ -17114,7 +17324,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.2ghd8ombh4fd37rfs27ivfa94",
-      "popularity": 4.2576,
+      "popularity": 5.4649,
       "number_of_seasons": 3,
       "number_of_episodes": 20,
       "first_air_date": "2024-06-27",
@@ -17198,7 +17408,7 @@
         }
       ],
       "homepage": "https://www.peacocktv.com/stream-tv/bel-air",
-      "popularity": 12.2023,
+      "popularity": 7.525,
       "number_of_seasons": 4,
       "number_of_episodes": 38,
       "first_air_date": "2022-02-13",
@@ -17295,8 +17505,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.28,
-      "vote_count": 197,
+      "vote_average": 8.29,
+      "vote_count": 198,
       "origin_country": [
         "US"
       ],
@@ -17309,7 +17519,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81557031",
-      "popularity": 14.106,
+      "popularity": 11.3498,
       "number_of_seasons": 4,
       "number_of_episodes": 39,
       "first_air_date": "2024-05-24",
@@ -17395,7 +17605,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.4,
-      "vote_count": 234,
+      "vote_count": 235,
       "origin_country": [
         "US"
       ],
@@ -17408,7 +17618,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81677257",
-      "popularity": 9.4747,
+      "popularity": 7.6317,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-11-21",
@@ -17464,7 +17674,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.18,
-      "vote_count": 578,
+      "vote_count": 579,
       "origin_country": [
         "US"
       ],
@@ -17478,7 +17688,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/landman",
-      "popularity": 47.6329,
+      "popularity": 48.4931,
       "number_of_seasons": 3,
       "number_of_episodes": 20,
       "first_air_date": "2024-11-17",
@@ -17566,7 +17776,7 @@
         }
       ],
       "homepage": "https://www.shudder.com/series/watch/the-creep-tapes/567b706159e95f20",
-      "popularity": 2.408,
+      "popularity": 1.8435,
       "number_of_seasons": 3,
       "number_of_episodes": 12,
       "first_air_date": "2024-11-15",
@@ -17653,7 +17863,7 @@
         }
       ],
       "homepage": "https://www.wingfeathersaga.com/",
-      "popularity": 2.9668,
+      "popularity": 2.3245,
       "number_of_seasons": 3,
       "number_of_episodes": 19,
       "first_air_date": "2022-12-02",
@@ -17749,7 +17959,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.6vwg3ce7ovsexa3a6r7f6qk49",
-      "popularity": 7.5917,
+      "popularity": 6.7394,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2024-03-19",
@@ -17833,7 +18043,7 @@
         }
       ],
       "homepage": "https://disneynow.com/show/3ebf43be-b09f-43b7-9a4a-15ca4eea2796",
-      "popularity": 6.7759,
+      "popularity": 6.1155,
       "number_of_seasons": 2,
       "number_of_episodes": 77,
       "first_air_date": "2024-06-27",
@@ -17903,7 +18113,7 @@
         }
       ],
       "homepage": "https://www.starz.com/us/en/series/power-book-iv-force/62261",
-      "popularity": 11.4399,
+      "popularity": 8.7265,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2022-02-06",
@@ -17992,7 +18202,7 @@
         }
       ],
       "homepage": "https://tuttletwins.com/",
-      "popularity": 3.9556,
+      "popularity": 2.9986,
       "number_of_seasons": 4,
       "number_of_episodes": 39,
       "first_air_date": "2021-10-13",
@@ -18093,7 +18303,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80189685",
-      "popularity": 26.9841,
+      "popularity": 35.1845,
       "number_of_seasons": 4,
       "number_of_episodes": 32,
       "first_air_date": "2019-12-20",
@@ -18198,7 +18408,7 @@
         }
       ],
       "homepage": "https://hazbinhotel.com/",
-      "popularity": 19.1363,
+      "popularity": 24.7285,
       "number_of_seasons": 5,
       "number_of_episodes": 16,
       "first_air_date": "2024-01-18",
@@ -18304,7 +18514,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/star-wars-visions/5AiiTRJ7OaKg",
-      "popularity": 21.5599,
+      "popularity": 18.0518,
       "number_of_seasons": 3,
       "number_of_episodes": 27,
       "first_air_date": "2021-09-22",
@@ -18375,7 +18585,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.95,
-      "vote_count": 642,
+      "vote_count": 643,
       "origin_country": [
         "US"
       ],
@@ -18389,7 +18599,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/mayor-of-kingstown/",
-      "popularity": 30.7088,
+      "popularity": 24.9466,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2021-11-14",
@@ -18483,7 +18693,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.32,
-      "vote_count": 280,
+      "vote_count": 281,
       "origin_country": [
         "US"
       ],
@@ -18496,7 +18706,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81591296",
-      "popularity": 12.1018,
+      "popularity": 9.7106,
       "number_of_seasons": 3,
       "number_of_episodes": 20,
       "first_air_date": "2024-09-26",
@@ -18584,7 +18794,7 @@
         }
       ],
       "homepage": "https://www.bet.plus/shows/the-family-business",
-      "popularity": 8.4548,
+      "popularity": 6.7888,
       "number_of_seasons": 6,
       "number_of_episodes": 62,
       "first_air_date": "2018-11-13",
@@ -18726,7 +18936,7 @@
         }
       ],
       "homepage": "https://www.max.com/shows/ec92dad5-265d-4b09-a27e-c7f7629cdfc3",
-      "popularity": 12.5326,
+      "popularity": 15.1538,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2023-08-31",
@@ -18784,8 +18994,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.6,
-      "vote_count": 296,
+      "vote_average": 7.57,
+      "vote_count": 297,
       "origin_country": [
         "US"
       ],
@@ -18799,7 +19009,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/tracker/",
-      "popularity": 66.2769,
+      "popularity": 53.1469,
       "number_of_seasons": 3,
       "number_of_episodes": 55,
       "first_air_date": "2024-02-11",
@@ -18885,7 +19095,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/fire-country",
-      "popularity": 18.8851,
+      "popularity": 17.2491,
       "number_of_seasons": 5,
       "number_of_episodes": 72,
       "first_air_date": "2022-10-07",
@@ -18976,8 +19186,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.96,
-      "vote_count": 223,
+      "vote_average": 7.97,
+      "vote_count": 225,
       "origin_country": [
         "US"
       ],
@@ -18991,7 +19201,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/georgie-and-mandys-first-marriage",
-      "popularity": 22.7649,
+      "popularity": 17.4084,
       "number_of_seasons": 2,
       "number_of_episodes": 44,
       "first_air_date": "2024-10-17",
@@ -19073,7 +19283,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/ghosts/",
-      "popularity": 34.151,
+      "popularity": 25.8522,
       "number_of_seasons": 5,
       "number_of_episodes": 94,
       "first_air_date": "2021-10-07",
@@ -19194,7 +19404,7 @@
         }
       ],
       "homepage": "https://abc.com/shows/911",
-      "popularity": 77.0739,
+      "popularity": 58.6271,
       "number_of_seasons": 9,
       "number_of_episodes": 142,
       "first_air_date": "2018-01-03",
@@ -19353,7 +19563,7 @@
         }
       ],
       "homepage": "https://abc.com/show/b7d90f97-dbb2-4ab5-b141-f9cbeae53581",
-      "popularity": 207.6796,
+      "popularity": 165.9151,
       "number_of_seasons": 22,
       "number_of_episodes": 465,
       "first_air_date": "2005-03-27",
@@ -19694,7 +19904,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81288983",
-      "popularity": 8.8264,
+      "popularity": 11.059,
       "number_of_seasons": 3,
       "number_of_episodes": 22,
       "first_air_date": "2023-04-20",
@@ -19778,7 +19988,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81303831",
-      "popularity": 37.0268,
+      "popularity": 29.867,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2022-05-13",
@@ -19877,7 +20087,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/ncis-origins/",
-      "popularity": 5.8567,
+      "popularity": 8.2159,
       "number_of_seasons": 2,
       "number_of_episodes": 36,
       "first_air_date": "2024-10-14",
@@ -19944,7 +20154,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.5erbujil1mpazuerhr1udnk45",
-      "popularity": 11.8537,
+      "popularity": 8.5763,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2022-06-23",
@@ -20033,7 +20243,7 @@
         }
       ],
       "homepage": "http://www.cbs.com/shows/ncis/",
-      "popularity": 177.4735,
+      "popularity": 149.1157,
       "number_of_seasons": 23,
       "number_of_episodes": 507,
       "first_air_date": "2003-09-23",
@@ -20386,7 +20596,7 @@
         }
       ],
       "homepage": "http://www.cbs.com/shows/watson",
-      "popularity": 11.0306,
+      "popularity": 7.9659,
       "number_of_seasons": 2,
       "number_of_episodes": 33,
       "first_air_date": "2025-01-26",
@@ -20449,7 +20659,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.8,
-      "vote_count": 641,
+      "vote_count": 642,
       "origin_country": [
         "US"
       ],
@@ -20463,7 +20673,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/solar-opposites-f089664b-1a87-433b-86a5-24e7da5a246a",
-      "popularity": 11.2349,
+      "popularity": 15.1089,
       "number_of_seasons": 6,
       "number_of_episodes": 59,
       "first_air_date": "2020-05-08",
@@ -20568,8 +20778,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.6,
-      "vote_count": 174,
+      "vote_average": 7.58,
+      "vote_count": 175,
       "origin_country": [
         "US"
       ],
@@ -20583,7 +20793,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/the-neighborhood",
-      "popularity": 14.1613,
+      "popularity": 17.5874,
       "number_of_seasons": 8,
       "number_of_episodes": 155,
       "first_air_date": "2018-10-01",
@@ -20737,7 +20947,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/fbi/",
-      "popularity": 108.4052,
+      "popularity": 93.301,
       "number_of_seasons": 8,
       "number_of_episodes": 157,
       "first_air_date": "2018-09-25",
@@ -20888,7 +21098,7 @@
         }
       ],
       "homepage": "https://www.cbs.com/shows/matlock/",
-      "popularity": 17.3406,
+      "popularity": 14.0981,
       "number_of_seasons": 2,
       "number_of_episodes": 35,
       "first_air_date": "2024-09-22",
@@ -20926,99 +21136,6 @@
           "overview": "",
           "douban_link_verified": true,
           "last_douban_rating_fetch": "2025-10-28T01:01:34+08:00"
-        }
-      ]
-    },
-    {
-      "name": "奇思妙探",
-      "original_name": "Elsbeth",
-      "id": 226285,
-      "imdb_id": "tt26591110",
-      "genres": [
-        {
-          "id": 80,
-          "name": "犯罪"
-        },
-        {
-          "id": 18,
-          "name": "剧情"
-        },
-        {
-          "id": 35,
-          "name": "喜剧"
-        },
-        {
-          "id": 9648,
-          "name": "悬疑"
-        }
-      ],
-      "type": "Scripted",
-      "vote_average": 6.75,
-      "vote_count": 125,
-      "origin_country": [
-        "US"
-      ],
-      "original_language": "en",
-      "networks": [
-        {
-          "id": 16,
-          "logo_path": "/wju8KhOUsR5y4bH9p3Jc50hhaLO.png",
-          "name": "CBS",
-          "origin_country": "US"
-        }
-      ],
-      "homepage": "https://cbs.com/shows/elsbeth",
-      "popularity": 87.6073,
-      "number_of_seasons": 3,
-      "number_of_episodes": 50,
-      "first_air_date": "2024-02-29",
-      "last_air_date": "2026-05-21",
-      "in_production": true,
-      "status": "Returning Series",
-      "adult": false,
-      "poster_path": "/lWOzxR1orgiXwCMI77qSY25dC5o.jpg",
-      "backdrop_path": "/ezQSOeu9uj4bWulxHR7D5CSNv3r.jpg",
-      "overview": "",
-      "seasons": [
-        {
-          "name": "第 1 季",
-          "season_number": 1,
-          "id": 340471,
-          "air_date": "2024-02-29",
-          "episode_count": 10,
-          "vote_average": 7.8,
-          "poster_path": "/q6RxCjj3I8FUPQHSkXnnE1xG2wn.jpg",
-          "douban_rating": "7.5",
-          "douban_link_google": "https://m.douban.com/movie/subject/36226799/",
-          "overview": "",
-          "douban_link_verified": true
-        },
-        {
-          "name": "第 2 季",
-          "season_number": 2,
-          "id": 402116,
-          "air_date": "2024-10-17",
-          "episode_count": 20,
-          "vote_average": 6.9,
-          "poster_path": "/4sbCGmIHInP6EiLhvpMC6SxBnYd.jpg",
-          "douban_rating": "7.6",
-          "douban_link_google": "https://m.douban.com/movie/subject/36860501/",
-          "overview": "",
-          "douban_link_verified": true
-        },
-        {
-          "name": "第 3 季",
-          "season_number": 3,
-          "id": 465503,
-          "air_date": "2025-10-12",
-          "episode_count": 2,
-          "vote_average": 0.0,
-          "poster_path": "/7lnNSbT90qwtrn1h9TvEkVFMz2P.jpg",
-          "douban_link_google": "https://m.douban.com/movie/subject/37245791/",
-          "overview": "",
-          "douban_link_verified": true,
-          "last_douban_rating_fetch": "2025-11-05T01:02:56+08:00",
-          "douban_rating": "7.7"
         }
       ]
     },
@@ -21065,7 +21182,7 @@
         }
       ],
       "homepage": "https://www.nickjr.com/shows/rubble-crew",
-      "popularity": 16.1818,
+      "popularity": 12.1252,
       "number_of_seasons": 4,
       "number_of_episodes": 129,
       "first_air_date": "2023-02-03",
@@ -21171,7 +21288,7 @@
         }
       ],
       "homepage": "https://www.adultswim.com/videos/smiling-friends",
-      "popularity": 6.6251,
+      "popularity": 9.9451,
       "number_of_seasons": 3,
       "number_of_episodes": 27,
       "first_air_date": "2020-04-01",
@@ -21250,8 +21367,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.9,
-      "vote_count": 21,
+      "vote_average": 8.0,
+      "vote_count": 22,
       "origin_country": [
         "US"
       ],
@@ -21281,7 +21398,7 @@
         }
       ],
       "homepage": "https://critrole.com/",
-      "popularity": 38.3597,
+      "popularity": 21.6259,
       "number_of_seasons": 4,
       "number_of_episodes": 409,
       "first_air_date": "2015-03-12",
@@ -21385,7 +21502,7 @@
         }
       ],
       "homepage": "https://abc.com/show/0b64a2a5-a111-450a-a3c3-b0f8e69a2124",
-      "popularity": 8.6385,
+      "popularity": 6.9075,
       "number_of_seasons": 2,
       "number_of_episodes": 23,
       "first_air_date": "2025-01-08",
@@ -21438,8 +21555,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.5,
-      "vote_count": 306,
+      "vote_average": 7.46,
+      "vote_count": 307,
       "origin_country": [
         "US"
       ],
@@ -21453,7 +21570,7 @@
         }
       ],
       "homepage": "https://abc.com/shows/abbott-elementary",
-      "popularity": 21.9983,
+      "popularity": 16.212,
       "number_of_seasons": 5,
       "number_of_episodes": 92,
       "first_air_date": "2021-12-07",
@@ -21564,7 +21681,7 @@
         }
       ],
       "homepage": "https://www.fox.com/bobs-burgers/",
-      "popularity": 50.8522,
+      "popularity": 39.4812,
       "number_of_seasons": 16,
       "number_of_episodes": 313,
       "first_air_date": "2011-01-09",
@@ -21827,7 +21944,7 @@
         }
       ],
       "homepage": "https://www.fox.com/krapopolis/",
-      "popularity": 7.0016,
+      "popularity": 13.0395,
       "number_of_seasons": 3,
       "number_of_episodes": 58,
       "first_air_date": "2023-09-24",
@@ -21899,7 +22016,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.66,
+      "vote_average": 7.7,
       "vote_count": 160,
       "origin_country": [
         "US"
@@ -21926,7 +22043,7 @@
         }
       ],
       "homepage": "https://www.epix.com/series/billy-the-kid",
-      "popularity": 9.4126,
+      "popularity": 8.2795,
       "number_of_seasons": 3,
       "number_of_episodes": 24,
       "first_air_date": "2022-04-24",
@@ -22007,7 +22124,7 @@
         }
       ],
       "homepage": "https://abc.com/shows/celebrity-wheel-of-fortune",
-      "popularity": 8.4067,
+      "popularity": 6.9412,
       "number_of_seasons": 6,
       "number_of_episodes": 64,
       "first_air_date": "2021-01-07",
@@ -22130,8 +22247,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.13,
-      "vote_count": 62,
+      "vote_average": 6.14,
+      "vote_count": 63,
       "origin_country": [
         "US"
       ],
@@ -22145,7 +22262,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/english-teacher",
-      "popularity": 5.3761,
+      "popularity": 4.3032,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2024-09-02",
@@ -22226,7 +22343,7 @@
         }
       ],
       "homepage": "https://www.fox.com/murder-in-a-small-town",
-      "popularity": 9.4223,
+      "popularity": 6.2848,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2024-09-24",
@@ -22299,7 +22416,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81662216",
-      "popularity": 0.8618,
+      "popularity": 0.744,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2025-04-07",
@@ -22375,7 +22492,7 @@
         }
       ],
       "homepage": "https://www.nbc.com/brilliant-minds",
-      "popularity": 13.7364,
+      "popularity": 8.0111,
       "number_of_seasons": 2,
       "number_of_episodes": 33,
       "first_air_date": "2024-09-23",
@@ -22451,7 +22568,7 @@
         }
       ],
       "homepage": "https://disneynow.com/show/ad86a2b8-5122-41e4-8423-bf39b74c6f6d",
-      "popularity": 5.9132,
+      "popularity": 8.5438,
       "number_of_seasons": 3,
       "number_of_episodes": 136,
       "first_air_date": "2023-01-11",
@@ -22519,7 +22636,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.3,
-      "vote_count": 2689,
+      "vote_count": 2691,
       "origin_country": [
         "US"
       ],
@@ -22533,7 +22650,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/tulsa-king",
-      "popularity": 41.0587,
+      "popularity": 56.0065,
       "number_of_seasons": 4,
       "number_of_episodes": 29,
       "first_air_date": "2022-11-13",
@@ -22613,8 +22730,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.0,
-      "vote_count": 61,
+      "vote_average": 6.04,
+      "vote_count": 62,
       "origin_country": [
         "US"
       ],
@@ -22628,7 +22745,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/reasonable-doubt-226c1cc5-ecc9-4d26-83a6-40131a93ed19",
-      "popularity": 3.7148,
+      "popularity": 4.9368,
       "number_of_seasons": 3,
       "number_of_episodes": 29,
       "first_air_date": "2022-09-27",
@@ -22724,7 +22841,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CBFTRGPZ",
-      "popularity": 20.3745,
+      "popularity": 14.1791,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-09-28",
@@ -22791,7 +22908,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.25tn3v8ku4b39tr6ccgb8nl6m",
-      "popularity": 20.565,
+      "popularity": 16.2944,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2019-11-01",
@@ -22895,7 +23012,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 8.0569,
+      "popularity": 6.8057,
       "number_of_seasons": 3,
       "number_of_episodes": 118,
       "first_air_date": "2022-09-21",
@@ -22960,8 +23077,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.89,
-      "vote_count": 208,
+      "vote_average": 7.9,
+      "vote_count": 210,
       "origin_country": [
         "US"
       ],
@@ -22974,7 +23091,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81764523",
-      "popularity": 34.532,
+      "popularity": 29.3612,
       "number_of_seasons": 2,
       "number_of_episodes": 32,
       "first_air_date": "2024-10-24",
@@ -23053,7 +23170,7 @@
         }
       ],
       "homepage": "http://www.bet.com/shows/tyler-perrys-zatima",
-      "popularity": 2.4987,
+      "popularity": 4.0677,
       "number_of_seasons": 4,
       "number_of_episodes": 70,
       "first_air_date": "2022-09-21",
@@ -23160,8 +23277,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.63,
-      "vote_count": 93,
+      "vote_average": 7.64,
+      "vote_count": 94,
       "origin_country": [
         "US"
       ],
@@ -23179,7 +23296,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/gp/video/detail/B0F9VY2DHL",
-      "popularity": 11.7176,
+      "popularity": 9.088,
       "number_of_seasons": 3,
       "number_of_episodes": 21,
       "first_air_date": "2020-10-31",
@@ -23250,7 +23367,7 @@
       ],
       "type": "Miniseries",
       "vote_average": 7.1,
-      "vote_count": 137,
+      "vote_count": 138,
       "origin_country": [
         "US",
         "GB"
@@ -23264,7 +23381,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/gp/video/detail/B0FB528M67",
-      "popularity": 5.6764,
+      "popularity": 4.3212,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-09-10",
@@ -23328,7 +23445,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/only-murders-in-the-building-ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf",
-      "popularity": 23.442,
+      "popularity": 14.4562,
       "number_of_seasons": 5,
       "number_of_episodes": 50,
       "first_air_date": "2021-08-31",
@@ -23443,7 +23560,7 @@
         }
       ],
       "homepage": "https://www.amc.com/shows/the-walking-dead-daryl-dixon--1060742",
-      "popularity": 23.7964,
+      "popularity": 17.8263,
       "number_of_seasons": 3,
       "number_of_episodes": 19,
       "first_air_date": "2023-09-10",
@@ -23542,7 +23659,7 @@
         }
       ],
       "homepage": "https://www.hbo.com/content/task",
-      "popularity": 13.4234,
+      "popularity": 9.4865,
       "number_of_seasons": 2,
       "number_of_episodes": 7,
       "first_air_date": "2025-09-07",
@@ -23616,7 +23733,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/ncis-tony-and-ziva/",
-      "popularity": 4.1329,
+      "popularity": 3.2839,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-09-04",
@@ -23666,8 +23783,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.86,
-      "vote_count": 92,
+      "vote_average": 7.84,
+      "vote_count": 93,
       "origin_country": [
         "US"
       ],
@@ -23687,7 +23804,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/mike-judges-beavis-and-butt-head/",
-      "popularity": 11.8019,
+      "popularity": 9.5598,
       "number_of_seasons": 3,
       "number_of_episodes": 71,
       "first_air_date": "2022-08-04",
@@ -23777,7 +23894,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0DGCZ1D33",
-      "popularity": 3.1339,
+      "popularity": 1.6201,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-09-01",
@@ -23841,7 +23958,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/dora",
-      "popularity": 7.5736,
+      "popularity": 3.2845,
       "number_of_seasons": 4,
       "number_of_episodes": 106,
       "first_air_date": "2024-04-12",
@@ -23955,7 +24072,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.40xdlw2jijoj95c3a6y2m3738",
-      "popularity": 3.2019,
+      "popularity": 2.479,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2023-01-19",
@@ -24035,7 +24152,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81572564",
-      "popularity": 3.8098,
+      "popularity": 5.145,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-11-01",
@@ -24109,7 +24226,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0FBJHCKDW",
-      "popularity": 26.8211,
+      "popularity": 20.7847,
       "number_of_seasons": 1,
       "number_of_episodes": 7,
       "first_air_date": "2025-08-27",
@@ -24163,7 +24280,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.78,
-      "vote_count": 1442,
+      "vote_count": 1443,
       "origin_country": [
         "US"
       ],
@@ -24176,7 +24293,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0858ZPY17",
-      "popularity": 9.8159,
+      "popularity": 8.3487,
       "number_of_seasons": 4,
       "number_of_episodes": 29,
       "first_air_date": "2020-04-30",
@@ -24273,7 +24390,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81686879",
-      "popularity": 4.275,
+      "popularity": 3.56,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-08-22",
@@ -24332,7 +24449,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.70b7z97fv7azfzn5baqnj88p6",
-      "popularity": 24.4206,
+      "popularity": 17.9045,
       "number_of_seasons": 3,
       "number_of_episodes": 30,
       "first_air_date": "2021-10-21",
@@ -24425,7 +24542,7 @@
         }
       ],
       "homepage": "https://www.hbomax.com/shows/peacemaker-2022/a939d96b-7ffb-4481-96f6-472838d104ca",
-      "popularity": 29.3332,
+      "popularity": 23.3598,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2022-01-13",
@@ -24493,7 +24610,7 @@
         }
       ],
       "homepage": "https://www.hulu.com/series/fec1f0e9-3df6-4da0-930f-e531326bc31e",
-      "popularity": 6.9447,
+      "popularity": 6.4796,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-08-20",
@@ -24553,7 +24670,7 @@
         }
       ],
       "homepage": "https://www.usanetwork.com/series/the-rainmaker-1755512388051",
-      "popularity": 6.2586,
+      "popularity": 4.6296,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2025-08-15",
@@ -24630,7 +24747,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0CTMNFDJJ",
-      "popularity": 10.2469,
+      "popularity": 8.4737,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-07-11",
@@ -24701,7 +24818,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B0FDK7VRFF",
-      "popularity": 14.0793,
+      "popularity": 10.5322,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-08-13",
@@ -24746,7 +24863,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.34,
-      "vote_count": 1075,
+      "vote_count": 1076,
       "origin_country": [
         "US"
       ],
@@ -24766,7 +24883,7 @@
         }
       ],
       "homepage": "https://www.fxnetworks.com/shows/alien-earth",
-      "popularity": 14.8185,
+      "popularity": 14.4852,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-08-12",
@@ -24824,7 +24941,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 3.4022,
+      "popularity": 2.5871,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-08-11",
@@ -24887,7 +25004,7 @@
         }
       ],
       "homepage": "https://disneynow.com/show/2421314c-161d-45a3-be83-6f0f7b988632",
-      "popularity": 15.1314,
+      "popularity": 10.3573,
       "number_of_seasons": 1,
       "number_of_episodes": 60,
       "first_air_date": "2025-08-11",
@@ -24947,7 +25064,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 2.4124,
+      "popularity": 3.5219,
       "number_of_seasons": 1,
       "number_of_episodes": 20,
       "first_air_date": "2024-09-25",
@@ -25013,8 +25130,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.34,
-      "vote_count": 10640,
+      "vote_average": 8.3,
+      "vote_count": 10643,
       "origin_country": [
         "US"
       ],
@@ -25027,7 +25144,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81231974",
-      "popularity": 30.3273,
+      "popularity": 39.5941,
       "number_of_seasons": 3,
       "number_of_episodes": 16,
       "first_air_date": "2022-11-23",
@@ -25107,7 +25224,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.y7bc18x7co813l8i2tlsyb4l",
-      "popularity": 10.4291,
+      "popularity": 7.9699,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2023-05-23",
@@ -25241,7 +25358,7 @@
         }
       ],
       "homepage": "https://peacocktv.com/stream-tv/twisted-metal",
-      "popularity": 9.704,
+      "popularity": 9.0018,
       "number_of_seasons": 2,
       "number_of_episodes": 22,
       "first_air_date": "2023-07-27",
@@ -25283,103 +25400,6 @@
       ]
     },
     {
-      "name": "熊猫静水",
-      "original_name": "Stillwater",
-      "id": 111834,
-      "imdb_id": "tt13135714",
-      "genres": [
-        {
-          "id": 10762,
-          "name": "儿童"
-        },
-        {
-          "id": 16,
-          "name": "动画"
-        }
-      ],
-      "type": "Scripted",
-      "vote_average": 7.54,
-      "vote_count": 22,
-      "origin_country": [
-        "US"
-      ],
-      "original_language": "en",
-      "networks": [
-        {
-          "id": 2552,
-          "logo_path": "/bngHRFi794mnMq34gfVcm9nDxN1.png",
-          "name": "Apple TV"
-        }
-      ],
-      "homepage": "https://tv.apple.com/show/umc.cmc.3czcagetjq31vvbgkkyp1xiao",
-      "popularity": 4.9817,
-      "number_of_seasons": 4,
-      "number_of_episodes": 35,
-      "first_air_date": "2020-12-04",
-      "last_air_date": "2025-07-31",
-      "in_production": true,
-      "status": "Returning Series",
-      "adult": false,
-      "poster_path": "/t6tcFn0LiyKRqR76XwNfErK81cw.jpg",
-      "backdrop_path": "/jESGW5K8tvjkbUbnrtJOygrMGYt.jpg",
-      "overview": "",
-      "seasons": [
-        {
-          "name": "第 1 季",
-          "season_number": 1,
-          "id": 166342,
-          "air_date": "2020-12-04",
-          "episode_count": 13,
-          "vote_average": 9.5,
-          "poster_path": "/hFvYDuR1lzm8HFMb12NWZ1ZvPEU.jpg",
-          "douban_rating": null,
-          "douban_link_google": "https://m.douban.com/movie/subject/35253671/",
-          "overview": "",
-          "douban_link_verified": true
-        },
-        {
-          "name": "第 2 季",
-          "season_number": 2,
-          "id": 282682,
-          "air_date": "2022-03-17",
-          "episode_count": 7,
-          "vote_average": 0.0,
-          "poster_path": "/t6tcFn0LiyKRqR76XwNfErK81cw.jpg",
-          "douban_rating": null,
-          "douban_link_google": "https://m.douban.com/movie/subject/35796891/",
-          "overview": "",
-          "douban_link_verified": true
-        },
-        {
-          "name": "第 3 季",
-          "season_number": 3,
-          "id": 326077,
-          "air_date": "2023-05-19",
-          "episode_count": 10,
-          "vote_average": 0.0,
-          "poster_path": "/w2ZuT3hUSLvmAuY08koM44Kkhld.jpg",
-          "douban_rating": null,
-          "douban_link_google": "https://m.douban.com/movie/subject/36402551/",
-          "overview": "",
-          "douban_link_verified": true
-        },
-        {
-          "name": "第 4 季",
-          "season_number": 4,
-          "id": 462446,
-          "air_date": "2025-07-31",
-          "episode_count": 1,
-          "vote_average": 0.0,
-          "poster_path": "/pCYYfDoF9FW4alydnDTE7bZa4xN.jpg",
-          "douban_rating": null,
-          "douban_link_google": "https://m.douban.com/movie/subject/37441988/",
-          "overview": "",
-          "douban_link_verified": true,
-          "last_douban_rating_fetch": "2025-11-26T01:32:34+08:00"
-        }
-      ]
-    },
-    {
       "name": "战酋",
       "original_name": "Chief of War",
       "id": 196890,
@@ -25405,7 +25425,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.6ag0zq020ielwv7m83v8r4dkw",
-      "popularity": 5.416,
+      "popularity": 6.1793,
       "number_of_seasons": 1,
       "number_of_episodes": 9,
       "first_air_date": "2025-07-31",
@@ -25472,7 +25492,7 @@
         }
       ],
       "homepage": "https://www.cartoonnetworkhq.com/show/gumball",
-      "popularity": 28.9338,
+      "popularity": 37.1243,
       "number_of_seasons": 6,
       "number_of_episodes": 240,
       "first_air_date": "2011-05-03",
@@ -25621,7 +25641,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/digman",
-      "popularity": 2.9107,
+      "popularity": 3.6633,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-03-22",
@@ -25747,7 +25767,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.8xrkg9zywke7g6a9ahmvpr3l",
-      "popularity": 9.3033,
+      "popularity": 6.8573,
       "number_of_seasons": 4,
       "number_of_episodes": 40,
       "first_air_date": "2021-10-08",
@@ -25850,7 +25870,7 @@
         }
       ],
       "homepage": "http://pbskids.org/dinosaurtrain",
-      "popularity": 8.0384,
+      "popularity": 11.4835,
       "number_of_seasons": 6,
       "number_of_episodes": 207,
       "first_air_date": "2009-09-07",
@@ -25982,7 +26002,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81575641",
-      "popularity": 7.1071,
+      "popularity": 4.5453,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-07-17",
@@ -26048,7 +26068,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B09NF5J6JX",
-      "popularity": 45.1699,
+      "popularity": 43.4996,
       "number_of_seasons": 3,
       "number_of_episodes": 26,
       "first_air_date": "2022-06-16",
