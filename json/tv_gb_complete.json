@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-08-13T06:31:52+08:00",
+    "last_updated": "2026-08-14T01:08:03+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2026-08-14T01:08:03+08:00",
+        "summary": "执行豆瓣链接验证和评分更新。本次验证成功 0 个链接，失败 0 个链接。正常完成。"
+      },
+      {
+        "time": "2026-08-14T01:03:13+08:00",
+        "summary": "从豆瓣搜索入口更新链接，本次更新10条，本次任务正常结束。"
+      },
       {
         "time": "2026-08-13T06:31:52+08:00",
         "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
@@ -34,14 +42,6 @@
       {
         "time": "2026-08-08T06:27:32+08:00",
         "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-07T09:28:41+08:00",
-        "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-06T06:51:25+08:00",
-        "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
       }
     ],
     "last_refreshed": "2026-08-13T06:31:52+08:00",
@@ -49,7 +49,7 @@
     "total_seasons": 3154,
     "earliest_show_date": "2000-01-09",
     "latest_show_date": "2026-08-10",
-    "total_douban_links": 2458,
+    "total_douban_links": 2468,
     "verified_douban_links": 2424,
     "verified_no_rating_links": 853,
     "last_fetched": "2025-09-11T14:55:48+08:00"
@@ -15174,7 +15174,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38508623/"
         }
       ]
     },
@@ -17474,7 +17476,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36781597/"
         }
       ]
     },
@@ -20161,7 +20165,9 @@
           "overview": "",
           "poster_path": "/jrLBrMHrvL0vsLjr9g7u0F57ybO.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36801096/"
         }
       ]
     },
@@ -20233,7 +20239,9 @@
           "overview": "",
           "poster_path": "/vggHpKqIxyAhkdzw37PzwgkHYsG.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37202599/"
         }
       ]
     },
@@ -21012,7 +21020,9 @@
           "overview": "",
           "poster_path": "/6iQAsm2GcYnezWOnRdIn9j0hJSX.jpg",
           "season_number": 9,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38594892/"
         },
         {
           "air_date": null,
@@ -21022,7 +21032,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 10,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36993418/"
         },
         {
           "air_date": null,
@@ -21032,7 +21044,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 11,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37561039/"
         },
         {
           "air_date": null,
@@ -21042,7 +21056,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 12,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38594892/"
         }
       ]
     },
@@ -24490,7 +24506,9 @@
           "overview": "如今已成为至高大天使的亚茨拉斐尔在第二次降临的计划正朝着出人意料却又危险的方向发展之际，寻求克劳利的帮助。这位天使与恶魔能否在一切为时已晚之前，弥合他们之间的分歧？",
           "poster_path": "/oBzSGd76DvR7vF0lARQo7dmSRgF.jpg",
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36402972/"
         }
       ]
     },
@@ -24983,7 +25001,9 @@
           "overview": "在第二季中，柏林的一列地铁及其乘客遭到劫持，当局紧急行动以拯救数百条生命。萨姆·纳尔逊身处列车上的危机中心，在那里，一个错误的决定就可能意味着灾难。",
           "poster_path": "/9An1tvkAoOqUH8g6hYclXY0ZSfX.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36758223/"
         }
       ]
     },
@@ -25820,7 +25840,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         },
         {
           "air_date": null,
@@ -64564,7 +64585,8 @@
           "overview": "第一季的事件发生九年后，乔纳森·派恩被卷入哥伦比亚的一项新任务。这次的任务涉及一位危险的新军火商泰迪·多斯·桑托斯及其性感迷人的同伙罗克萨娜·博拉诺斯。派恩潜入泰迪的组织，揭开了层层叠叠的秘密、谎言和腐败。他能否在为时已晚之前挫败泰迪的阴谋？",
           "poster_path": "/nGzq5ksTqhoiuERLsNbPiwxPp8m.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
