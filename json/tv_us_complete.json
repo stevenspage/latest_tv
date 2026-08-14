@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-08-14T06:33:38+08:00",
+    "last_updated": "2026-08-15T01:08:02+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2026-08-15T01:08:02+08:00",
+        "summary": "执行豆瓣链接验证和评分更新。本次验证成功 0 个链接，失败 0 个链接。正常完成。"
+      },
+      {
+        "time": "2026-08-15T01:07:37+08:00",
+        "summary": "从豆瓣搜索入口更新链接，本次更新21条，连续失败过多，已保存当前进度。"
+      },
       {
         "time": "2026-08-14T06:33:38+08:00",
         "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
@@ -34,14 +42,6 @@
       {
         "time": "2026-08-08T06:27:14+08:00",
         "summary": "数据更新完成：更新了 591 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-07T09:28:24+08:00",
-        "summary": "数据更新完成：更新了 591 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-06T06:51:07+08:00",
-        "summary": "数据更新完成：更新了 591 部正在制作中的剧集信息"
       }
     ],
     "last_refreshed": "2026-08-14T06:33:38+08:00",
@@ -50,7 +50,7 @@
     "total_seasons": 9506,
     "earliest_show_date": "2000-01-01",
     "latest_show_date": "2026-08-12",
-    "total_douban_links": 8583,
+    "total_douban_links": 8604,
     "verified_douban_links": 7466,
     "verified_no_rating_links": 2450
   },
@@ -1755,7 +1755,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38439085/"
         }
       ]
     },
@@ -1952,7 +1954,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38188305/"
         }
       ]
     },
@@ -2033,7 +2037,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37806552/"
         }
       ]
     },
@@ -12096,7 +12102,9 @@
           "overview": "",
           "poster_path": "/6GvFdXnzTG5Lkxe78pCWsszLriV.jpg",
           "season_number": 18,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/35287019/"
         }
       ]
     },
@@ -12507,7 +12515,9 @@
           "overview": "卡米离开餐厅后，西德尼、里奇和娜塔莉接手“熊家餐馆”。面对餐厅经营压力与追逐米其林星级的梦想，他们必须携手完成一场决定未来的关键服务。在考验接踵而至之际，他们逐渐明白，这家餐厅最珍贵的，并非料理本身，而是一路同行、彼此扶持的伙伴。",
           "poster_path": "/vE8rW5E8evCUKfZR4y8PvNrsU3.jpg",
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37415674/"
         }
       ]
     },
@@ -12655,7 +12665,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37344496/"
         }
       ]
     },
@@ -12912,7 +12924,8 @@
           "overview": "",
           "poster_path": "/76z19jH6MC3z2t9ZGJhObQtm4Ie.jpg",
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -13715,7 +13728,9 @@
           "overview": "",
           "poster_path": "/p5S9g4Df2J2mS7PO1IA9cJYaU5u.jpg",
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37571432/"
         }
       ]
     },
@@ -13835,7 +13850,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -13999,7 +14015,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37447622/"
         }
       ]
     },
@@ -14071,7 +14089,9 @@
           "overview": "",
           "poster_path": "/33cbXLBzFhw2NAzFHEE1yKLAWwJ.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37484191/"
         }
       ]
     },
@@ -14569,7 +14589,9 @@
           "overview": "",
           "poster_path": "/qXx8kS5ZVsJ0rcpjNOKweOv9lPS.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37315637/"
         }
       ]
     },
@@ -14642,7 +14664,9 @@
           "overview": "",
           "poster_path": "/rwkicHIWwMw8AjI9C8v6wJuK9xE.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37386645/"
         }
       ]
     },
@@ -14809,7 +14833,9 @@
           "overview": "第九季每一集都堪称爆款佳作。全程没有 AI 流水线烂活，全是真人实打实打磨的原创内容，主创们也都是有着体毛、皮肤囊肿这类普通人特征的鲜活人类。赶紧追剧吧，不然大家舍家撇业付出的心血就全都白费了。",
           "poster_path": "/qo07tk7mF3c63G7MktMVA2GApZt.jpg",
           "season_number": 9,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36508123/"
         }
       ]
     },
@@ -15414,7 +15440,9 @@
           "overview": "",
           "poster_path": "/qciTEJyEm2zJXwHw7k01fv0n0v8.jpg",
           "season_number": 8,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37373925/"
         }
       ]
     },
@@ -15759,7 +15787,9 @@
           "overview": "",
           "poster_path": "/zV3XS7gyQs8OGpl0xdJtufy6U2n.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37398510/"
         }
       ]
     },
@@ -15871,7 +15901,8 @@
           "overview": "",
           "poster_path": "/3EYayTwZ8FtH18X1FmeNfvZsBiS.jpg",
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -16601,7 +16632,9 @@
           "overview": "",
           "poster_path": "/admyw1GprtFGwFVltDBn8Q1VdJ0.jpg",
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37386785/"
         }
       ]
     },
@@ -19483,7 +19516,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 7,
-          "vote_average": 8.0
+          "vote_average": 8.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -20158,7 +20192,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -20652,7 +20687,9 @@
           "overview": "",
           "poster_path": "/guPa9hTEhUkm73BgFlMZ1cq6vJd.jpg",
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37248287/"
         },
         {
           "air_date": "2027-02-07",
@@ -20953,7 +20990,8 @@
           "overview": "",
           "poster_path": "/ivYtyxSx5CAbVSzhTFKS8pHfe0E.jpg",
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -21172,7 +21210,9 @@
           "overview": "",
           "poster_path": "/zsjiNaXqbWUCKFyU72N5HpALcUu.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37496400/"
         }
       ]
     },
@@ -21303,7 +21343,9 @@
           "overview": "威尔逊·菲斯克市长反转整个纽约市，誓要追捕头号公敌 —— 义警夜魔侠。然而，面具下的马修·默多克将在黑暗中奋起反击，摧毁金并腐败的管治帝国。抵抗、反击、重生。",
           "poster_path": "/8JhHBf1dRQeHWlBauOvoEeF75dw.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36341343/"
         }
       ]
     },
@@ -21761,7 +21803,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -22129,7 +22172,9 @@
           "overview": "自杀式炸弹袭击者其实不难辨认。他们会流露出各种蛛丝马迹，多半是因为紧张——毕竟从定义上说，他们都是第一次干这种事。有十二条特征值得留意，凡是在执法部门工作过的人，都不会忘记。纽约市，地铁，凌晨两点。杰克·雷彻打量着同车的乘客。四个人没问题，第五个不对劲。列车减速进站，前往中央车站。雷彻会出手干预、拯救性命吗？还是他判断错了？他的介入会害死人——包括他自己吗？",
           "poster_path": "/wXQNonDCHMI4tzzzPwp66rKK0DC.jpg",
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37067733/"
         }
       ]
     },
@@ -22675,7 +22720,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37212371/"
         }
       ]
     },
@@ -22952,7 +22999,9 @@
           "overview": "宁静小镇人气十足的三人闺蜜团 —— 玛迪、海伦、达娜・苏，即将再次推开她们的 “暖心厨房” 大门，共同迎接全新的人生难题、爱情纠葛，还有日常生活中避无可避的种种风波。",
           "poster_path": "/5gU6lDINkwP1goRWjBQoWifu0uF.jpg",
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37331021/"
         }
       ]
     },
