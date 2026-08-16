@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-08-16T06:14:01+08:00",
+    "last_updated": "2026-08-17T01:08:05+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2026-08-17T01:08:05+08:00",
+        "summary": "执行豆瓣链接验证和评分更新。本次验证成功 0 个链接，失败 0 个链接。正常完成。"
+      },
+      {
+        "time": "2026-08-17T01:07:41+08:00",
+        "summary": "从豆瓣搜索入口更新链接，本次更新18条，连续失败过多，已保存当前进度。"
+      },
       {
         "time": "2026-08-16T06:14:01+08:00",
         "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
@@ -34,14 +42,6 @@
       {
         "time": "2026-08-12T06:34:02+08:00",
         "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-11T06:29:08+08:00",
-        "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-10T06:22:01+08:00",
-        "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
       }
     ],
     "last_refreshed": "2026-08-16T06:14:01+08:00",
@@ -50,7 +50,7 @@
     "total_seasons": 9507,
     "earliest_show_date": "2000-01-01",
     "latest_show_date": "2026-08-13",
-    "total_douban_links": 8614,
+    "total_douban_links": 8632,
     "verified_douban_links": 7466,
     "verified_no_rating_links": 2450
   },
@@ -25246,7 +25246,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38439175/"
         }
       ]
     },
@@ -26704,7 +26706,8 @@
           "overview": "",
           "poster_path": "/czAZ6vKeBt7gRi8p92w242sKt3q.jpg",
           "season_number": 20,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -28020,7 +28023,8 @@
           "overview": "",
           "poster_path": "/j5M4bTggyrCDJR9xarGl4FtkSR6.jpg",
           "season_number": 8,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -28827,7 +28831,9 @@
           "overview": "",
           "poster_path": "/pAyRm7qivWQ2KA0mlOm0rFjhkDN.jpg",
           "season_number": 7,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37089980/"
         }
       ]
     },
@@ -29207,7 +29213,8 @@
           "overview": "",
           "poster_path": "/nx0qQjVYJU0usKhMrLPhEiJakzm.jpg",
           "season_number": 15,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -29568,7 +29575,8 @@
           "overview": "",
           "poster_path": "/dtsmwORVWMxkxVh07NimRrbfLT9.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -29895,7 +29903,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37170433/"
         }
       ]
     },
@@ -30095,7 +30105,9 @@
           "overview": "",
           "poster_path": "/dFZrqUbNVj9cJlj7cKOkCXCuUq8.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37143222/"
         }
       ]
     },
@@ -30268,7 +30280,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -30922,7 +30935,9 @@
           "overview": "在本季，亚历克斯·克罗斯面对的是一个冷酷无情的法外执法者，专门猎杀美国腐败的亿万富翁。",
           "poster_path": "/unoPk0LRa4CYDEYqXbizDqzC6ZW.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36732501/"
         },
         {
           "air_date": null,
@@ -30932,7 +30947,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38038690/"
         }
       ]
     },
@@ -32004,7 +32021,8 @@
           "overview": "",
           "poster_path": "/vRmH7T1w1Wa3TPYbPjBuCWXJjLo.jpg",
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -33219,7 +33237,9 @@
           "overview": "",
           "poster_path": "/wIcZtmFh2q4OCN4wbdGc6OSs3RO.jpg",
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37078948/"
         }
       ]
     },
@@ -35922,7 +35942,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 13,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36791178/"
         },
         {
           "air_date": "2026-07-31",
@@ -35932,7 +35954,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 14,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36791178/"
         }
       ]
     },
@@ -36273,7 +36297,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 12,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -36960,7 +36985,9 @@
           "overview": "",
           "poster_path": "/1tW3P8V0AIv2vKSuscvEU63fezZ.jpg",
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37164607/"
         }
       ]
     },
@@ -37334,7 +37361,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37936560/"
         }
       ]
     },
@@ -42610,7 +42639,9 @@
           "overview": "",
           "poster_path": "/qeRekIcmAGFOCZC9wQPkuZymig5.jpg",
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36937450/"
         }
       ]
     },
@@ -42715,7 +42746,9 @@
           "overview": "",
           "poster_path": "/2MG7PLAAFdYdeoHvE3fr8qQvAhy.jpg",
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/38547543/"
         }
       ]
     },
@@ -43154,7 +43187,9 @@
           "overview": "",
           "poster_path": "/kjthFwTN9iJDsRFbIglNYNHk5Rd.jpg",
           "season_number": 5,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37354212/"
         },
         {
           "air_date": null,
@@ -43164,7 +43199,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 6,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37354213/"
         }
       ]
     },
@@ -43747,7 +43784,8 @@
           "overview": "",
           "poster_path": "/7m7RgQNT8kuWnPE4sEL2TqZ84Tn.jpg",
           "season_number": 4,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -45187,7 +45225,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -45677,7 +45716,9 @@
           "overview": "",
           "poster_path": "/wCJtxNGBWY2Sg6YyrbLDsgGdZMq.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36851140/"
         }
       ]
     },
@@ -47013,7 +47054,9 @@
           "overview": "",
           "poster_path": "/ajW2DLWtb28KMdrlETYr26cljWL.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36010991/"
         },
         {
           "air_date": null,
@@ -47023,7 +47066,9 @@
           "overview": "",
           "poster_path": null,
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36838197/"
         }
       ]
     },
