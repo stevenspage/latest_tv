@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-08-17T06:13:27+08:00",
+    "last_updated": "2026-08-18T01:04:32+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2026-08-18T01:04:32+08:00",
+        "summary": "执行豆瓣链接验证和评分更新。本次验证成功 0 个链接，失败 0 个链接。正常完成。"
+      },
+      {
+        "time": "2026-08-18T01:04:07+08:00",
+        "summary": "从豆瓣搜索入口更新链接，本次更新7条，连续失败过多，已保存当前进度。"
+      },
       {
         "time": "2026-08-17T06:13:27+08:00",
         "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
@@ -34,14 +42,6 @@
       {
         "time": "2026-08-14T01:07:58+08:00",
         "summary": "从豆瓣搜索入口更新链接，本次更新12条，连续失败过多，已保存当前进度。"
-      },
-      {
-        "time": "2026-08-13T06:32:37+08:00",
-        "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-12T06:34:02+08:00",
-        "summary": "数据更新完成：更新了 590 部正在制作中的剧集信息"
       }
     ],
     "last_refreshed": "2026-08-17T06:13:27+08:00",
@@ -50,7 +50,7 @@
     "total_seasons": 9507,
     "earliest_show_date": "2000-01-01",
     "latest_show_date": "2026-08-15",
-    "total_douban_links": 8632,
+    "total_douban_links": 8639,
     "verified_douban_links": 7466,
     "verified_no_rating_links": 2450
   },
@@ -31456,7 +31456,9 @@
           "overview": "在第三季中，隐秘网络、外国特工与个人背叛交织碰撞。当一股股无形势力步步逼近她的生活时，乔（Joe）必须在职责与家庭之间艰难维系平衡。种种迹象在不该出现之处显现，名字凭空消失，局势也随之重组。在凯特琳（Kaitlyn）和韦斯特菲尔德（Westfield）的指引下，乔直面那些潜伏于暗处的敌人，不得不应对一场已渗透进她生活方方面面的战争。",
           "poster_path": "/vQlOkuIJ1yHWUnftrqXRuT0CvWx.jpg",
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37483384/"
         }
       ]
     },
@@ -38115,7 +38117,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 8,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -38567,7 +38570,8 @@
           "overview": "",
           "poster_path": "/gg1RIAhqc0iZh4yitqO5PJD47GM.jpg",
           "season_number": 6,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -38796,7 +38800,9 @@
           "overview": "蝙蝠侠与众盟友齐心协力，誓要彻底瓦解鲁伯特·索恩的犯罪帝国。然而，扳倒一个盘踞已久的黑道霸主，背后的代价远比想象中沉重。",
           "poster_path": "/fwGsqQHeO7VcWiam3v2gp5HIzwj.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36309216/"
         }
       ]
     },
@@ -41980,7 +41986,8 @@
           "overview": "",
           "poster_path": "/hVMWPVavxgoU9qy8HAzdqKt94dZ.jpg",
           "season_number": 11,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -44321,7 +44328,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 16,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -49649,7 +49657,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -51815,7 +51824,9 @@
           "overview": "1994年，口无遮拦的泰迪熊和他挚友——外向却笨拙的约翰·贝内特正经历着高中最后一年。这对好友与约翰的父母（马蒂和苏珊）及表妹（布莱尔）同住波士顿一户蓝领家庭。马蒂是个爱吹牛的波士顿蓝领，自诩为家中无可争议的主子，尤其反感有人挑战他，尤其是他那思想开明的侄女。苏珊则温柔无私，照顾家人时近乎病态地甜言蜜语。布莱尔是位直言不讳的大学生，常与更保守的亲戚们产生分歧。",
           "poster_path": "/aCvgLAHuIIhk6H1jebGN6sXDLzL.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36888431/"
         }
       ]
     },
@@ -62514,7 +62525,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
@@ -67789,7 +67801,9 @@
           "overview": "",
           "poster_path": "/sxRBl0zPdevzruEoIbsL2MMDkFN.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36828551/"
         }
       ]
     },
@@ -68305,7 +68319,9 @@
           "overview": "",
           "poster_path": "/9CqVlxFUhJimDfFuELwtHBhxgD8.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/37447548/"
         }
       ]
     },
@@ -68431,7 +68447,9 @@
           "overview": "一对年轻情侣目睹上司与妻子发生激烈争执，随即被卷入一场人情与胁迫交织的权力博弈，看着这一切在韩国亿万富豪开设的上流乡村俱乐部上演。",
           "poster_path": "/bPNMKnYZwVpQcMiDEn7incvfZZl.jpg",
           "season_number": 2,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/36787498/"
         }
       ]
     },
@@ -96480,7 +96498,9 @@
           "overview": "五年过去了，高中的前学生们的生活发生了重大变化。",
           "poster_path": "/AgVczwdyZreBiE704HsjtoLtFEJ.jpg",
           "season_number": 3,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1,
+          "douban_link_google": "https://movie.douban.com/subject/35758798/"
         }
       ]
     },
@@ -97325,7 +97345,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 14,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         },
         {
           "air_date": null,
@@ -97335,7 +97356,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 15,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         },
         {
           "air_date": null,
@@ -97345,7 +97367,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 16,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         },
         {
           "air_date": null,
@@ -97355,7 +97378,8 @@
           "overview": "",
           "poster_path": null,
           "season_number": 17,
-          "vote_average": 0.0
+          "vote_average": 0.0,
+          "douban_search_count": 1
         }
       ]
     },
