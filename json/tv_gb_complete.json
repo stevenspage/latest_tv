@@ -1,8 +1,16 @@
 {
   "metadata": {
-    "last_updated": "2026-08-19T06:14:11+08:00",
+    "last_updated": "2026-08-20T01:16:36+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2026-08-20T01:16:36+08:00",
+        "summary": "执行豆瓣链接验证和评分更新。本次验证成功 0 个链接，失败 0 个链接。正常完成。"
+      },
+      {
+        "time": "2026-08-20T01:00:06+08:00",
+        "summary": "从豆瓣搜索入口更新链接，本次更新0条，本次任务正常结束。"
+      },
       {
         "time": "2026-08-19T06:14:11+08:00",
         "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
@@ -34,14 +42,6 @@
       {
         "time": "2026-08-16T01:00:05+08:00",
         "summary": "从豆瓣搜索入口更新链接，本次更新0条，本次任务正常结束。"
-      },
-      {
-        "time": "2026-08-15T06:14:26+08:00",
-        "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-15T01:00:32+08:00",
-        "summary": "从豆瓣搜索入口更新链接，本次更新1条，本次任务正常结束。"
       }
     ],
     "last_refreshed": "2026-08-19T06:14:11+08:00",
@@ -241,7 +241,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36931742/",
           "overview": "平民少年长大成人，得知自己是一个古老狼人家族的末裔，也是王位的继承者。",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:07:46+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:00:49+08:00"
         },
         {
           "air_date": "2025-09-11",
@@ -262,7 +262,7 @@
           "googlesearch_count": 2,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:07:53+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:00:56+08:00"
         }
       ]
     },
@@ -393,7 +393,7 @@
           ],
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:08:00+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:04+08:00"
         }
       ]
     },
@@ -500,7 +500,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36791566/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:08:06+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:10+08:00"
         },
         {
           "air_date": "2026-02-23",
@@ -734,7 +734,7 @@
           "vote_average": 0.0,
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:08:14+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:18+08:00"
         }
       ]
     },
@@ -1153,7 +1153,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35797539/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:08:21+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:26+08:00"
         },
         {
           "air_date": null,
@@ -1377,7 +1377,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36686616/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:08:29+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:34+08:00"
         },
         {
           "name": "第 2 季",
@@ -1391,7 +1391,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37200048/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:08:35+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:42+08:00"
         }
       ]
     },
@@ -1472,7 +1472,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36420910/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:08:45+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:49+08:00"
         },
         {
           "name": "第 4 季",
@@ -1486,7 +1486,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37226868/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:08:54+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:01:58+08:00"
         }
       ]
     },
@@ -1701,7 +1701,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37262406/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:09:02+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:06+08:00"
         }
       ]
     },
@@ -2169,7 +2169,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36058652/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:09:10+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:14+08:00"
         },
         {
           "name": "第 9 季",
@@ -2183,7 +2183,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36477988/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:09:17+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:22+08:00"
         },
         {
           "name": "第 10 季",
@@ -2197,7 +2197,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36900954/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:09:26+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:29+08:00"
         },
         {
           "air_date": "2026-06-14",
@@ -2458,7 +2458,7 @@
           "overview": "",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:09:35+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:35+08:00"
         }
       ]
     },
@@ -2570,7 +2570,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:09:41+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:42+08:00"
         },
         {
           "name": "第 5 季",
@@ -2590,7 +2590,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:09:47+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:49+08:00"
         },
         {
           "air_date": "2025-12-14",
@@ -2832,7 +2832,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36666674/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:09:53+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:02:58+08:00"
         }
       ]
     },
@@ -2888,7 +2888,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36451730/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:10:00+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:06+08:00"
         }
       ]
     },
@@ -2956,7 +2956,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37364782",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:10:07+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:14+08:00"
         }
       ]
     },
@@ -3588,7 +3588,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36504086/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:10:15+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:19+08:00"
         }
       ]
     },
@@ -3648,7 +3648,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37242403/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:10:23+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:25+08:00"
         }
       ]
     },
@@ -3716,7 +3716,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37316398/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:10:30+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:34+08:00"
         }
       ]
     },
@@ -3827,7 +3827,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36767219/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:10:37+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:40+08:00"
         }
       ]
     },
@@ -3965,7 +3965,7 @@
           "overview": "",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:10:44+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:48+08:00"
         },
         {
           "air_date": "2026-03-02",
@@ -4298,7 +4298,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36964161/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:10:52+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:03:54+08:00"
         }
       ]
     },
@@ -4740,7 +4740,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36877113/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:11:01+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:01+08:00"
         },
         {
           "air_date": "2026-03-27",
@@ -4824,7 +4824,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36943573/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:11:09+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:08+08:00"
         }
       ]
     },
@@ -4883,7 +4883,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36779033/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:11:17+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:17+08:00"
         }
       ]
     },
@@ -5188,7 +5188,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36764977/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:11:25+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:24+08:00"
         }
       ]
     },
@@ -5394,7 +5394,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36857846/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:11:32+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:29+08:00"
         }
       ]
     },
@@ -5505,7 +5505,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36954954/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:11:39+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:38+08:00"
         },
         {
           "air_date": null,
@@ -5640,7 +5640,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36552976/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:11:46+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:47+08:00"
         }
       ]
     },
@@ -5970,7 +5970,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36321843/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:11:53+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:04:55+08:00"
         }
       ]
     },
@@ -6024,7 +6024,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36290659/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:12:01+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:04+08:00"
         },
         {
           "air_date": "2026-01-09",
@@ -6289,7 +6289,7 @@
           "overview": "",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:12:09+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:12+08:00"
         },
         {
           "name": "第 14 季",
@@ -6303,7 +6303,7 @@
           "overview": "",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:12:18+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:19+08:00"
         },
         {
           "name": "第 15 季",
@@ -6317,7 +6317,7 @@
           "overview": "",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:12:23+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:27+08:00"
         },
         {
           "name": "第 16 季",
@@ -6331,7 +6331,7 @@
           "overview": "",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:12:30+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:34+08:00"
         },
         {
           "air_date": "2026-01-06",
@@ -6406,7 +6406,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36533708/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:12:37+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:42+08:00"
         }
       ]
     },
@@ -6873,7 +6873,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36783946/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:12:46+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:50+08:00"
         },
         {
           "name": "第 2 季",
@@ -6888,7 +6888,7 @@
           "overview": "",
           "douban_link_last_checked": "2025-08-24T21:55:29+08:00",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:12:52+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:05:57+08:00"
         },
         {
           "air_date": "2026-06-08",
@@ -7097,7 +7097,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36342906/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:13:00+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:06:06+08:00"
         },
         {
           "name": "第 2 季",
@@ -7111,7 +7111,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37193740/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:13:06+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:06:14+08:00"
         },
         {
           "air_date": "2026-03-15",
@@ -7428,7 +7428,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37228514/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:13:12+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:06:19+08:00"
         }
       ]
     },
@@ -7669,7 +7669,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35762368/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:13:19+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:06:27+08:00"
         }
       ]
     },
@@ -7945,7 +7945,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37088343/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:13:28+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:06:36+08:00"
         },
         {
           "air_date": "2026-01-09",
@@ -8247,7 +8247,7 @@
           "overview": "",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:13:35+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:06:44+08:00"
         },
         {
           "air_date": "2026-01-02",
@@ -8334,7 +8334,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37183699/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:13:42+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:06:51+08:00"
         },
         {
           "air_date": "2025-12-27",
@@ -9019,7 +9019,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35682118/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:13:50+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:00+08:00"
         },
         {
           "name": "第 14 季",
@@ -9033,7 +9033,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36246268/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:13:58+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:09+08:00"
         },
         {
           "air_date": "2026-01-11",
@@ -9669,7 +9669,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:14:04+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:16+08:00"
         }
       ]
     },
@@ -9729,7 +9729,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36656636/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:14:10+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:23+08:00"
         }
       ]
     },
@@ -9823,7 +9823,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37276177/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:14:18+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:31+08:00"
         },
         {
           "air_date": "2025-12-14",
@@ -9911,7 +9911,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37200052/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:14:27+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:38+08:00"
         }
       ]
     },
@@ -9996,7 +9996,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36913491/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:14:34+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:44+08:00"
         },
         {
           "air_date": "2026-08-03",
@@ -10345,7 +10345,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36666503/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:14:42+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:50+08:00"
         }
       ]
     },
@@ -10417,7 +10417,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36850598/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:14:51+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:07:57+08:00"
         }
       ]
     },
@@ -10473,7 +10473,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36781753/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:14:59+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:05+08:00"
         }
       ]
     },
@@ -10930,7 +10930,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36821617/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:15:07+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:11+08:00"
         }
       ]
     },
@@ -10989,7 +10989,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36768531/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:15:15+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:19+08:00"
         },
         {
           "air_date": "2026-03-10",
@@ -11148,7 +11148,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36976472/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:15:23+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:26+08:00"
         }
       ]
     },
@@ -11299,7 +11299,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36301657/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:15:31+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:33+08:00"
         }
       ]
     },
@@ -11781,7 +11781,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36619703/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:15:39+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:39+08:00"
         }
       ]
     },
@@ -11837,7 +11837,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36433411/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:15:45+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:46+08:00"
         }
       ]
     },
@@ -11900,7 +11900,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36614675/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:15:53+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:08:55+08:00"
         }
       ]
     },
@@ -12106,7 +12106,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:16:02+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:09:01+08:00"
         }
       ]
     },
@@ -12240,7 +12240,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35969689/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:16:09+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:09:46+08:00"
         }
       ]
     },
@@ -12308,7 +12308,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36560613/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:16:18+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:09:54+08:00"
         }
       ]
     },
@@ -12390,7 +12390,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36728551/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:16:26+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:10:01+08:00"
         }
       ]
     },
@@ -12662,7 +12662,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36557304/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:16:33+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:10:09+08:00"
         },
         {
           "air_date": "2025-09-25",
@@ -12676,7 +12676,7 @@
           "vote_average": 0.0,
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:16:40+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:10:17+08:00"
         }
       ]
     },
@@ -12756,7 +12756,8 @@
           "douban_search_count": 1,
           "douban_link_google": "https://movie.douban.com/subject/37100781/",
           "douban_link_verified": true,
-          "douban_rating": null
+          "douban_rating": null,
+          "last_douban_rating_fetch": "2026-08-20T01:10:25+08:00"
         }
       ]
     },
@@ -13002,7 +13003,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:16:48+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:10:33+08:00"
         }
       ]
     },
@@ -13337,7 +13338,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36449119/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:16:57+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:10:39+08:00"
         },
         {
           "air_date": null,
@@ -13484,7 +13485,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37184290/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:17:06+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:10:48+08:00"
         },
         {
           "air_date": "2026-03-30",
@@ -13717,7 +13718,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36743754/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:17:12+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:10:56+08:00"
         }
       ]
     },
@@ -13904,7 +13905,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36453725/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:17:19+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:03+08:00"
         },
         {
           "air_date": "2026-02-25",
@@ -14029,7 +14030,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36623680/",
           "overview": "一部关于两个既有趣又严重有缺陷的角色的经典怪异家庭喜剧，过程中会有恋爱灾难和失败的浪漫关系，有毒的友谊和混乱的家庭动态，还有一位危险的反社会倾向的产前教师。",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:17:26+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:10+08:00"
         },
         {
           "air_date": "2025-11-21",
@@ -14044,7 +14045,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37226571/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:17:33+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:18+08:00"
         }
       ]
     },
@@ -14134,7 +14135,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36920203/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:17:41+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:26+08:00"
         }
       ]
     },
@@ -14426,7 +14427,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:17:47+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:32+08:00"
         }
       ]
     },
@@ -14661,7 +14662,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36657631/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:17:55+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:38+08:00"
         },
         {
           "air_date": "2026-01-15",
@@ -14748,7 +14749,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36650063/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:18:03+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:47+08:00"
         }
       ]
     },
@@ -14880,7 +14881,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37292284/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:18:11+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:11:56+08:00"
         },
         {
           "air_date": "2025-11-23",
@@ -14895,7 +14896,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37292374/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:18:19+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:12:03+08:00"
         }
       ]
     },
@@ -15243,7 +15244,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:18:26+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:12:09+08:00"
         }
       ]
     },
@@ -15303,7 +15304,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36746361/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:18:33+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:12:16+08:00"
         }
       ]
     },
@@ -16056,7 +16057,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36365983/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:18:39+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:12:23+08:00"
         }
       ]
     },
@@ -16575,7 +16576,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/2981622/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:18:46+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:12:32+08:00"
         }
       ]
     },
@@ -16634,7 +16635,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36494016/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:18:55+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:12:40+08:00"
         }
       ]
     },
@@ -16880,7 +16881,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35811391/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:19:03+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:13:22+08:00"
         }
       ]
     },
@@ -16952,7 +16953,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36785330",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:19:11+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:13:30+08:00"
         },
         {
           "air_date": "2026-07-23",
@@ -17087,7 +17088,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36342893/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:19:18+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:13:37+08:00"
         }
       ]
     },
@@ -17298,7 +17299,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36456920/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:19:26+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:13:44+08:00"
         },
         {
           "name": "第 2 季",
@@ -17312,7 +17313,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37200050/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:19:33+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:13:53+08:00"
         }
       ]
     },
@@ -17367,7 +17368,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36421445/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:19:42+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:01+08:00"
         },
         {
           "air_date": "2025-12-01",
@@ -17382,7 +17383,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37302653/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:19:48+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:09+08:00"
         }
       ]
     },
@@ -17541,7 +17542,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36818914/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:19:56+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:16+08:00"
         },
         {
           "air_date": "2026-12-31",
@@ -17850,7 +17851,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36835287/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:20:02+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:23+08:00"
         }
       ]
     },
@@ -18000,7 +18001,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36170249/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:20:10+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:31+08:00"
         }
       ]
     },
@@ -18167,7 +18168,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36265500/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:20:17+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:40+08:00"
         },
         {
           "air_date": "2026-04-16",
@@ -18251,7 +18252,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36137966/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:20:25+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:49+08:00"
         }
       ]
     },
@@ -18314,7 +18315,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36283073/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:20:32+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:14:56+08:00"
         }
       ]
     },
@@ -18374,7 +18375,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36787806/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:20:40+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:03+08:00"
         }
       ]
     },
@@ -18541,7 +18542,7 @@
           "googlesearch_count": 1,
           "douban_search_count": 1,
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:20:47+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:11+08:00"
         }
       ]
     },
@@ -19433,7 +19434,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36250021/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:20:53+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:18+08:00"
         }
       ]
     },
@@ -19489,7 +19490,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36493830/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:20:59+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:25+08:00"
         }
       ]
     },
@@ -19612,7 +19613,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36415331/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:21:06+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:31+08:00"
         }
       ]
     },
@@ -19670,7 +19671,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36750166/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:21:16+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:39+08:00"
         }
       ]
     },
@@ -19783,7 +19784,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/36330442/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:21:24+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:46+08:00"
         }
       ]
     },
@@ -19869,7 +19870,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37069914/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:21:30+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:15:52+08:00"
         }
       ]
     },
@@ -19988,7 +19989,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36768638/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:21:36+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:16:00+08:00"
         }
       ]
     },
@@ -20510,7 +20511,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/35811392/",
           "overview": "",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:21:44+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:16:07+08:00"
         }
       ]
     },
@@ -20628,7 +20629,7 @@
           "douban_link_google": "https://movie.douban.com/subject/36717155/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:21:52+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:16:13+08:00"
         }
       ]
     },
@@ -23291,7 +23292,7 @@
           "douban_link_google": "https://movie.douban.com/subject/37202949/",
           "douban_link_verified": true,
           "douban_rating": null,
-          "last_douban_rating_fetch": "2026-08-12T01:22:01+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:16:20+08:00"
         }
       ]
     },
@@ -30945,7 +30946,7 @@
           "douban_link_google": "https://m.douban.com/movie/subject/37168326/",
           "overview": "新一季将延续第二季的故事，自Rachel Carey（荷丽黛·格兰杰 饰）在全国直播中揭露一段伪造的政府部长视频、暴露情报机构秘密操作项目“修正”以来，已过去一年。在对“修正”计划非法使用的调查期间，Carey成为SO15反恐指挥部的代理负责人，试图通过全新的“真相行动”摄像系统重建公众对监控技术的信任。然而，一场精心策划、极其残忍的恐怖袭击突然爆发，直击英国权力核心，仅留下一位目击者。随着Carey深入调查，她被卷入一场不断扩大的地缘政治危机之中，这场危机渗透至英国政坛、安全机构乃至媒体界。一场巨大的阴谋正悄然展开，但幕后黑手究竟是谁？",
           "douban_link_verified": true,
-          "last_douban_rating_fetch": "2026-08-12T01:22:10+08:00"
+          "last_douban_rating_fetch": "2026-08-20T01:16:27+08:00"
         }
       ]
     },
