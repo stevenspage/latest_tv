@@ -1,8 +1,12 @@
 {
   "metadata": {
-    "last_updated": "2026-09-04T07:43:30+08:00",
+    "last_updated": "2026-09-05T07:35:50+08:00",
     "version": "1.0.0",
     "update_log": [
+      {
+        "time": "2026-09-05T07:35:50+08:00",
+        "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
+      },
       {
         "time": "2026-09-04T07:43:30+08:00",
         "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
@@ -38,17 +42,13 @@
       {
         "time": "2026-08-29T11:26:28+08:00",
         "summary": "数据更新完成：更新了 238 部正在制作中的剧集信息"
-      },
-      {
-        "time": "2026-08-29T01:00:30+08:00",
-        "summary": "从豆瓣搜索入口更新链接，本次更新0条，本次任务正常结束。"
       }
     ],
-    "last_refreshed": "2026-09-04T07:43:30+08:00",
+    "last_refreshed": "2026-09-05T07:35:50+08:00",
     "total_shows": 1453,
     "total_seasons": 3160,
     "earliest_show_date": "2000-01-09",
-    "latest_show_date": "2026-08-31",
+    "latest_show_date": "2026-09-03",
     "total_douban_links": 2473,
     "verified_douban_links": 2424,
     "verified_no_rating_links": 853,
@@ -76,7 +76,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.0,
-      "vote_count": 953,
+      "vote_count": 954,
       "origin_country": [
         "GB"
       ],
@@ -89,7 +89,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
-      "popularity": 71.2632,
+      "popularity": 80.4392,
       "number_of_seasons": 6,
       "number_of_episodes": 36,
       "first_air_date": "2022-04-01",
@@ -217,7 +217,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81271209",
-      "popularity": 7.7177,
+      "popularity": 8.493,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2025-03-20",
@@ -282,8 +282,8 @@
         }
       ],
       "type": "Miniseries",
-      "vote_average": 7.13,
-      "vote_count": 151,
+      "vote_average": 7.11,
+      "vote_count": 152,
       "origin_country": [
         "US",
         "GB"
@@ -297,7 +297,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/gp/video/detail/B0FB528M67",
-      "popularity": 10.4971,
+      "popularity": 9.7923,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-09-10",
@@ -363,7 +363,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/atomic",
-      "popularity": 4.208,
+      "popularity": 4.7463,
       "number_of_seasons": 1,
       "number_of_episodes": 5,
       "first_air_date": "2025-08-28",
@@ -437,7 +437,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/professor-t/7a0171",
-      "popularity": 15.6048,
+      "popularity": 13.1332,
       "number_of_seasons": 5,
       "number_of_episodes": 30,
       "first_air_date": "2021-07-18",
@@ -551,7 +551,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0024pyz",
-      "popularity": 7.4347,
+      "popularity": 7.0205,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-08-24",
@@ -659,7 +659,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.53,
+      "vote_average": 6.5,
       "vote_count": 35,
       "origin_country": [
         "GB"
@@ -674,7 +674,7 @@
         }
       ],
       "homepage": "https://www.britbox.com/us/show/Sister_Boniface_Mysteries_73774",
-      "popularity": 14.5543,
+      "popularity": 14.8123,
       "number_of_seasons": 4,
       "number_of_episodes": 36,
       "first_air_date": "2022-03-11",
@@ -777,7 +777,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/iplayer/episodes/b08bzfnh/numberblocks?seriesId=m000t16j",
-      "popularity": 19.9472,
+      "popularity": 20.2218,
       "number_of_seasons": 9,
       "number_of_episodes": 165,
       "first_air_date": "2017-01-23",
@@ -1041,7 +1041,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.54,
-      "vote_count": 1782,
+      "vote_count": 1783,
       "origin_country": [
         "US"
       ],
@@ -1055,7 +1055,7 @@
         }
       ],
       "homepage": "https://www.cartoonnetworkhq.com/show/gumball",
-      "popularity": 48.5246,
+      "popularity": 49.3796,
       "number_of_seasons": 6,
       "number_of_episodes": 240,
       "first_air_date": "2011-05-03",
@@ -1206,7 +1206,7 @@
         }
       ],
       "homepage": "https://www.amazon.co.uk/gp/video/detail/B0F8LWL532",
-      "popularity": 9.9977,
+      "popularity": 10.618,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-07-25",
@@ -1276,7 +1276,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0byxbkn",
-      "popularity": 3.7672,
+      "popularity": 4.6033,
       "number_of_seasons": 3,
       "number_of_episodes": 19,
       "first_air_date": "2022-04-29",
@@ -1357,7 +1357,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/mr-bigstuff",
-      "popularity": 2.1825,
+      "popularity": 2.3481,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-07-17",
@@ -1426,7 +1426,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p08gpftk",
-      "popularity": 7.3825,
+      "popularity": 7.1604,
       "number_of_seasons": 4,
       "number_of_episodes": 24,
       "first_air_date": "2020-08-13",
@@ -1525,7 +1525,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/karen-pirie/10a0641",
-      "popularity": 4.8869,
+      "popularity": 4.5125,
       "number_of_seasons": 2,
       "number_of_episodes": 6,
       "first_air_date": "2022-09-25",
@@ -1600,7 +1600,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 20.6579,
+      "popularity": 19.6533,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2025-07-16",
@@ -1670,7 +1670,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/the-couple-next-door",
-      "popularity": 8.0036,
+      "popularity": 8.5711,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-11-27",
@@ -1742,7 +1742,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81671844",
-      "popularity": 6.7656,
+      "popularity": 6.4364,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2025-07-10",
@@ -1800,7 +1800,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0gqd7m8",
-      "popularity": 2.8065,
+      "popularity": 2.8441,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-11-22",
@@ -1876,7 +1876,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/murder-most-puzzling",
-      "popularity": 2.778,
+      "popularity": 2.9682,
       "number_of_seasons": 1,
       "number_of_episodes": 3,
       "first_air_date": "2025-06-19",
@@ -1931,7 +1931,7 @@
         }
       ],
       "homepage": "https://u.co.uk/shows/outrageous/watch-online",
-      "popularity": 3.4463,
+      "popularity": 3.5458,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-06-19",
@@ -1985,7 +1985,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.g28hcpusm23xbs9zwvnwn9re",
-      "popularity": 15.4972,
+      "popularity": 15.5988,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2023-11-08",
@@ -2045,7 +2045,7 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.26,
+      "vote_average": 7.25,
       "vote_count": 151,
       "origin_country": [
         "GB"
@@ -2060,7 +2060,7 @@
         }
       ],
       "homepage": "https://www.itv.com/itvplayer/grantchester",
-      "popularity": 22.6467,
+      "popularity": 23.9511,
       "number_of_seasons": 11,
       "number_of_episodes": 74,
       "first_air_date": "2014-10-06",
@@ -2246,7 +2246,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/b006mw70",
-      "popularity": 12.2494,
+      "popularity": 15.6236,
       "number_of_seasons": 14,
       "number_of_episodes": 98,
       "first_air_date": "2006-10-06",
@@ -2501,7 +2501,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81014532",
-      "popularity": 13.1552,
+      "popularity": 12.0748,
       "number_of_seasons": 7,
       "number_of_episodes": 77,
       "first_air_date": "2022-04-12",
@@ -2655,7 +2655,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/cbbc/shows/malory-towers",
-      "popularity": 9.2461,
+      "popularity": 10.7908,
       "number_of_seasons": 7,
       "number_of_episodes": 103,
       "first_air_date": "2020-04-06",
@@ -2869,7 +2869,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m002c6nx",
-      "popularity": 3.1542,
+      "popularity": 5.1027,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-06-03",
@@ -2925,7 +2925,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0fvmzb8",
-      "popularity": 2.1104,
+      "popularity": 2.0745,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-07-28",
@@ -3001,7 +3001,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81487660",
-      "popularity": 11.0523,
+      "popularity": 12.2531,
       "number_of_seasons": 2,
       "number_of_episodes": 9,
       "first_air_date": "2025-05-29",
@@ -3087,7 +3087,7 @@
         }
       ],
       "homepage": "https://www.sonypicturestelevision-kids.com/brand/octonauts",
-      "popularity": 42.9487,
+      "popularity": 42.7059,
       "number_of_seasons": 11,
       "number_of_episodes": 300,
       "first_air_date": "2010-10-05",
@@ -3327,7 +3327,7 @@
         }
       ],
       "homepage": "http://www.shaunthesheep.com",
-      "popularity": 27.898,
+      "popularity": 32.8837,
       "number_of_seasons": 6,
       "number_of_episodes": 170,
       "first_air_date": "2007-03-05",
@@ -3446,7 +3446,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/the-horne-section-tv-show",
-      "popularity": 3.0867,
+      "popularity": 2.8281,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2022-11-17",
@@ -3530,7 +3530,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/code-of-silence/10a5340/upcoming",
-      "popularity": 5.9215,
+      "popularity": 8.5147,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-05-18",
@@ -3704,7 +3704,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/malpractice/10a2194/10a2194a0001",
-      "popularity": 3.8288,
+      "popularity": 4.3264,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2023-04-23",
@@ -3776,7 +3776,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p05pgjy6",
-      "popularity": 5.1945,
+      "popularity": 5.5397,
       "number_of_seasons": 5,
       "number_of_episodes": 23,
       "first_air_date": "2017-12-17",
@@ -3901,7 +3901,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 24.0076,
+      "popularity": 23.0928,
       "number_of_seasons": 7,
       "number_of_episodes": 169,
       "first_air_date": "2002-01-05",
@@ -4095,7 +4095,7 @@
         }
       ],
       "homepage": "https://www.nowtv.com/ie/online/i-jack-wright/iYEQZ1fR3ZWGiW74iw3wCh/iYsxVPHCfSwksS9HN77iWh/seasons/1",
-      "popularity": 6.4049,
+      "popularity": 5.5231,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-04-23",
@@ -4215,7 +4215,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0gglvqn",
-      "popularity": 22.5866,
+      "popularity": 21.9323,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-05-11",
@@ -4286,7 +4286,7 @@
         }
       ],
       "homepage": "http://www.paramountplus.com/shows/the-ex-wife/",
-      "popularity": 3.6525,
+      "popularity": 3.6198,
       "number_of_seasons": 2,
       "number_of_episodes": 8,
       "first_air_date": "2022-10-12",
@@ -4347,8 +4347,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 8.29,
-      "vote_count": 6464,
+      "vote_average": 8.3,
+      "vote_count": 6467,
       "origin_country": [
         "GB"
       ],
@@ -4367,7 +4367,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/70264888",
-      "popularity": 71.0867,
+      "popularity": 71.7657,
       "number_of_seasons": 7,
       "number_of_episodes": 33,
       "first_air_date": "2011-12-04",
@@ -4515,7 +4515,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/grace/2a7610/2a7610a0001",
-      "popularity": 17.9137,
+      "popularity": 19.4175,
       "number_of_seasons": 6,
       "number_of_episodes": 20,
       "first_air_date": "2021-03-14",
@@ -4625,7 +4625,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.35,
-      "vote_count": 815,
+      "vote_count": 816,
       "origin_country": [
         "GB",
         "US"
@@ -4646,7 +4646,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/mobland",
-      "popularity": 54.974,
+      "popularity": 57.4007,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2025-03-30",
@@ -4714,7 +4714,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001jg5h",
-      "popularity": 12.1074,
+      "popularity": 12.9832,
       "number_of_seasons": 4,
       "number_of_episodes": 24,
       "first_air_date": "2023-02-24",
@@ -4884,7 +4884,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0028mhs",
-      "popularity": 6.3036,
+      "popularity": 6.4632,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-03-23",
@@ -4933,7 +4933,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.82,
-      "vote_count": 702,
+      "vote_count": 704,
       "origin_country": [
         "GB"
       ],
@@ -4947,7 +4947,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/gangs-of-london",
-      "popularity": 20.1786,
+      "popularity": 21.9852,
       "number_of_seasons": 3,
       "number_of_episodes": 25,
       "first_air_date": "2020-04-23",
@@ -5031,7 +5031,7 @@
         }
       ],
       "homepage": "https://uktvplay.co.uk/shows/the-marlow-murder-club/watch-online",
-      "popularity": 10.3953,
+      "popularity": 8.6631,
       "number_of_seasons": 3,
       "number_of_episodes": 14,
       "first_air_date": "2024-03-06",
@@ -5176,7 +5176,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0ff9d1l",
-      "popularity": 3.9375,
+      "popularity": 4.1882,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-05-14",
@@ -5252,7 +5252,7 @@
         }
       ],
       "homepage": "https://u.co.uk/shows/miss-scarlet/watch-online",
-      "popularity": 13.7957,
+      "popularity": 14.9501,
       "number_of_seasons": 7,
       "number_of_episodes": 36,
       "first_air_date": "2020-03-31",
@@ -5454,7 +5454,7 @@
         }
       ],
       "homepage": "https://www.itv.com/hub/the-bay/2a5041a0012",
-      "popularity": 9.21,
+      "popularity": 9.2401,
       "number_of_seasons": 6,
       "number_of_episodes": 30,
       "first_air_date": "2019-03-20",
@@ -5641,7 +5641,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/small-town-big-story",
-      "popularity": 4.6944,
+      "popularity": 6.8782,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-02-27",
@@ -5696,7 +5696,7 @@
         }
       ],
       "homepage": "https://u.co.uk/shows/bergerac/watch-online",
-      "popularity": 8.7839,
+      "popularity": 10.1973,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2025-02-27",
@@ -5817,7 +5817,7 @@
         }
       ],
       "homepage": "https://u.co.uk/shows/dave-gorman-modern-life-is-goodish/watch-online",
-      "popularity": 4.2182,
+      "popularity": 4.4254,
       "number_of_seasons": 6,
       "number_of_episodes": 39,
       "first_air_date": "2013-09-17",
@@ -5971,7 +5971,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0028c6h",
-      "popularity": 2.6445,
+      "popularity": 2.7788,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-02-22",
@@ -6025,7 +6025,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/a-thousand-blows/u6avjk5gAMtM",
-      "popularity": 11.1627,
+      "popularity": 11.3215,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2025-02-21",
@@ -6092,7 +6092,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/b006t1p7",
-      "popularity": 27.9183,
+      "popularity": 28.2507,
       "number_of_seasons": 17,
       "number_of_episodes": 254,
       "first_air_date": "2006-03-09",
@@ -6407,7 +6407,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0027vxj",
-      "popularity": 4.3361,
+      "popularity": 4.3781,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2025-02-10",
@@ -6555,7 +6555,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/unforgotten/2a3372/",
-      "popularity": 16.451,
+      "popularity": 15.9562,
       "number_of_seasons": 6,
       "number_of_episodes": 36,
       "first_air_date": "2015-10-08",
@@ -6678,7 +6678,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/cbbc/shows/horrible-histories",
-      "popularity": 16.7015,
+      "popularity": 16.4926,
       "number_of_seasons": 11,
       "number_of_episodes": 154,
       "first_air_date": "2009-04-16",
@@ -6874,7 +6874,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/gwed/10a1909",
-      "popularity": 3.3825,
+      "popularity": 3.6828,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2024-02-05",
@@ -6956,7 +6956,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0024pyy",
-      "popularity": 5.0568,
+      "popularity": 6.2283,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2025-02-05",
@@ -7027,7 +7027,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001c3f9",
-      "popularity": 1.922,
+      "popularity": 1.7056,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2022-09-23",
@@ -7098,7 +7098,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001wjyk",
-      "popularity": 4.5635,
+      "popularity": 6.6043,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2024-02-20",
@@ -7179,7 +7179,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0027dz9",
-      "popularity": 4.001,
+      "popularity": 4.1748,
       "number_of_seasons": 1,
       "number_of_episodes": 4,
       "first_air_date": "2025-02-02",
@@ -7246,7 +7246,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/b01pvmf6",
-      "popularity": 125.2325,
+      "popularity": 97.6082,
       "number_of_seasons": 15,
       "number_of_episodes": 120,
       "first_air_date": "2011-10-25",
@@ -7487,7 +7487,7 @@
       "original_language": "en",
       "networks": [],
       "homepage": "https://www.thomasandfriends.jp",
-      "popularity": 12.9704,
+      "popularity": 14.6608,
       "number_of_seasons": 4,
       "number_of_episodes": 156,
       "first_air_date": "2021-08-23",
@@ -7608,7 +7608,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.5hje8i3v25dzow2olljxetnus",
-      "popularity": 9.3785,
+      "popularity": 9.8621,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2025-01-22",
@@ -7729,7 +7729,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/gb/shows/the-crow-girl",
-      "popularity": 6.5368,
+      "popularity": 6.6689,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2025-01-16",
@@ -7803,7 +7803,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/b03pmw4m",
-      "popularity": 37.0153,
+      "popularity": 37.5092,
       "number_of_seasons": 13,
       "number_of_episodes": 140,
       "first_air_date": "2013-01-14",
@@ -8013,7 +8013,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/b007r3n8",
-      "popularity": 22.6766,
+      "popularity": 19.2203,
       "number_of_seasons": 19,
       "number_of_episodes": 184,
       "first_air_date": "2007-06-16",
@@ -8322,7 +8322,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/the-good-ship-murder",
-      "popularity": 9.4169,
+      "popularity": 10.0375,
       "number_of_seasons": 3,
       "number_of_episodes": 23,
       "first_air_date": "2023-10-13",
@@ -8402,7 +8402,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/channel/sky-one/a-league-of-their-own",
-      "popularity": 11.7922,
+      "popularity": 11.6248,
       "number_of_seasons": 20,
       "number_of_episodes": 206,
       "first_air_date": "2010-03-11",
@@ -8798,7 +8798,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/patience/",
-      "popularity": 13.4378,
+      "popularity": 15.706,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2025-01-08",
@@ -8864,7 +8864,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/p0118t80",
-      "popularity": 50.6258,
+      "popularity": 55.1115,
       "number_of_seasons": 15,
       "number_of_episodes": 117,
       "first_air_date": "2012-01-15",
@@ -9149,8 +9149,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 6.66,
-      "vote_count": 244,
+      "vote_average": 6.65,
+      "vote_count": 245,
       "origin_country": [
         "GB"
       ],
@@ -9163,7 +9163,7 @@
         }
       ],
       "homepage": "http://www.amazon.co.uk/dp/B0B8SBN6FL",
-      "popularity": 12.684,
+      "popularity": 12.8339,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-01-06",
@@ -9299,7 +9299,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0d5z0xy",
-      "popularity": 12.3058,
+      "popularity": 13.1852,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2022-10-30",
@@ -9664,7 +9664,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.4768,
+      "popularity": 4.6354,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2024-12-29",
@@ -9785,7 +9785,7 @@
         }
       ],
       "homepage": "https://www.my5.tv/the-madame-blanc-mysteries/",
-      "popularity": 5.1894,
+      "popularity": 4.7912,
       "number_of_seasons": 4,
       "number_of_episodes": 28,
       "first_air_date": "2021-10-16",
@@ -9899,7 +9899,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001tbsj",
-      "popularity": 3.8794,
+      "popularity": 3.3919,
       "number_of_seasons": 2,
       "number_of_episodes": 5,
       "first_air_date": "2023-12-09",
@@ -9971,7 +9971,7 @@
         }
       ],
       "homepage": "https://acorn.tv/chelseadetective/",
-      "popularity": 22.1452,
+      "popularity": 22.4146,
       "number_of_seasons": 4,
       "number_of_episodes": 16,
       "first_air_date": "2022-02-07",
@@ -10058,7 +10058,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.23,
-      "vote_count": 267,
+      "vote_count": 268,
       "origin_country": [
         "GB"
       ],
@@ -10072,7 +10072,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/b093ypxy",
-      "popularity": 15.8574,
+      "popularity": 16.1056,
       "number_of_seasons": 6,
       "number_of_episodes": 19,
       "first_air_date": "2017-08-27",
@@ -10198,7 +10198,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81682935",
-      "popularity": 19.8832,
+      "popularity": 20.0325,
       "number_of_seasons": 2,
       "number_of_episodes": 6,
       "first_air_date": "2024-12-05",
@@ -10270,7 +10270,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/dalgliesh",
-      "popularity": 11.5868,
+      "popularity": 13.7453,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2021-11-04",
@@ -10415,7 +10415,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0b7pwbp",
-      "popularity": 3.6334,
+      "popularity": 3.4484,
       "number_of_seasons": 2,
       "number_of_episodes": 26,
       "first_air_date": "2022-02-08",
@@ -10601,7 +10601,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.14kr4vv65unannh7doqgvlh20",
-      "popularity": 22.2229,
+      "popularity": 26.4664,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2022-08-19",
@@ -10755,7 +10755,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/the-day-of-the-jackal",
-      "popularity": 43.6231,
+      "popularity": 43.6173,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2024-11-07",
@@ -10802,8 +10802,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.53,
-      "vote_count": 213,
+      "vote_average": 7.5,
+      "vote_count": 214,
       "origin_country": [
         "GB"
       ],
@@ -10823,9 +10823,9 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/p01s711r",
-      "popularity": 35.0804,
+      "popularity": 36.6952,
       "number_of_seasons": 11,
-      "number_of_episodes": 57,
+      "number_of_episodes": 62,
       "first_air_date": "2013-03-10",
       "last_air_date": "2025-12-10",
       "in_production": true,
@@ -11010,7 +11010,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/ellis",
-      "popularity": 7.5952,
+      "popularity": 7.1473,
       "number_of_seasons": 2,
       "number_of_episodes": 7,
       "first_air_date": "2024-10-31",
@@ -11143,7 +11143,7 @@
         }
       ],
       "homepage": "https://acorn.tv/whitstablepearl/",
-      "popularity": 5.4283,
+      "popularity": 6.4497,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2021-05-24",
@@ -11234,7 +11234,7 @@
         }
       ],
       "homepage": "https://www.tvnz.co.nz/shows/the-gone",
-      "popularity": 4.3395,
+      "popularity": 4.0618,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-05-07",
@@ -11374,7 +11374,7 @@
         }
       ],
       "homepage": "https://www.disneyplus.com/series/rivals/4MoVqX2aLYpm",
-      "popularity": 13.9095,
+      "popularity": 14.6996,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2024-10-18",
@@ -11447,7 +11447,7 @@
         }
       ],
       "homepage": "https://www.amazon.co.uk/dp/B0B5NPSW6C",
-      "popularity": 8.2886,
+      "popularity": 8.8791,
       "number_of_seasons": 2,
       "number_of_episodes": 11,
       "first_air_date": "2022-10-28",
@@ -11518,7 +11518,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 9.2076,
+      "popularity": 9.2771,
       "number_of_seasons": 13,
       "number_of_episodes": 233,
       "first_air_date": "2013-01-04",
@@ -11789,7 +11789,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/everyone-else-burns",
-      "popularity": 2.8499,
+      "popularity": 2.9551,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-01-23",
@@ -12024,7 +12024,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.4,
-      "vote_count": 287,
+      "vote_count": 288,
       "origin_country": [
         "GB"
       ],
@@ -12050,7 +12050,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/sweetpea",
-      "popularity": 5.6033,
+      "popularity": 8.0221,
       "number_of_seasons": 2,
       "number_of_episodes": 7,
       "first_air_date": "2024-10-10",
@@ -12121,7 +12121,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/gb/shows/curfew",
-      "popularity": 2.5648,
+      "popularity": 2.6317,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2024-10-10",
@@ -12182,7 +12182,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/the-hardacres",
-      "popularity": 7.5563,
+      "popularity": 8.866,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-10-07",
@@ -12316,7 +12316,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p09twdp8",
-      "popularity": 4.0714,
+      "popularity": 3.7698,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2021-10-31",
@@ -12384,7 +12384,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p09pm359",
-      "popularity": 6.6221,
+      "popularity": 7.8661,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2021-09-10",
@@ -12618,7 +12618,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/brassic",
-      "popularity": 17.3784,
+      "popularity": 16.6523,
       "number_of_seasons": 7,
       "number_of_episodes": 49,
       "first_air_date": "2019-08-22",
@@ -12764,7 +12764,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0022wvz",
-      "popularity": 23.1956,
+      "popularity": 23.433,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-09-25",
@@ -12837,7 +12837,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/all-creatures-great-and-small/",
-      "popularity": 40.2924,
+      "popularity": 37.4668,
       "number_of_seasons": 7,
       "number_of_episodes": 43,
       "first_air_date": "2020-09-01",
@@ -13022,7 +13022,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/the-wives",
-      "popularity": 2.257,
+      "popularity": 2.253,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2024-09-16",
@@ -13093,7 +13093,7 @@
         }
       ],
       "homepage": "https://cocomelon.com/",
-      "popularity": 5.5616,
+      "popularity": 5.8816,
       "number_of_seasons": 12,
       "number_of_episodes": 88,
       "first_air_date": "2020-05-31",
@@ -13350,7 +13350,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/ridley/10a1231",
-      "popularity": 5.8692,
+      "popularity": 6.0099,
       "number_of_seasons": 2,
       "number_of_episodes": 8,
       "first_air_date": "2022-08-28",
@@ -13497,7 +13497,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/the-teacher/",
-      "popularity": 4.8137,
+      "popularity": 4.6048,
       "number_of_seasons": 3,
       "number_of_episodes": 12,
       "first_air_date": "2022-01-31",
@@ -13577,7 +13577,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/title/programme/5351c63e-8dc4-4291-9ad5-7c1e098585ec",
-      "popularity": 3.9181,
+      "popularity": 4.3573,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2023-02-09",
@@ -13863,7 +13863,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0c724lz",
-      "popularity": 7.8307,
+      "popularity": 8.2911,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2022-06-13",
@@ -13930,7 +13930,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0021ctf",
-      "popularity": 2.2101,
+      "popularity": 2.1155,
       "number_of_seasons": 2,
       "number_of_episodes": 10,
       "first_air_date": "2024-08-19",
@@ -14001,7 +14001,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/gb/shows/stags/",
-      "popularity": 4.2057,
+      "popularity": 4.4659,
       "number_of_seasons": 1,
       "number_of_episodes": 7,
       "first_air_date": "2024-08-15",
@@ -14041,7 +14041,7 @@
       ],
       "type": "Scripted",
       "vote_average": 6.96,
-      "vote_count": 27,
+      "vote_count": 28,
       "origin_country": [
         "GB"
       ],
@@ -14055,7 +14055,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0021k8h",
-      "popularity": 6.8293,
+      "popularity": 6.5603,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-08-15",
@@ -14134,7 +14134,7 @@
         }
       ],
       "homepage": "https://www.amazon.co.uk/dp/B0CZJ9R8VP",
-      "popularity": 16.7406,
+      "popularity": 11.0327,
       "number_of_seasons": 3,
       "number_of_episodes": 24,
       "first_air_date": "2019-11-25",
@@ -14237,7 +14237,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m000bhqj",
-      "popularity": 6.6888,
+      "popularity": 6.6724,
       "number_of_seasons": 4,
       "number_of_episodes": 11,
       "first_air_date": "2019-11-18",
@@ -14338,7 +14338,7 @@
         }
       ],
       "homepage": "https://acorn.tv/signoravolpe/",
-      "popularity": 3.693,
+      "popularity": 3.7561,
       "number_of_seasons": 2,
       "number_of_episodes": 6,
       "first_air_date": "2022-05-02",
@@ -14414,7 +14414,7 @@
         }
       ],
       "homepage": "https://u.co.uk/shows/hotel-portofino/watch-online",
-      "popularity": 6.4447,
+      "popularity": 9.4618,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2022-01-27",
@@ -14687,7 +14687,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/piglets/10a4958",
-      "popularity": 3.0075,
+      "popularity": 3.2446,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-07-20",
@@ -14761,7 +14761,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/suspect",
-      "popularity": 5.3373,
+      "popularity": 5.8806,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2022-06-19",
@@ -14833,7 +14833,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0020ys7",
-      "popularity": 4.2952,
+      "popularity": 4.0644,
       "number_of_seasons": 1,
       "number_of_episodes": 4,
       "first_air_date": "2024-07-15",
@@ -14893,7 +14893,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 6.5589,
+      "popularity": 6.5752,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2023-06-01",
@@ -14976,7 +14976,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/i-literally-just-told-you",
-      "popularity": 2.0625,
+      "popularity": 2.1079,
       "number_of_seasons": 4,
       "number_of_episodes": 23,
       "first_air_date": "2021-12-16",
@@ -15099,7 +15099,7 @@
         }
       ],
       "homepage": "https://www.milkshake.tv/pip-and-posy",
-      "popularity": 9.6642,
+      "popularity": 8.8233,
       "number_of_seasons": 2,
       "number_of_episodes": 104,
       "first_air_date": "2021-03-15",
@@ -15181,7 +15181,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0020bv6",
-      "popularity": 12.5369,
+      "popularity": 14.1241,
       "number_of_seasons": 3,
       "number_of_episodes": 12,
       "first_air_date": "2024-07-10",
@@ -15263,7 +15263,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001zpr6",
-      "popularity": 1.8678,
+      "popularity": 1.5751,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2024-07-08",
@@ -15396,7 +15396,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/cbeebies/shows/hey-duggee",
-      "popularity": 22.4119,
+      "popularity": 23.1253,
       "number_of_seasons": 5,
       "number_of_episodes": 216,
       "first_air_date": "2014-12-17",
@@ -15574,7 +15574,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81316476",
-      "popularity": 8.2259,
+      "popularity": 8.2796,
       "number_of_seasons": 2,
       "number_of_episodes": 7,
       "first_air_date": "2024-06-27",
@@ -15641,7 +15641,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0bzn7k4",
-      "popularity": 2.2294,
+      "popularity": 2.9515,
       "number_of_seasons": 2,
       "number_of_episodes": 9,
       "first_air_date": "2022-04-25",
@@ -15737,7 +15737,7 @@
         }
       ],
       "homepage": "https://www.nick.com/shows/loud-house",
-      "popularity": 50.4854,
+      "popularity": 54.826,
       "number_of_seasons": 10,
       "number_of_episodes": 413,
       "first_air_date": "2016-05-02",
@@ -15951,7 +15951,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/queenie",
-      "popularity": 2.7648,
+      "popularity": 3.4294,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2024-06-04",
@@ -16008,7 +16008,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81435566",
-      "popularity": 2.1979,
+      "popularity": 2.3054,
       "number_of_seasons": 2,
       "number_of_episodes": 18,
       "first_air_date": "2023-09-25",
@@ -16144,7 +16144,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81637842",
-      "popularity": 5.1745,
+      "popularity": 5.2286,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-05-30",
@@ -16298,7 +16298,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/we-are-lady-parts",
-      "popularity": 6.3633,
+      "popularity": 9.0977,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2021-05-20",
@@ -16427,7 +16427,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/gb/shows/insomnia/",
-      "popularity": 3.6118,
+      "popularity": 3.0861,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-05-23",
@@ -16492,7 +16492,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.6muy4la7lj1omu5nci4bt2m66",
-      "popularity": 28.5439,
+      "popularity": 29.9221,
       "number_of_seasons": 5,
       "number_of_episodes": 40,
       "first_air_date": "2020-05-01",
@@ -16601,7 +16601,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001yjr6",
-      "popularity": 3.9904,
+      "popularity": 4.3389,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2024-05-17",
@@ -16965,7 +16965,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0db975h",
-      "popularity": 5.5839,
+      "popularity": 5.0283,
       "number_of_seasons": 3,
       "number_of_episodes": 9,
       "first_air_date": "2022-12-01",
@@ -17180,7 +17180,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/cbbc/shows/a-kind-of-spark",
-      "popularity": 2.9635,
+      "popularity": 2.6909,
       "number_of_seasons": 2,
       "number_of_episodes": 20,
       "first_air_date": "2023-04-17",
@@ -17324,7 +17324,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/red-eye/10a4437",
-      "popularity": 11.077,
+      "popularity": 12.6974,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-04-21",
@@ -17393,7 +17393,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001y669",
-      "popularity": 1.6667,
+      "popularity": 1.8972,
       "number_of_seasons": 2,
       "number_of_episodes": 7,
       "first_air_date": "2024-04-17",
@@ -17467,7 +17467,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0f2cxpr",
-      "popularity": 9.7512,
+      "popularity": 10.8488,
       "number_of_seasons": 4,
       "number_of_episodes": 24,
       "first_air_date": "2023-03-27",
@@ -17567,7 +17567,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001ybcl",
-      "popularity": 3.1276,
+      "popularity": 2.8281,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-04-14",
@@ -18193,7 +18193,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/big-mood",
-      "popularity": 2.0692,
+      "popularity": 2.2517,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-03-28",
@@ -18462,7 +18462,7 @@
         }
       ],
       "homepage": "https://neiloseman.com/showcase/showcase-ren",
-      "popularity": 3.7951,
+      "popularity": 3.7194,
       "number_of_seasons": 3,
       "number_of_episodes": 14,
       "first_air_date": "2016-03-01",
@@ -18615,8 +18615,8 @@
         }
       ],
       "type": "Scripted",
-      "vote_average": 7.83,
-      "vote_count": 859,
+      "vote_average": 7.8,
+      "vote_count": 861,
       "origin_country": [
         "GB"
       ],
@@ -18629,11 +18629,11 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81437051",
-      "popularity": 50.5446,
+      "popularity": 145.5079,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-03-07",
-      "last_air_date": "2024-03-07",
+      "last_air_date": "2026-09-03",
       "in_production": true,
       "status": "Returning Series",
       "adult": false,
@@ -18699,7 +18699,7 @@
         }
       ],
       "homepage": "https://simonscat.com/",
-      "popularity": 8.0112,
+      "popularity": 7.9732,
       "number_of_seasons": 19,
       "number_of_episodes": 146,
       "first_air_date": "2008-03-04",
@@ -19337,7 +19337,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81154899",
-      "popularity": 9.7418,
+      "popularity": 10.0182,
       "number_of_seasons": 5,
       "number_of_episodes": 105,
       "first_air_date": "2021-09-07",
@@ -19696,7 +19696,7 @@
         }
       ],
       "homepage": "https://www.showmax.com/za/stream/series/catch-me-a-killer/c158c9f6-336f-3a63-b886-3ca653d54eb3",
-      "popularity": 2.6085,
+      "popularity": 2.5945,
       "number_of_seasons": 1,
       "number_of_episodes": 11,
       "first_air_date": "2024-02-12",
@@ -19809,7 +19809,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001vv93",
-      "popularity": 3.7281,
+      "popularity": 3.8109,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2024-01-31",
@@ -19868,7 +19868,7 @@
         }
       ],
       "homepage": "https://www.itv.com/hub/trigger-point/10a0591",
-      "popularity": 20.7318,
+      "popularity": 21.351,
       "number_of_seasons": 4,
       "number_of_episodes": 24,
       "first_air_date": "2022-01-23",
@@ -19967,7 +19967,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/shows/sexy-beast/",
-      "popularity": 5.2867,
+      "popularity": 5.6317,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2024-01-25",
@@ -20025,7 +20025,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/finders-keepers",
-      "popularity": 2.7851,
+      "popularity": 2.3401,
       "number_of_seasons": 1,
       "number_of_episodes": 4,
       "first_air_date": "2024-01-17",
@@ -20196,7 +20196,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.1sbjeoma6tvxgda6l0h4bb0x3",
-      "popularity": 14.3746,
+      "popularity": 15.0214,
       "number_of_seasons": 2,
       "number_of_episodes": 16,
       "first_air_date": "2024-01-10",
@@ -20270,7 +20270,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/after-the-flood/10a1446",
-      "popularity": 4.3045,
+      "popularity": 4.4003,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2024-01-10",
@@ -20394,7 +20394,7 @@
         }
       ],
       "homepage": "http://www.itv.com/lorraine",
-      "popularity": 10.1574,
+      "popularity": 9.4375,
       "number_of_seasons": 5,
       "number_of_episodes": 245,
       "first_air_date": "2001-09-03",
@@ -20780,7 +20780,7 @@
         }
       ],
       "homepage": "https://www.paramountplus.com/gb/shows/the-castaways/",
-      "popularity": 2.4728,
+      "popularity": 2.3846,
       "number_of_seasons": 1,
       "number_of_episodes": 5,
       "first_air_date": "2023-12-26",
@@ -20946,7 +20946,7 @@
       ],
       "type": "Scripted",
       "vote_average": 6.54,
-      "vote_count": 761,
+      "vote_count": 762,
       "origin_country": [
         "GB"
       ],
@@ -20960,7 +20960,7 @@
         }
       ],
       "homepage": "http://www.channel5.com/show/peppa-pig",
-      "popularity": 79.4514,
+      "popularity": 80.2213,
       "number_of_seasons": 9,
       "number_of_episodes": 492,
       "first_air_date": "2004-05-31",
@@ -20969,7 +20969,7 @@
       "status": "Returning Series",
       "adult": false,
       "poster_path": "/e7qeAsiGBSbu7dxTV3hf4jzjPvF.jpg",
-      "backdrop_path": "/fnyS6gOv9tTjhHPl4A1aKEDgWEG.jpg",
+      "backdrop_path": "/qKyczRO7EUJ0NHxIscmaZbmINYp.jpg",
       "overview": "　　佩奇是一只可爱的粉红色小猪，她有一个名叫乔治的弟弟，乔治不喜欢吃蔬菜，最喜欢的东西是巧克力蛋糕和恐龙。猪爸爸有着一个胖胖的大肚子，在一家绘图公司上班，他的上司兔先生的女儿和佩奇同在一间幼儿园上学。猪妈妈喜欢做蛋糕，而它们一家人全部都喜欢的事情，就是穿上各自的靴子，在泥坑里跳来跳去！佩奇和乔治在幼儿园里有着一大群快乐的好朋友们，它们的老师是慈祥善良的羚羊夫人。在老师和朋友们的陪伴下，小猪佩奇的每一天都是如此的快乐和幸福！",
       "seasons": [
         {
@@ -21157,7 +21157,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p09pm77q",
-      "popularity": 45.062,
+      "popularity": 46.588,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2021-08-29",
@@ -21520,7 +21520,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/b072wv8z",
-      "popularity": 3.5434,
+      "popularity": 3.5704,
       "number_of_seasons": 7,
       "number_of_episodes": 42,
       "first_air_date": "2016-04-01",
@@ -21738,7 +21738,7 @@
         }
       ],
       "homepage": "https://www.toggo.de/bo-flo--co",
-      "popularity": 8.9345,
+      "popularity": 8.6466,
       "number_of_seasons": 3,
       "number_of_episodes": 156,
       "first_air_date": "2019-11-19",
@@ -22291,7 +22291,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0gmj4tn",
-      "popularity": 3.3747,
+      "popularity": 3.7267,
       "number_of_seasons": 1,
       "number_of_episodes": 7,
       "first_air_date": "2023-11-01",
@@ -22615,7 +22615,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/cobra",
-      "popularity": 4.9415,
+      "popularity": 5.6636,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2020-01-17",
@@ -22921,7 +22921,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/payback/10a2111",
-      "popularity": 4.0147,
+      "popularity": 4.1552,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2023-10-04",
@@ -23154,7 +23154,7 @@
         }
       ],
       "homepage": "https://www.itv.com/watch/irvine-welshs-crime/10a1858",
-      "popularity": 5.1917,
+      "popularity": 5.5951,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2021-11-18",
@@ -23317,7 +23317,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0gbkx4m",
-      "popularity": 2.8986,
+      "popularity": 2.2773,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2023-09-18",
@@ -23398,7 +23398,7 @@
         }
       ],
       "homepage": "https://acorn.tv/mrssidhuinvestigates/",
-      "popularity": 3.3639,
+      "popularity": 3.3068,
       "number_of_seasons": 1,
       "number_of_episodes": 4,
       "first_air_date": "2023-09-18",
@@ -23452,7 +23452,7 @@
         }
       ],
       "homepage": "https://www.itv.com/hub/tenable/2a4724",
-      "popularity": 9.6627,
+      "popularity": 8.7772,
       "number_of_seasons": 7,
       "number_of_episodes": 299,
       "first_air_date": "2016-11-14",
@@ -23946,7 +23946,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/the-inheritance",
-      "popularity": 1.8096,
+      "popularity": 1.7533,
       "number_of_seasons": 1,
       "number_of_episodes": 4,
       "first_air_date": "2023-09-04",
@@ -24080,7 +24080,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0fvml17",
-      "popularity": 1.9213,
+      "popularity": 2.0821,
       "number_of_seasons": 1,
       "number_of_episodes": 5,
       "first_air_date": "2023-08-29",
@@ -24407,7 +24407,7 @@
         }
       ],
       "homepage": "https://alibi.uktv.co.uk/shows/annika/",
-      "popularity": 7.6187,
+      "popularity": 8.2427,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2021-08-17",
@@ -24523,7 +24523,7 @@
       ],
       "type": "Scripted",
       "vote_average": 8.02,
-      "vote_count": 2410,
+      "vote_count": 2411,
       "origin_country": [
         "GB"
       ],
@@ -24536,7 +24536,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B07FMHTRFF",
-      "popularity": 22.9614,
+      "popularity": 25.15,
       "number_of_seasons": 3,
       "number_of_episodes": 13,
       "first_air_date": "2019-05-31",
@@ -25031,7 +25031,7 @@
       ],
       "type": "Scripted",
       "vote_average": 7.5,
-      "vote_count": 857,
+      "vote_count": 858,
       "origin_country": [
         "GB"
       ],
@@ -25044,7 +25044,7 @@
         }
       ],
       "homepage": "https://tv.apple.com/show/umc.cmc.1dg08zn0g3zx52hs8npoj5qe3",
-      "popularity": 22.7155,
+      "popularity": 28.8578,
       "number_of_seasons": 2,
       "number_of_episodes": 15,
       "first_air_date": "2023-06-28",
@@ -25118,7 +25118,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/before-we-die",
-      "popularity": 1.8617,
+      "popularity": 1.9383,
       "number_of_seasons": 2,
       "number_of_episodes": 11,
       "first_air_date": "2021-05-26",
@@ -25527,7 +25527,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m001mg3k",
-      "popularity": 5.2939,
+      "popularity": 4.9958,
       "number_of_seasons": 1,
       "number_of_episodes": 3,
       "first_air_date": "2023-05-31",
@@ -25691,7 +25691,7 @@
         }
       ],
       "homepage": "https://www.kittikatz.com/",
-      "popularity": 2.8433,
+      "popularity": 2.8148,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2023-05-18",
@@ -25883,7 +25883,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0ff7v49",
-      "popularity": 3.6467,
+      "popularity": 3.956,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2023-05-05",
@@ -26029,7 +26029,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/the-curse",
-      "popularity": 3.005,
+      "popularity": 2.6461,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2022-02-06",
@@ -26253,7 +26253,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 1.0719,
+      "popularity": 0.9753,
       "number_of_seasons": 1,
       "number_of_episodes": 20,
       "first_air_date": "2023-04-15",
@@ -26701,7 +26701,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p070b9gh",
-      "popularity": 3.1473,
+      "popularity": 2.9753,
       "number_of_seasons": 3,
       "number_of_episodes": 14,
       "first_air_date": "2019-02-24",
@@ -27232,7 +27232,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/the-catch",
-      "popularity": 4.1304,
+      "popularity": 4.3149,
       "number_of_seasons": 1,
       "number_of_episodes": 4,
       "first_air_date": "2023-01-25",
@@ -27945,7 +27945,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/title/series/769f9f7a-36ce-4e1c-8046-c456cd2f9327",
-      "popularity": 2.0204,
+      "popularity": 2.0939,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2023-01-01",
@@ -28772,7 +28772,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0bh0ftr",
-      "popularity": 4.2816,
+      "popularity": 3.7547,
       "number_of_seasons": 2,
       "number_of_episodes": 14,
       "first_air_date": "2022-02-06",
@@ -29356,7 +29356,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p09cwbzf",
-      "popularity": 6.0608,
+      "popularity": 5.9408,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2021-05-17",
@@ -29427,7 +29427,7 @@
         }
       ],
       "homepage": "https://gold.uktv.co.uk/shows/murder-they-hope/",
-      "popularity": 4.0708,
+      "popularity": 3.4141,
       "number_of_seasons": 2,
       "number_of_episodes": 6,
       "first_air_date": "2021-05-08",
@@ -29498,7 +29498,7 @@
         }
       ],
       "homepage": "https://www.itv.com/hub/the-larkins/10a0555",
-      "popularity": 4.7133,
+      "popularity": 4.4606,
       "number_of_seasons": 2,
       "number_of_episodes": 13,
       "first_air_date": "2021-10-10",
@@ -29748,7 +29748,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m000d4w4",
-      "popularity": 3.3934,
+      "popularity": 3.2856,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2020-01-17",
@@ -29858,7 +29858,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/cbbc/shows/theodosia",
-      "popularity": 4.5374,
+      "popularity": 4.6354,
       "number_of_seasons": 2,
       "number_of_episodes": 52,
       "first_air_date": "2022-03-10",
@@ -30057,7 +30057,7 @@
         }
       ],
       "homepage": "https://www.amazon.co.uk/dp/B0B6TBS311",
-      "popularity": 2.1416,
+      "popularity": 2.3863,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2022-09-30",
@@ -30959,7 +30959,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m00085sx",
-      "popularity": 26.536,
+      "popularity": 31.5459,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2019-09-03",
@@ -31253,7 +31253,7 @@
         }
       ],
       "homepage": "https://www.bigtreecity.co.uk/",
-      "popularity": 4.6472,
+      "popularity": 4.7232,
       "number_of_seasons": 1,
       "number_of_episodes": 15,
       "first_air_date": "2022-08-01",
@@ -31544,7 +31544,7 @@
         }
       ],
       "homepage": "https://www.channel4.com/programmes/the-undeclared-war",
-      "popularity": 9.3546,
+      "popularity": 10.3252,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2022-06-30",
@@ -31667,7 +31667,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0c99012",
-      "popularity": 3.2034,
+      "popularity": 3.2449,
       "number_of_seasons": 1,
       "number_of_episodes": 6,
       "first_air_date": "2022-06-21",
@@ -31721,7 +31721,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0c70rlw",
-      "popularity": 2.628,
+      "popularity": 2.6672,
       "number_of_seasons": 1,
       "number_of_episodes": 7,
       "first_air_date": "2022-06-07",
@@ -31902,7 +31902,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p08d6jb0",
-      "popularity": 2.42,
+      "popularity": 2.4547,
       "number_of_seasons": 2,
       "number_of_episodes": 11,
       "first_air_date": "2020-06-12",
@@ -32477,7 +32477,7 @@
         }
       ],
       "homepage": "https://www.channel5.com/show/compulsion",
-      "popularity": 1.9087,
+      "popularity": 1.7908,
       "number_of_seasons": 1,
       "number_of_episodes": 4,
       "first_air_date": "2022-04-12",
@@ -32810,7 +32810,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/81037539",
-      "popularity": 3.3279,
+      "popularity": 3.2806,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2022-04-01",
@@ -33357,7 +33357,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 2.9935,
+      "popularity": 3.5698,
       "number_of_seasons": 1,
       "number_of_episodes": 3,
       "first_air_date": "2022-03-01",
@@ -33742,7 +33742,7 @@
         }
       ],
       "homepage": "https://warhammertv.com/details/25089?playlist_id=5",
-      "popularity": 2.3696,
+      "popularity": 2.4226,
       "number_of_seasons": 1,
       "number_of_episodes": 3,
       "first_air_date": "2022-02-16",
@@ -33876,7 +33876,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0014j3v",
-      "popularity": 2.3625,
+      "popularity": 2.4434,
       "number_of_seasons": 1,
       "number_of_episodes": 8,
       "first_air_date": "2022-02-14",
@@ -34016,7 +34016,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/b09trrn9",
-      "popularity": 12.0264,
+      "popularity": 10.8862,
       "number_of_seasons": 5,
       "number_of_episodes": 50,
       "first_air_date": "2018-02-26",
@@ -35087,7 +35087,7 @@
         }
       ],
       "homepage": "https://acorn.tv/agatharaisin",
-      "popularity": 9.6838,
+      "popularity": 10.435,
       "number_of_seasons": 4,
       "number_of_episodes": 25,
       "first_air_date": "2016-06-07",
@@ -35359,7 +35359,7 @@
         }
       ],
       "homepage": "https://acorn.tv/queensofmystery",
-      "popularity": 2.9464,
+      "popularity": 2.9284,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2019-04-08",
@@ -36941,7 +36941,7 @@
         }
       ],
       "homepage": "https://warhammertv.com/details/25383",
-      "popularity": 7.3873,
+      "popularity": 6.7629,
       "number_of_seasons": 1,
       "number_of_episodes": 16,
       "first_air_date": "2021-08-25",
@@ -37168,7 +37168,7 @@
         }
       ],
       "homepage": "http://pjmasks.com",
-      "popularity": 24.1003,
+      "popularity": 23.7854,
       "number_of_seasons": 5,
       "number_of_episodes": 257,
       "first_air_date": "2015-09-18",
@@ -37686,7 +37686,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/title/series/b0ed0223-c30b-42e2-ba40-2a55a41be8eb/dodo-b0ed0223-c30b-42e2-ba40-2a55a41be8eb",
-      "popularity": 4.0153,
+      "popularity": 4.119,
       "number_of_seasons": 2,
       "number_of_episodes": 40,
       "first_air_date": "2021-06-14",
@@ -37904,7 +37904,7 @@
         }
       ],
       "homepage": "https://dave.uktv.co.uk/shows/sliced/",
-      "popularity": 2.9014,
+      "popularity": 3.6527,
       "number_of_seasons": 2,
       "number_of_episodes": 9,
       "first_air_date": "2019-05-15",
@@ -38417,7 +38417,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 1.9623,
+      "popularity": 1.7674,
       "number_of_seasons": 4,
       "number_of_episodes": 43,
       "first_air_date": "2016-09-06",
@@ -38988,7 +38988,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/p00yzlr0",
-      "popularity": 27.6277,
+      "popularity": 28.2123,
       "number_of_seasons": 7,
       "number_of_episodes": 42,
       "first_air_date": "2012-06-26",
@@ -39121,7 +39121,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.0698,
+      "popularity": 3.7428,
       "number_of_seasons": 1,
       "number_of_episodes": 20,
       "first_air_date": "2021-03-15",
@@ -39303,7 +39303,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/b00vt2q1",
-      "popularity": 9.5188,
+      "popularity": 8.943,
       "number_of_seasons": 12,
       "number_of_episodes": 65,
       "first_air_date": "2009-05-18",
@@ -39803,7 +39803,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p06l2nvb",
-      "popularity": 2.6494,
+      "popularity": 2.7923,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2017-02-11",
@@ -43484,7 +43484,7 @@
         }
       ],
       "homepage": "https://www.sky.com/watch/channel/sky-one/the-trip-to",
-      "popularity": 8.1724,
+      "popularity": 8.7985,
       "number_of_seasons": 4,
       "number_of_episodes": 24,
       "first_air_date": "2010-11-01",
@@ -43668,7 +43668,7 @@
         }
       ],
       "homepage": "http://www.channel4.com/programmes/the-windsors",
-      "popularity": 4.6521,
+      "popularity": 4.5635,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2016-05-06",
@@ -44808,7 +44808,7 @@
       "original_language": "en",
       "networks": [],
       "homepage": "http://thedadlab.com",
-      "popularity": 0.5016,
+      "popularity": 0.5493,
       "number_of_seasons": 1,
       "number_of_episodes": 1,
       "first_air_date": "2020-01-17",
@@ -45868,7 +45868,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/m0009tgy",
-      "popularity": 10.1112,
+      "popularity": 10.1358,
       "number_of_seasons": 2,
       "number_of_episodes": 157,
       "first_air_date": "2014-06-09",
@@ -46912,7 +46912,7 @@
       "original_language": "en",
       "networks": [],
       "homepage": "https://www.rickyzoom.fr/",
-      "popularity": 6.1431,
+      "popularity": 5.2101,
       "number_of_seasons": 2,
       "number_of_episodes": 104,
       "first_air_date": "2019-09-02",
@@ -47000,7 +47000,7 @@
         }
       ],
       "homepage": "https://www.cbeebies.com/shows/go-jetters/",
-      "popularity": 9.6369,
+      "popularity": 9.9883,
       "number_of_seasons": 3,
       "number_of_episodes": 132,
       "first_air_date": "2015-10-26",
@@ -47100,7 +47100,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B00RSGH58Y",
-      "popularity": 6.8284,
+      "popularity": 9.2368,
       "number_of_seasons": 5,
       "number_of_episodes": 66,
       "first_air_date": "2016-09-01",
@@ -48885,7 +48885,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 10.3495,
+      "popularity": 9.2281,
       "number_of_seasons": 1,
       "number_of_episodes": 52,
       "first_air_date": "2019-03-18",
@@ -49004,7 +49004,7 @@
         }
       ],
       "homepage": "https://www.netflix.com/title/80147920",
-      "popularity": 3.6752,
+      "popularity": 4.1307,
       "number_of_seasons": 2,
       "number_of_episodes": 40,
       "first_air_date": "2018-10-25",
@@ -49228,7 +49228,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 3.2239,
+      "popularity": 3.2876,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2017-10-09",
@@ -54154,7 +54154,7 @@
         }
       ],
       "homepage": "http://www.pbskids.org/catinthehat/",
-      "popularity": 14.8338,
+      "popularity": 15.5915,
       "number_of_seasons": 3,
       "number_of_episodes": 160,
       "first_air_date": "2010-09-06",
@@ -57360,7 +57360,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 7.3388,
+      "popularity": 7.182,
       "number_of_seasons": 6,
       "number_of_episodes": 200,
       "first_air_date": "2015-02-23",
@@ -57503,7 +57503,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/cbbc/shows/danger-mouse",
-      "popularity": 9.948,
+      "popularity": 11.1425,
       "number_of_seasons": 2,
       "number_of_episodes": 100,
       "first_air_date": "2015-09-28",
@@ -58721,7 +58721,7 @@
         }
       ],
       "homepage": "https://www.amazon.com/dp/B06W5H33JH",
-      "popularity": 2.1591,
+      "popularity": 2.7787,
       "number_of_seasons": 1,
       "number_of_episodes": 1,
       "first_air_date": "2017-03-17",
@@ -61058,7 +61058,7 @@
         }
       ],
       "homepage": "http://www.dealornodeal.co.uk/",
-      "popularity": 33.9208,
+      "popularity": 29.2869,
       "number_of_seasons": 11,
       "number_of_episodes": 1320,
       "first_air_date": "2005-10-31",
@@ -63022,7 +63022,7 @@
         }
       ],
       "homepage": "http://counterfeitcat.com/",
-      "popularity": 6.0678,
+      "popularity": 5.6681,
       "number_of_seasons": 1,
       "number_of_episodes": 52,
       "first_air_date": "2016-05-26",
@@ -64631,7 +64631,7 @@
         }
       ],
       "homepage": "https://www.bbc.co.uk/programmes/p0fty7vj",
-      "popularity": 22.5146,
+      "popularity": 19.1817,
       "number_of_seasons": 2,
       "number_of_episodes": 12,
       "first_air_date": "2016-02-21",
@@ -64779,7 +64779,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.2518,
+      "popularity": 3.7359,
       "number_of_seasons": 5,
       "number_of_episodes": 72,
       "first_air_date": "2012-03-05",
@@ -65060,7 +65060,7 @@
         }
       ],
       "homepage": "http://disneyjunior.com/the-hive",
-      "popularity": 5.9146,
+      "popularity": 5.1843,
       "number_of_seasons": 2,
       "number_of_episodes": 156,
       "first_air_date": "2010-09-11",
@@ -66439,7 +66439,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 5.3133,
+      "popularity": 6.0799,
       "number_of_seasons": 1,
       "number_of_episodes": 46,
       "first_air_date": "2015-11-02",
@@ -71387,7 +71387,7 @@
         }
       ],
       "homepage": "http://yesterday.uktv.co.uk/shows/ancient-black-ops/",
-      "popularity": 1.2529,
+      "popularity": 1.1661,
       "number_of_seasons": 1,
       "number_of_episodes": 10,
       "first_air_date": "2014-09-17",
@@ -76277,7 +76277,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.7691,
+      "popularity": 4.6353,
       "number_of_seasons": 3,
       "number_of_episodes": 128,
       "first_air_date": "2011-08-27",
@@ -76427,7 +76427,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/b00mr0kc",
-      "popularity": 7.1371,
+      "popularity": 7.9936,
       "number_of_seasons": 2,
       "number_of_episodes": 87,
       "first_air_date": "2009-09-07",
@@ -77486,7 +77486,7 @@
       "original_language": "en",
       "networks": [],
       "homepage": "",
-      "popularity": 0.6593,
+      "popularity": 0.6685,
       "number_of_seasons": 1,
       "number_of_episodes": 1,
       "first_air_date": "2013-03-18",
@@ -78459,7 +78459,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/programmes/b006s5v8",
-      "popularity": 4.7803,
+      "popularity": 4.5482,
       "number_of_seasons": 7,
       "number_of_episodes": 153,
       "first_air_date": "2007-01-15",
@@ -81159,7 +81159,7 @@
         }
       ],
       "homepage": "https://rastamouse.com",
-      "popularity": 5.3967,
+      "popularity": 5.3835,
       "number_of_seasons": 3,
       "number_of_episodes": 78,
       "first_air_date": "2011-01-31",
@@ -93879,7 +93879,7 @@
         }
       ],
       "homepage": "http://www.bbc.co.uk/cbeebies/mistermaker/",
-      "popularity": 7.7263,
+      "popularity": 7.1866,
       "number_of_seasons": 4,
       "number_of_episodes": 80,
       "first_air_date": "2007-09-17",
@@ -104865,7 +104865,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 2.649,
+      "popularity": 2.8312,
       "number_of_seasons": 3,
       "number_of_episodes": 18,
       "first_air_date": "2003-03-23",
@@ -105411,7 +105411,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 3.4776,
+      "popularity": 3.2475,
       "number_of_seasons": 3,
       "number_of_episodes": 40,
       "first_air_date": "2002-04-26",
@@ -108517,7 +108517,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.9397,
+      "popularity": 4.8742,
       "number_of_seasons": 1,
       "number_of_episodes": 104,
       "first_air_date": "2003-04-14",
@@ -109774,7 +109774,7 @@
         }
       ],
       "homepage": "",
-      "popularity": 4.6308,
+      "popularity": 4.7994,
       "number_of_seasons": 14,
       "number_of_episodes": 14,
       "first_air_date": "2002-09-24",
